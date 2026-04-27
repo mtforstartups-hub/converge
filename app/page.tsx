@@ -1,5 +1,6 @@
 import Hero from "@/components/homepage/Hero";
 import HowItWorks from "@/components/homepage/HowItWorks";
+import IntelligenceSection from "@/components/homepage/Intelligence";
 import ProblemSection from "@/components/homepage/ProblemSection";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <ProblemSection />
       <HowItWorks />
+      <IntelligenceSection />
     </>
   );
 }
