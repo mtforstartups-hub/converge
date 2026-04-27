@@ -7,4 +7,7 @@
   --color-steel: hsl(211 18% 61%);
   --color-verified: hsl(174 81% 23%);
   --color-charcoal: hsl(211 27% 24%);
+
+  --color-primary: #0a0f1c;
+  --color-accent: #0d7d71;
 }
