@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="en" className={`${fraunces.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
         <Header />
-        {children}
+        <main>{children}</main>
       </body>
     </html>
   );
