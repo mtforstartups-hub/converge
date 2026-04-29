@@ -31,7 +31,7 @@ export default function PlatformSection() {
 
   return (
     <section className="w-full bg-font">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-16 lg:py-24 grid lg:grid-cols-2 gap-12 lg:gap-20">
+      <div className="max-w-5/6 mx-auto px-4 sm:px-6 lg:px-10 py-16 lg:py-24 grid lg:grid-cols-2 gap-12 lg:gap-20">
         {/* LEFT */}
         <div>
           <p className="text-[10px] tracking-widest uppercase text-[#8A94A6] mb-4">

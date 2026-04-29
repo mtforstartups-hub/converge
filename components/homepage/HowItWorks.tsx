@@ -24,7 +24,7 @@ export default function HowItWorks() {
 
   return (
     <section className="w-full bg-primary text-font">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-20 lg:py-28">
+      <div className="max-w-5/6 mx-auto px-4 sm:px-6 lg:px-10 py-20 lg:py-28">
         {/* TOP TEXT */}
         <div className="text-center mx-auto mb-14">
           <p className="text-[10px] tracking-widest uppercase text-font/40 mb-4">

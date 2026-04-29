@@ -20,7 +20,7 @@ export default function ImpactSection() {
 
   return (
     <section className="w-full bg-[#16263A] text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-16 lg:py-20">
+      <div className="max-w-5/6 mx-auto px-4 sm:px-6 lg:px-10 py-16 lg:py-20">
         {/* Top label */}
         <p className="text-[10px] tracking-widest uppercase text-white/40 mb-10">
           Measurable impact

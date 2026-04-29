@@ -13,7 +13,7 @@ const menuLinks = [
 export default function Header() {
   return (
     <header className="bg-primary relative border-b-[0.5px] border-white/20">
-      <div className="mx-auto max-w-7xl text-white flex justify-between items-center p-4">
+      <div className="mx-auto max-w-5/6 text-white flex justify-between items-center p-4">
         <Link href="/" className="text-xl">
           CONVERGE
         </Link>
