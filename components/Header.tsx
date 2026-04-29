@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Button from "./ui/Button";
 import MobileMenu from "./MobileMenu";
+import Image from "next/image";
 
 const menuLinks = [
   { title: "Product", link: "/product" },
@@ -36,12 +37,18 @@ export default function Header() {
           : "bg-transparent border-transparent py-4"
       }`}
     >
-      <div className="mx-auto max-w-5/6 text-white flex justify-between items-center px-10">
+      <div className="mx-auto max-w-95/100 md:max-w-5/6 text-white flex justify-between items-center px-4 md:px-10">
         <Link href="/" className="text-xl">
-          CONVERGE
+          <Image
+            src="/images/logo.svg"
+            alt="Converge Logo"
+            width={120}
+            height={80}
+            className="w-auto h-auto"
+          />
         </Link>
         <nav className="hidden lg:block">
-          <ul className="flex gap-4">
+          <ul className="flex gap-8">
             {menuLinks.map((item, i) => (
               <li key={i}>
                 <Link

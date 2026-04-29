@@ -28,7 +28,7 @@ export default function FAQ() {
 
   return (
     <section className="w-full bg-[#E9E6E1]">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-10 py-16 lg:py-20">
+      <div className="max-w-95/100 md:max-w-5/6 mx-auto px-4 sm:px-6 lg:px-10 py-16 lg:py-20">
         {/* Title */}
         <h2 className="text-2xl sm:text-3xl font-semibold text-center text-[#0B1B2B] mb-10">
           Frequently asked questions

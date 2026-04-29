@@ -20,7 +20,7 @@ export default function BrandsMarquee() {
 
   return (
     <div className="relative z-10 w-full bg-[#121A2B] py-5 sm:py-6 overflow-hidden">
-      <div className="max-w-5/6 mx-auto px-4 sm:px-6 lg:px-10 flex flex-col md:flex-row md:items-center justify-center md:justify-between items-center gap-4">
+      <div className="max-w-95/100 md:max-w-5/6 mx-auto px-4 sm:px-6 lg:px-10 flex flex-col md:flex-row md:items-center justify-center md:justify-between items-center gap-4">
         {/* Title */}
         <div className="uppercase text-[10px] sm:text-xs text-font/80 whitespace-nowrap z-20 font-medium tracking-wide">
           Built by industry experts from

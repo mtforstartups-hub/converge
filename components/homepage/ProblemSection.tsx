@@ -8,7 +8,7 @@ export default function ProblemSection() {
 
   return (
     <section className="w-full bg-[#E9E6E1]">
-      <div className="max-w-5/6 mx-auto px-4 sm:px-6 lg:px-10 py-16 lg:py-24 grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
+      <div className="max-w-95/100 md:max-w-5/6 mx-auto px-4 sm:px-6 lg:px-10 py-16 lg:py-24 grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
         {/* LEFT CONTENT */}
         <div>
           <p className="text-[10px] tracking-widest uppercase text-[#8A94A6] mb-4">

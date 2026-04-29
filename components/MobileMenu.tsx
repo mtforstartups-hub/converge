@@ -22,7 +22,7 @@ export default function MobileMenu({
       </button>
       {/* Menu panel */}
       {open && (
-        <div className="absolute left-0 top-full w-full bg-primary text-white p-4">
+        <div className="absolute left-0 top-full w-full bg-primary/95 text-white py-4 px-10 border-t backdrop-blur-md border-t-white/20 shadow-lg">
           <ul className="flex flex-col gap-4">
             {links.map((item, i: number) => (
               <li key={i}>

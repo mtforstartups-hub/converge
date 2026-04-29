@@ -1,16 +1,22 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
   return (
     <footer className="w-full bg-[#020C1B] text-white">
-      <div className="max-w-5/6 mx-auto px-4 sm:px-6 lg:px-10 py-16 lg:py-20">
+      <div className="max-w-95/100 md:max-w-5/6 mx-auto px-4 sm:px-6 lg:px-10 py-7 lg:py-10">
         {/* TOP GRID */}
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-6">
           {/* BRAND */}
           <div className="lg:col-span-2">
             <div className="text-sm font-semibold mb-4">
-              CONVERGE{" "}
-              <span className="text-white/50 font-normal">FINANCE</span>
+              <Image
+                src="/images/logo.svg"
+                alt="Converge Logo"
+                width={120}
+                height={80}
+                className="w-auto h-auto"
+              />
             </div>
 
             <p className="text-sm text-white/60 max-w-sm mb-6">

@@ -31,7 +31,7 @@ export default function IntelligenceSection() {
 
   return (
     <section className="w-full bg-[#E9E6E1]">
-      <div className="max-w-5/6 mx-auto px-4 sm:px-6 lg:px-10 py-16 lg:py-24">
+      <div className="max-w-95/100 md:max-w-5/6 mx-auto px-4 sm:px-6 lg:px-10 py-16 lg:py-24">
         {/* TOP */}
         <div className="max-w-2xl mb-12 lg:mb-16">
           <p className="text-[10px] tracking-widest uppercase text-[#8A94A6] mb-4">

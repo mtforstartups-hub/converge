@@ -31,7 +31,7 @@ export default function Hero() {
         {/* Overlay */}
         <div className="absolute inset-0 bg-primary/70 z-0" />
 
-        <div className="relative z-10 max-w-5/6 mx-auto px-4 sm:px-6 lg:px-10 py-12 sm:py-16 lg:py-20 grid gap-10 lg:grid-cols-2 lg:gap-16 items-center text-font min-h-[60vh] lg:min-h-[80vh]">
+        <div className="relative z-10 max-w-95/100 md:max-w-5/6 mx-auto px-4 sm:px-6 lg:px-10 py-12 sm:py-16 lg:py-20 grid gap-10 lg:grid-cols-2 lg:gap-16 items-center text-font min-h-[60vh] lg:min-h-[80vh]">
           {/* LEFT */}
           <div>
             <h1 className="text-3xl sm:text-5xl lg:text-7xl font-bold mb-5 leading-tight font-sans text-center lg:text-left">
