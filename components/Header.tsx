@@ -42,9 +42,9 @@ export default function Header() {
           <Image
             src="/images/logo.svg"
             alt="Converge Logo"
-            width={120}
+            width={160}
             height={80}
-            className="w-auto h-auto"
+            className="w-30 md:w-40 h-auto"
           />
         </Link>
         <nav className="hidden lg:block">
