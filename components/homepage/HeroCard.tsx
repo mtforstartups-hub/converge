@@ -55,7 +55,7 @@ export default function HeroCard() {
 
       <div className="flex flex-col relative mb-6 pl-2">
         {/* Vertical line spanning the steps */}
-        <div className="absolute left-[1.65rem] top-[2rem] bottom-[2rem] w-[1px] bg-white/5 z-0"></div>
+        <div className="absolute left-[1.65rem] top-8 bottom-8 w-px bg-white/5 z-0"></div>
 
         {steps.map((step, index) => {
           const isActive = index === activeIndex;
@@ -66,7 +66,7 @@ export default function HeroCard() {
               className={`relative z-10 flex gap-5 cursor-pointer py-4 px-4 -mx-4 rounded-[12px] transition-all duration-500 ease-in-out ${
                 isActive
                   ? "bg-[#141f30] border border-white/10"
-                  : "hover:bg-white/[0.02] border border-transparent"
+                  : "hover:bg-white/2 border border-transparent"
               }`}
               onClick={() => setActiveIndex(index)}
             >

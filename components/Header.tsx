@@ -1,3 +1,6 @@
+"use client";
+
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Button from "./ui/Button";
 import MobileMenu from "./MobileMenu";
@@ -11,19 +14,39 @@ const menuLinks = [
 ];
 
 export default function Header() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    // Trigger on initial load to handle cases where the user starts halfway down the page
+    handleScroll();
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className="bg-primary relative border-b-[0.5px] border-white/20">
-      <div className="mx-auto max-w-5/6 text-white flex justify-between items-center p-4">
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b-[0.5px] ${
+        isScrolled
+          ? "bg-primary/95 backdrop-blur-md border-white/20 shadow-lg py-3"
+          : "bg-transparent border-transparent py-4"
+      }`}
+    >
+      <div className="mx-auto max-w-5/6 text-white flex justify-between items-center px-10">
         <Link href="/" className="text-xl">
           CONVERGE
         </Link>
-        <nav className="text-sm hidden md:block">
+        <nav className="hidden lg:block">
           <ul className="flex gap-4">
             {menuLinks.map((item, i) => (
               <li key={i}>
                 <Link
                   href={item.link}
-                  className="text-white/60 hover:text-white"
+                  className="text-white/80 hover:text-white"
                 >
                   {item.title}
                 </Link>
@@ -31,7 +54,8 @@ export default function Header() {
             ))}
           </ul>
         </nav>
-        <div className="hidden md:block">
+        <div className="hidden lg:flex justify-end items-center gap-5">
+          <button className="cursor-pointer">Login</button>
           <Button href="/live-deal" title="See it on a live deal" />
         </div>
 

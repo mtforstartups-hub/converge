@@ -11,7 +11,7 @@ export default function MobileMenu({
 }) {
   const [open, setOpen] = useState(false);
   return (
-    <div className="md:hidden">
+    <div className="lg:hidden">
       <button
         className="text-white"
         onClick={() => {
