@@ -20,26 +20,32 @@ const platformAgents = [
   {
     name: "Triage",
     description: "Document classification & data extraction",
+    link: "/platform/triage",
   },
   {
     name: "Credit Intelligence",
     description: "Deep interlinked risk analysis",
+    link: "/platform/credit-intelligence",
   },
   {
     name: "Policy Match",
     description: "Automated credit guideline compliance",
+    link: "/platform/policy-match",
   },
   {
     name: "Entity Review",
     description: "Entity structure compliance review",
+    link: "/platform/entity-review",
   },
   {
     name: "Background Report",
     description: "Background report risk analysis",
+    link: "/platform/background-report",
   },
   {
     name: "Comps",
     description: "Property comparable benchmarking",
+    link: "/platform/comps",
   },
 ];
 
@@ -120,7 +126,7 @@ export default function Header() {
                       <div className="grid grid-cols-2 gap-x-6 gap-y-6">
                         {platformAgents.map((agent, index) => (
                           <Link
-                            href="#"
+                            href={agent.link}
                             key={index}
                             className="flex gap-3 items-start group/agent rounded-lg hover:bg-white/5 p-2 -m-2 transition-colors"
                           >

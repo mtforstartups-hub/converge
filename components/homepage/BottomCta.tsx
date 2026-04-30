@@ -31,7 +31,7 @@ export default function BottomCta() {
     <section className="bg-[#16263A]">
       <div className="max-w-95/100 md:max-w-5/6 text-font text-xl md:text-2xl lg:text-3xl xl:text-5xl mx-auto px-4 md:px-10 py-10 md:py-20 font-bold text-center">
         {/* Animated text */}
-        <div className="h-[1.5em] flex items-center justify-center overflow-hidden">
+        <div className="h-14 flex items-center justify-center overflow-hidden">
           <p
             className={`transition-all duration-500 ease-out ${
               visible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4"

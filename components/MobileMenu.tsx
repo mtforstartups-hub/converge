@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { Menu, ChevronDown, X } from "lucide-react";
 
-type Agent = { name: string; description: string };
+type Agent = { name: string; description: string; link: string };
 
 export default function MobileMenu({
   links,
@@ -75,7 +75,7 @@ export default function MobileMenu({
                             <div className="flex flex-col gap-5">
                               {platformAgents?.map((agent, index) => (
                                 <Link
-                                  href="#"
+                                  href={agent.link}
                                   key={index}
                                   onClick={() => setOpen(false)}
                                   className="flex gap-3 items-start group/agent"

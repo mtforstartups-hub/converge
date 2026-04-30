@@ -1,19 +1,12 @@
+import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import Button from "@/components/ui/Button";
-import Link from "next/link";
-import { ChevronRight } from "lucide-react";
 
 export default function PlatformHero() {
   return (
     <section className="pt-32 pb-16 md:pt-40 md:pb-24 bg-primary">
       <div className="mx-auto max-w-95/100 md:max-w-5/6 px-4 md:px-6 lg:px-10">
         <div className="flex flex-col space-y-8 max-w-3xl">
-          <div className="flex items-center space-x-2 text-sm text-white/50">
-            <Link href="/" className="hover:text-white transition-colors">
-              Home
-            </Link>
-            <ChevronRight className="w-4 h-4" />
-            <span className="text-white">Platform</span>
-          </div>
+          <Breadcrumbs items={[{ label: "Platform" }]} />
 
           <div className="space-y-6">
             <div className="text-xs font-semibold tracking-widest text-white/60 uppercase">
