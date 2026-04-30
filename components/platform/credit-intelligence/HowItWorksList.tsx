@@ -44,7 +44,7 @@ export default function HowItWorksList() {
               className="flex flex-row gap-6 sm:gap-8 relative z-10"
             >
               <div className="flex-none">
-                <div className="w-8 h-8 rounded-full border border-white/20 bg-[#0a0f1c] flex items-center justify-center text-xs font-semibold text-[#0d7d71]">
+                <div className="w-8 h-8 rounded-full border border-white/20 bg-primary flex items-center justify-center text-xs font-semibold text-accent">
                   {index + 1}
                 </div>
               </div>

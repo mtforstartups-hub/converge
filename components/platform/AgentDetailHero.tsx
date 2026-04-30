@@ -21,8 +21,8 @@ export default function AgentDetailHero({
           />
 
           <div className="space-y-6">
-            <div className="inline-block px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-semibold tracking-widest text-[#0d7d71] uppercase">
-              <span className="w-1.5 h-1.5 inline-block rounded-full bg-[#0d7d71] mr-2 mb-[1px]"></span>
+            <div className="inline-block px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-semibold tracking-widest text-accent uppercase">
+              <span className="w-1.5 h-1.5 inline-block rounded-full bg-accent mr-2 mb-px"></span>
               {badge}
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-font leading-tight tracking-tight">
