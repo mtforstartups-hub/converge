@@ -18,7 +18,7 @@ export default function Testimonials() {
     <section className="w-full bg-font">
       <div className="max-w-95/100 md:max-w-5/6 mx-auto px-4 sm:px-6 lg:px-10 py-16 lg:py-20">
         {/* Label */}
-        <p className="text-[10px] tracking-widest uppercase text-[#8A94A6] mb-10">
+        <p className="text-base font-semibold tracking-widest uppercase text-primary/80 mb-10">
           Trusted by credit professionals
         </p>
 
@@ -34,15 +34,17 @@ export default function Testimonials() {
 
               {/* Content */}
               <div className="pl-3">
-                <p className="text-base sm:text-lg text-[#0B1B2B] italic leading-relaxed mb-6">
+                <p className="text-base sm:text-lg text-primary italic leading-relaxed mb-6">
                   “{item.quote}”
                 </p>
 
                 <div>
-                  <p className="text-sm font-semibold text-[#0B1B2B]">
+                  <p className="text-sm md:text-base font-semibold text-primary">
                     {item.role}
                   </p>
-                  <p className="text-sm text-[#0B1B2B]/60">{item.sub}</p>
+                  <p className="text-sm md:text-base text-primary/60">
+                    {item.sub}
+                  </p>
                 </div>
               </div>
             </div>

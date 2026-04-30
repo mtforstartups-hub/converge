@@ -3,7 +3,7 @@ import Button from "../ui/Button";
 
 export default function BottomCta() {
   return (
-    <section className="bg-primary">
+    <section className="bg-[#16263A]">
       <div className="max-w-95/100 md:max-w-5/6 text-font text-4xl md:text-5xl mx-auto px-4 md:px-10 py-10 md:py-20 font-bold text-center">
         Your team reviews 50 loans
         <br />a month.

@@ -34,7 +34,7 @@ export default function PlatformSection() {
       <div className="max-w-95/100 md:max-w-5/6 mx-auto px-4 sm:px-6 lg:px-10 py-16 lg:py-24 grid lg:grid-cols-2 gap-12 lg:gap-20">
         {/* LEFT */}
         <div>
-          <p className="text-[10px] tracking-widest uppercase text-[#8A94A6] mb-4">
+          <p className="text-base font-semibold tracking-widest uppercase text-primary/80 mb-4">
             Our platform
           </p>
 
@@ -59,16 +59,14 @@ export default function PlatformSection() {
           {items.map((item) => (
             <div key={item.id} className="py-5 flex gap-4">
               {/* Number */}
-              <div className="text-xs text-[#1F7A63] mt-1 min-w-[24px]">
-                {item.id}
-              </div>
+              <div className="text-lg text-accent mt-1 min-w-6">{item.id}</div>
 
               {/* Content */}
               <div>
-                <h3 className="text-sm font-semibold text-[#0B1B2B] mb-1">
+                <h3 className="text-lg font-semibold text-primary mb-1">
                   {item.title}
                 </h3>
-                <p className="text-sm text-[#0B1B2B]/70 leading-relaxed">
+                <p className="text-base text-primary/70 leading-relaxed">
                   {item.desc}
                 </p>
               </div>

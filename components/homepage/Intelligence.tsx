@@ -34,7 +34,7 @@ export default function IntelligenceSection() {
       <div className="max-w-95/100 md:max-w-5/6 mx-auto px-4 sm:px-6 lg:px-10 py-16 lg:py-24">
         {/* TOP */}
         <div className="max-w-2xl mb-12 lg:mb-16">
-          <p className="text-[10px] tracking-widest uppercase text-[#8A94A6] mb-4">
+          <p className="text-base font-semibold tracking-widest uppercase text-primary/80 mb-4">
             Intelligence at every step
           </p>
 
@@ -57,12 +57,12 @@ export default function IntelligenceSection() {
               className="group bg-white rounded-xl p-6 lg:p-7 border border-l-[3px] border-l-accent border-black/5 transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-xl"
             >
               {/* Title */}
-              <h3 className="text-base font-semibold text-[#0B1B2B] mb-3">
+              <h3 className="text-xl font-semibold text-primary mb-3">
                 {card.title}
               </h3>
 
               {/* Description */}
-              <p className="text-sm text-[#0B1B2B]/70 mb-5 leading-relaxed">
+              <p className="text-sm md:text-base text-primary/70 mb-5 leading-relaxed">
                 {card.desc}
               </p>
 
@@ -71,7 +71,7 @@ export default function IntelligenceSection() {
                 {card.points.map((point, idx) => (
                   <li
                     key={idx}
-                    className="flex items-start gap-2 text-sm text-[#0B1B2B]/80"
+                    className="flex items-start gap-2 text-sm md:text-lg text-primary/80"
                   >
                     <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-accent" />
                     <span>{point}</span>

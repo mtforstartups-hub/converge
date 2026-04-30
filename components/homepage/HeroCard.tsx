@@ -49,7 +49,7 @@ export default function HeroCard() {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <p className="text-[10px] sm:text-xs uppercase tracking-[0.15em] text-font/40 mb-8 font-medium">
+      <p className="text-xs md:text-sm font-semibold uppercase tracking-[0.15em] text-font/80 mb-8 ">
         CreditOS <span className="mx-2">·</span> Live Processing
       </p>
 
@@ -63,7 +63,7 @@ export default function HeroCard() {
           return (
             <div
               key={step.id}
-              className={`relative z-10 flex gap-5 cursor-pointer py-4 px-4 -mx-4 rounded-[12px] transition-all duration-500 ease-in-out ${
+              className={`relative z-10 flex gap-5 cursor-pointer py-4 px-4 -mx-4 rounded-xl transition-all duration-500 ease-in-out ${
                 isActive
                   ? "bg-[#141f30] border border-white/10"
                   : "hover:bg-white/2 border border-transparent"
@@ -121,7 +121,7 @@ export default function HeroCard() {
         })}
       </div>
 
-      <div className="mt-auto border-t border-white/5 pt-5 flex justify-between items-center text-xs text-font/40">
+      <div className="mt-auto border-t border-white/5 pt-5 flex justify-between items-center text-xs md:text-sm text-font/80">
         <span>Every output auditable</span>
         <span className="text-accent flex items-center gap-2">
           <span className="w-1 h-1 rounded-full bg-accent shadow-[0_0_8px_rgba(13,125,113,0.8)]"></span>

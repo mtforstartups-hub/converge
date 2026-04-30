@@ -30,7 +30,7 @@ export default function FAQ() {
     <section className="w-full bg-[#E9E6E1]">
       <div className="max-w-95/100 md:max-w-4xl mx-auto px-4 sm:px-6 lg:px-10 py-16 lg:py-20">
         {/* Title */}
-        <h2 className="text-2xl sm:text-3xl font-semibold text-center text-[#0B1B2B] mb-10">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-center text-primary mb-10">
           Frequently asked questions
         </h2>
 
@@ -44,7 +44,7 @@ export default function FAQ() {
             >
               <summary className="flex items-center justify-between cursor-pointer list-none">
                 {/* Question */}
-                <span className="text-sm font-medium text-[#0B1B2B]">
+                <span className="text-lg font-medium text-primary">
                   {faq.q}
                 </span>
 
@@ -55,7 +55,7 @@ export default function FAQ() {
               </summary>
 
               {/* Answer placeholder */}
-              <div className="mt-3 text-sm text-[#0B1B2B]/70 leading-relaxed max-w-2xl">
+              <div className="mt-3 text-base text-primary/70 leading-relaxed max-w-2xl">
                 {/* You’ll replace this */}
                 {faq.a}
               </div>

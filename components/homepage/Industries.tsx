@@ -32,7 +32,7 @@ export default function Industries() {
       <div className="max-w-95/100 md:max-w-5/6 mx-auto px-4 sm:px-6 lg:px-10 py-20 lg:py-28">
         {/* HEADER */}
         <div className="max-w-2xl mb-14">
-          <p className="text-[10px] tracking-widest uppercase text-white/40 mb-4">
+          <p className="text-base font-semibold tracking-widest uppercase text-white/80 mb-4">
             Industries
           </p>
 
@@ -40,7 +40,7 @@ export default function Industries() {
             Built for real estate credit and asset-backed lending.
           </h2>
 
-          <p className="text-base sm:text-lg text-white/60 leading-relaxed">
+          <p className="text-base sm:text-lg text-white/70 leading-relaxed">
             Laser-focused on originators where document volume, entity
             complexity, time sensitivity, and policy variability make cognitive
             work the bottleneck.
@@ -56,19 +56,42 @@ export default function Industries() {
             >
               <div>
                 {/* Title */}
-                <h3 className="text-base font-semibold mb-3">{item.title}</h3>
+                <h3 className="text-xl font-semibold mb-3">{item.title}</h3>
 
                 {/* Description */}
-                <p className="text-sm text-white/60 leading-relaxed mb-5">
+                <p className="text-sm md:text-lg text-white/70 leading-relaxed mb-5">
                   {item.desc}
                 </p>
               </div>
 
               {/* Footer */}
-              <p className="text-xs text-[#10a393]">{item.entry}</p>
+              <p className="text-sm md:text-base text-[#10a393]">
+                {item.entry}
+              </p>
             </div>
           ))}
         </div>
+
+        {/* <div className="flex flex-wrap justify-center gap-4">
+          {items.map((item, i) => (
+            <div
+              key={i}
+              className="group w-full sm:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.67rem)] bg-[#0B1B2B] border border-white/10 rounded-xl p-6 lg:p-7 flex flex-col justify-between min-h-50 transition-all duration-300 ease-out hover:bg-[#11243A] hover:-translate-y-1 hover:shadow-lg hover:border-white/20"
+            >
+              <div>
+                <h3 className="text-xl font-semibold mb-3">{item.title}</h3>
+
+                <p className="text-sm md:text-lg text-white/70 leading-relaxed mb-5">
+                  {item.desc}
+                </p>
+              </div>
+
+              <p className="text-sm md:text-base text-[#10a393]">
+                {item.entry}
+              </p>
+            </div>
+          ))}
+        </div> */}
       </div>
     </section>
   );

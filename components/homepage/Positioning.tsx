@@ -32,10 +32,10 @@ export default function Positioning() {
               <div className="h-px w-full bg-white/10 mb-4" />
 
               {/* Title */}
-              <h3 className="text-base font-semibold">{item.title}</h3>
+              <h3 className="text-lg font-semibold">{item.title}</h3>
 
               {/* Description */}
-              <p className="text-sm text-white/60 leading-relaxed">
+              <p className="text-base text-white/60 leading-relaxed">
                 {item.desc}
               </p>
             </div>

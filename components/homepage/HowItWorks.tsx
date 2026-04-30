@@ -27,7 +27,7 @@ export default function HowItWorks() {
       <div className="max-w-95/100 md:max-w-5/6 mx-auto px-4 sm:px-6 lg:px-10 py-20 lg:py-28">
         {/* TOP TEXT */}
         <div className="text-center mx-auto mb-14">
-          <p className="text-[10px] tracking-widest uppercase text-font/40 mb-4">
+          <p className="text-base font-semibold tracking-widest uppercase text-font/80 mb-4">
             How it works
           </p>
 
@@ -50,13 +50,15 @@ export default function HowItWorks() {
               className="bg-[#0B1B2B] p-6 lg:p-7 flex flex-col gap-4 border-b sm:border-b-0 sm:border-r border-font/10 last:border-r-0"
             >
               {/* Number */}
-              <span className="text-[10px] text-font/30">{step.id}</span>
+              <span className="text-sm text-font/50">{step.id}</span>
 
               {/* Title */}
-              <h3 className="text-sm font-semibold text-font">{step.title}</h3>
+              <h3 className="text-base font-semibold text-font">
+                {step.title}
+              </h3>
 
               {/* Description */}
-              <p className="text-sm text-font/60 leading-relaxed">
+              <p className="text-base text-font/60 leading-relaxed">
                 {step.desc}
               </p>
             </div>

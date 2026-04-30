@@ -37,7 +37,7 @@ export default function Header() {
           : "bg-transparent border-transparent py-4"
       }`}
     >
-      <div className="mx-auto max-w-95/100 md:max-w-5/6 text-white flex justify-between items-center px-4 md:px-10">
+      <div className="mx-auto max-w-95/100 md:max-w-5/6 text-white flex justify-between items-center px-4 md:px-6 lg:px-10">
         <Link href="/" className="text-xl">
           <Image
             src="/images/logo.svg"
