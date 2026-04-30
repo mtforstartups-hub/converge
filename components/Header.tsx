@@ -6,12 +6,41 @@ import Button from "./ui/Button";
 import MobileMenu from "./MobileMenu";
 import Image from "next/image";
 
+import { ChevronDown } from "lucide-react";
+
 const menuLinks = [
-  { title: "Product", link: "/product" },
+  { title: "Platform", link: "/platform", hasDropdown: true },
+  // { title: "Product", link: "/product" },
   { title: "Intelligence", link: "/intelligence" },
   { title: "Industries", link: "/industries" },
   { title: "Proof", link: "/proof" },
-  { title: "Platform", link: "/platform" },
+];
+
+const platformAgents = [
+  {
+    name: "Triage",
+    description: "Document classification & data extraction",
+  },
+  {
+    name: "Credit Intelligence",
+    description: "Deep interlinked risk analysis",
+  },
+  {
+    name: "Policy Match",
+    description: "Automated credit guideline compliance",
+  },
+  {
+    name: "Entity Review",
+    description: "Entity structure compliance review",
+  },
+  {
+    name: "Background Report",
+    description: "Background report risk analysis",
+  },
+  {
+    name: "Comps",
+    description: "Property comparable benchmarking",
+  },
 ];
 
 export default function Header() {
@@ -48,15 +77,70 @@ export default function Header() {
           />
         </Link>
         <nav className="hidden lg:block">
-          <ul className="flex gap-8">
+          <ul className="flex gap-8 items-center">
             {menuLinks.map((item, i) => (
-              <li key={i}>
+              <li key={i} className="relative group">
                 <Link
                   href={item.link}
-                  className="text-white/80 hover:text-white"
+                  className="text-white/80 hover:text-white flex items-center gap-1.5 py-2"
                 >
                   {item.title}
+                  {item.hasDropdown && (
+                    <ChevronDown
+                      size={14}
+                      className="opacity-60 group-hover:rotate-180 transition-transform duration-200"
+                    />
+                  )}
                 </Link>
+
+                {/* Dropdown for Platform */}
+                {item.title === "Platform" && (
+                  <div className="absolute top-full left-0 mt-0 w-[640px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top translate-y-2 group-hover:translate-y-0">
+                    <div className="bg-[#0c121e] border border-white/10 rounded-xl shadow-2xl p-6 text-left -mt-2">
+                      {/* Overview Card */}
+                      <Link
+                        href="/platform"
+                        className="block p-5 rounded-lg bg-[#0e1923] border border-accent/40 mb-6 group/overview hover:bg-[#111e2a] transition-colors"
+                      >
+                        <h3 className="text-white font-semibold text-[15px] mb-1">
+                          Platform Overview
+                        </h3>
+                        <p className="text-white/60 text-sm flex items-center gap-2">
+                          See how six AI agents work as one unified system{" "}
+                          <span className="group-hover/overview:translate-x-1 transition-transform">
+                            →
+                          </span>
+                        </p>
+                      </Link>
+
+                      {/* Six Agents Section */}
+                      <h4 className="text-[11px] font-bold text-white/40 tracking-widest uppercase mb-4 px-1">
+                        Six Agents
+                      </h4>
+                      <div className="grid grid-cols-2 gap-x-6 gap-y-6">
+                        {platformAgents.map((agent, index) => (
+                          <Link
+                            href="#"
+                            key={index}
+                            className="flex gap-3 items-start group/agent rounded-lg hover:bg-white/5 p-2 -m-2 transition-colors"
+                          >
+                            <div className="w-10 h-10 rounded-md bg-[#0d1b22] border border-accent/60 flex items-center justify-center shrink-0">
+                              <div className="w-2 h-2 rounded-full bg-accent group-hover/agent:bg-accent/80 group-hover/agent:shadow-[0_0_10px_rgba(45,212,191,0.6)] transition-all"></div>
+                            </div>
+                            <div>
+                              <h5 className="text-white font-medium text-sm mb-1 group-hover/agent:text-accent/80 transition-colors">
+                                {agent.name}
+                              </h5>
+                              <p className="text-white/50 text-xs leading-snug">
+                                {agent.description}
+                              </p>
+                            </div>
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                )}
               </li>
             ))}
           </ul>
@@ -66,7 +150,7 @@ export default function Header() {
           <Button href="/live-deal" title="See it on a live deal" />
         </div>
 
-        <MobileMenu links={menuLinks} />
+        <MobileMenu links={menuLinks} platformAgents={platformAgents} />
       </div>
     </header>
   );
