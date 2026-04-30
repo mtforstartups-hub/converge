@@ -27,7 +27,7 @@ export default function HowItWorks() {
       <div className="max-w-95/100 md:max-w-5/6 mx-auto px-4 sm:px-6 lg:px-10 py-20 lg:py-28">
         {/* TOP TEXT */}
         <div className="text-center mx-auto mb-14">
-          <p className="text-base font-semibold tracking-widest uppercase text-font/80 mb-4">
+          <p className="text-sm md:text-base font-semibold tracking-widest uppercase text-font/80 mb-4">
             How it works
           </p>
 
@@ -53,7 +53,7 @@ export default function HowItWorks() {
               <span className="text-sm text-font/50">{step.id}</span>
 
               {/* Title */}
-              <h3 className="text-base font-semibold text-font">
+              <h3 className="text-sm md:text-base font-semibold text-font">
                 {step.title}
               </h3>
 

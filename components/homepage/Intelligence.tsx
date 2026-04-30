@@ -34,7 +34,7 @@ export default function IntelligenceSection() {
       <div className="max-w-95/100 md:max-w-5/6 mx-auto px-4 sm:px-6 lg:px-10 py-16 lg:py-24">
         {/* TOP */}
         <div className="max-w-2xl mb-12 lg:mb-16">
-          <p className="text-base font-semibold tracking-widest uppercase text-primary/80 mb-4">
+          <p className="text-sm md:text-base font-semibold tracking-widest uppercase text-primary/80 mb-4">
             Intelligence at every step
           </p>
 

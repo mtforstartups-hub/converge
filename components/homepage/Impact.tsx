@@ -22,7 +22,7 @@ export default function ImpactSection() {
     <section className="w-full bg-[#16263A] text-white">
       <div className="max-w-95/100 md:max-w-5/6 mx-auto px-4 sm:px-6 lg:px-10 py-16 lg:py-20">
         {/* Top label */}
-        <p className="text-base font-semibold tracking-widest uppercase text-white/80 mb-10">
+        <p className="text-sm md:text-base font-semibold tracking-widest uppercase text-white/80 mb-10">
           Measurable impact
         </p>
 

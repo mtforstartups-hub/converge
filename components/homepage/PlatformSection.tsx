@@ -34,7 +34,7 @@ export default function PlatformSection() {
       <div className="max-w-95/100 md:max-w-5/6 mx-auto px-4 sm:px-6 lg:px-10 py-16 lg:py-24 grid lg:grid-cols-2 gap-12 lg:gap-20">
         {/* LEFT */}
         <div>
-          <p className="text-base font-semibold tracking-widest uppercase text-primary/80 mb-4">
+          <p className="text-sm md:text-base font-semibold tracking-widest uppercase text-primary/80 mb-4">
             Our platform
           </p>
 
