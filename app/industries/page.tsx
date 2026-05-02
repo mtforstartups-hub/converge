@@ -12,8 +12,8 @@ export default function IndustriesPage() {
   return (
     <div className="min-h-screen relative overflow-hidden">
       {/* Background Glows */}
-      <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-accent/5 rounded-full blur-[120px] -z-10" />
-      <div className="absolute bottom-1/4 right-0 w-[400px] h-[400px] bg-accent/5 rounded-full blur-[100px] -z-10" />
+      {/* <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-verified/5 rounded-full blur-[120px] -z-10" />
+      <div className="absolute bottom-1/4 right-0 w-[400px] h-[400px] bg-verified/5 rounded-full blur-[100px] -z-10" /> */}
 
       {/* Hero Section */}
       <section className="pt-32 pb-16 md:pt-40 md:pb-24 bg-deep-slate">
@@ -22,7 +22,7 @@ export default function IndustriesPage() {
             <Breadcrumbs items={[{ label: "Industries" }]} />
 
             <div className="space-y-8">
-              <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold leading-[1.1] tracking-tight text-font">
+              <h1 className="font-display text-4xl md:text-5xl lg:text-7xl font-bold leading-[1.1] tracking-tight text-parchment">
                 Built for real estate credit.
                 <br />
                 <span className="text-white/30">
@@ -40,7 +40,7 @@ export default function IndustriesPage() {
       </section>
 
       {/* Tabs Section */}
-      <section className="py-20 md:py-32 bg-primary border-y border-white/5">
+      <section className="py-10 md:py-20 bg-midnight border-y border-white/5">
         <div className="mx-auto max-w-95/100 md:max-w-5/6 px-4 md:px-6 lg:px-10">
           <IndustryTabs />
         </div>
@@ -51,7 +51,7 @@ export default function IndustriesPage() {
         <div className="mx-auto max-w-95/100 md:max-w-5/6 px-4 md:px-6 lg:px-10 text-center">
           <div className="max-w-3xl mx-auto space-y-5">
             <div className="space-y-6">
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-font tracking-tight">
+              <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-parchment tracking-tight">
                 Which vertical are you in?
               </h2>
               <p className="text-lg md:text-xl text-white/50 font-light">

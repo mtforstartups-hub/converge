@@ -22,7 +22,7 @@ export default function BrandsMarquee() {
     <div className="relative z-10 w-full bg-[#121A2B] py-5 sm:py-6 overflow-hidden">
       <div className="max-w-95/100 md:max-w-5/6 mx-auto px-4 sm:px-6 lg:px-10 flex flex-col md:flex-row md:items-center justify-center md:justify-between items-center gap-4">
         {/* Title */}
-        <div className="uppercase text-sm md:text-base font-semibold text-font/80 whitespace-nowrap z-20 tracking-wide">
+        <div className="uppercase text-sm md:text-base font-semibold text-parchment/80 whitespace-nowrap z-20 tracking-wide">
           Built by industry experts from
         </div>
 
@@ -37,7 +37,7 @@ export default function BrandsMarquee() {
             {duplicatedBrands.map((brand, idx) => (
               <span
                 key={idx}
-                className="mx-5 sm:mx-8 text-font/70 hover:text-white transition-colors duration-300 font-semibold text-[11px] sm:text-sm tracking-widest cursor-default"
+                className="mx-5 sm:mx-8 text-parchment/70 hover:text-white transition-colors duration-300 font-semibold text-[11px] sm:text-sm tracking-widest cursor-default"
               >
                 {brand}
               </span>

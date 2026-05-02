@@ -15,10 +15,10 @@ export default function Testimonials() {
   ];
 
   return (
-    <section className="w-full bg-font">
+    <section className="w-full bg-parchment">
       <div className="max-w-95/100 md:max-w-5/6 mx-auto px-4 sm:px-6 lg:px-10 py-16 lg:py-20">
         {/* Label */}
-        <p className="text-sm md:text-base font-semibold tracking-widest uppercase text-primary/80 mb-10">
+        <p className="text-sm md:text-base font-semibold tracking-widest uppercase text-charcoal/80 mb-10">
           Trusted by credit professionals
         </p>
 
@@ -27,22 +27,19 @@ export default function Testimonials() {
           {testimonials.map((item, i) => (
             <div
               key={i}
-              className="bg-white/70 backdrop-blur rounded-xl p-6 sm:p-7 border border-black/5 relative overflow-hidden border-l-[3px] border-l-accent"
+              className="bg-white/70 backdrop-blur rounded-xl p-6 sm:p-7 border border-black/5 relative overflow-hidden border-l-[3px] border-l-verified"
             >
-              {/* Left accent line */}
-              {/* <div className="absolute left-0 top-0 h-full w-0.75 bg-accent" /> */}
-
               {/* Content */}
               <div className="pl-3">
-                <p className="text-base sm:text-lg text-primary italic leading-relaxed mb-6">
+                <p className="text-base sm:text-lg text-charcoal italic leading-relaxed mb-6">
                   “{item.quote}”
                 </p>
 
                 <div>
-                  <p className="text-sm md:text-base font-semibold text-primary">
+                  <p className="text-sm md:text-base font-semibold text-charcoal">
                     {item.role}
                   </p>
-                  <p className="text-sm md:text-base text-primary/60">
+                  <p className="text-sm md:text-base text-charcoal/60">
                     {item.sub}
                   </p>
                 </div>

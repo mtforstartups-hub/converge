@@ -71,20 +71,20 @@ export default function IndustryTabs() {
             onClick={() => setActiveTab(industry.id)}
             className={`relative py-4 px-4 text-sm md:text-base font-medium transition-all duration-300 whitespace-nowrap ${
               activeTab === industry.id
-                ? "text-font"
+                ? "text-parchment"
                 : "text-white/40 hover:text-white/70"
             }`}
           >
             {industry.name}
             {activeTab === industry.id && (
-              <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-accent shadow-[0_0_15px_rgba(45,212,191,0.8)] z-10" />
+              <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-verified shadow-[0_0_15px_rgba(45,212,191,0.8)] z-10" />
             )}
           </button>
         ))}
       </div>
 
       {/* Tab Content */}
-      <div className="relative min-h-[300px]">
+      <div className="relative min-h-64">
         {industries.map((industry) => (
           <div
             key={industry.id}
@@ -97,11 +97,11 @@ export default function IndustryTabs() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
               {/* Header Info */}
               <div className="lg:col-span-4 space-y-6">
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-font tracking-tight">
+                <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-parchment tracking-tight">
                   {industry.name}
                 </h2>
-                <div className="group flex items-center gap-2 text-accent cursor-pointer w-fit">
-                  <span className="text-sm md:text-base font-medium border-b border-accent/20 group-hover:border-accent transition-all duration-300">
+                <div className="group flex items-center gap-2 text-verified cursor-pointer w-fit">
+                  <span className="text-sm md:text-base font-medium border-b border-verified/20 group-hover:border-verified transition-all duration-300">
                     {industry.entry}
                   </span>
                   <ArrowRight className="size-4 group-hover:translate-x-1 transition-transform duration-300" />
@@ -112,7 +112,7 @@ export default function IndustryTabs() {
               <div className="lg:col-span-8 grid grid-cols-1 md:grid-cols-3 gap-10">
                 <div className="space-y-5">
                   <div className="flex flex-col gap-2">
-                    <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-accent/80">
+                    <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-verified/80">
                       01
                     </span>
                     <h3 className="text-xs font-semibold uppercase tracking-widest text-white/40">
@@ -126,7 +126,7 @@ export default function IndustryTabs() {
 
                 <div className="space-y-5">
                   <div className="flex flex-col gap-2">
-                    <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-accent/80">
+                    <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-verified/80">
                       02
                     </span>
                     <h3 className="text-xs font-semibold uppercase tracking-widest text-white/40">
@@ -140,7 +140,7 @@ export default function IndustryTabs() {
 
                 <div className="space-y-5">
                   <div className="flex flex-col gap-2">
-                    <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-accent/80">
+                    <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-verified/80">
                       03
                     </span>
                     <h3 className="text-xs font-semibold uppercase tracking-widest text-white/40">

@@ -28,7 +28,7 @@ export default function Industries() {
   ];
 
   return (
-    <section className="w-full bg-primary text-font">
+    <section className="w-full bg-midnight text-parchment">
       <div className="max-w-95/100 md:max-w-5/6 mx-auto px-4 sm:px-6 lg:px-10 py-20 lg:py-28">
         {/* HEADER */}
         <div className="max-w-2xl mb-14">
@@ -36,7 +36,7 @@ export default function Industries() {
             Industries
           </p>
 
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight mb-6">
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight mb-6">
             Built for real estate credit and asset-backed lending.
           </h2>
 
@@ -52,7 +52,7 @@ export default function Industries() {
           {items.map((item, i) => (
             <div
               key={i}
-              className="group bg-[#0B1B2B] border border-white/10 rounded-xl p-6 lg:p-7 flex flex-col justify-between min-h-50 transition-all duration-300 ease-out hover:bg-[#11243A] hover:-translate-y-1 hover:shadow-lg hover:border-white/20"
+              className="group bg-deep-slate border border-white/10 rounded-xl p-6 lg:p-7 flex flex-col justify-between min-h-50 transition-all duration-300 ease-out hover:bg-[#11243A] hover:-translate-y-1 hover:shadow-lg hover:border-white/20"
             >
               <div>
                 {/* Title */}
@@ -76,7 +76,7 @@ export default function Industries() {
           {items.map((item, i) => (
             <div
               key={i}
-              className="group w-full sm:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.67rem)] bg-[#0B1B2B] border border-white/10 rounded-xl p-6 lg:p-7 flex flex-col justify-between min-h-50 transition-all duration-300 ease-out hover:bg-[#11243A] hover:-translate-y-1 hover:shadow-lg hover:border-white/20"
+              className="group w-full sm:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.67rem)] bg-deep-slate border border-white/10 rounded-xl p-6 lg:p-7 flex flex-col justify-between min-h-50 transition-all duration-300 ease-out hover:bg-[#11243A] hover:-translate-y-1 hover:shadow-lg hover:border-white/20"
             >
               <div>
                 <h3 className="text-xl font-semibold mb-3">{item.title}</h3>

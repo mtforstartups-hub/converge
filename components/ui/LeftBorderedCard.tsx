@@ -9,10 +9,10 @@ export default function LeftBorderedCard({
 }) {
   return (
     <div
-      className={`py-10 px-8 md:px-10 border-l-[3px] border-l-accent rounded-lg transition-all duration-300 ${
+      className={`py-10 px-8 md:px-10 border-l-[3px] border-l-verified rounded-lg transition-all duration-300 ${
         type === "primary"
-          ? "bg-[#0B1B2B] text-font border-white/10"
-          : "bg-parchment text-primary border-primary/10"
+          ? "bg-deep-slate text-parchment border-white/10"
+          : "bg-parchment text-charcoal border-charcoal/10"
       } ${className}`}
     >
       {children}

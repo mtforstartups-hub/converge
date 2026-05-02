@@ -30,19 +30,19 @@ export default function IntelligenceSection() {
   ];
 
   return (
-    <section className="w-full bg-[#E9E6E1]">
+    <section className="w-full bg-parchment">
       <div className="max-w-95/100 md:max-w-5/6 mx-auto px-4 sm:px-6 lg:px-10 py-16 lg:py-24">
         {/* TOP */}
         <div className="max-w-2xl mb-12 lg:mb-16">
-          <p className="text-sm md:text-base font-semibold tracking-widest uppercase text-primary/80 mb-4">
+          <p className="text-sm md:text-base font-semibold tracking-widest uppercase text-charcoal/80 mb-4">
             Intelligence at every step
           </p>
 
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-[#0B1B2B] mb-6 leading-tight">
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-semibold text-deep-slate mb-6 leading-tight">
             Loan origination, intelligently.
           </h2>
 
-          <p className="text-base sm:text-lg text-[#0B1B2B]/70 leading-relaxed">
+          <p className="text-base sm:text-lg text-deep-slate/70 leading-relaxed">
             Three intelligence layers — each built for a specific role in the
             origination process. Not general-purpose. Not a chatbot.
             Purpose-built credit intelligence.
@@ -54,15 +54,15 @@ export default function IntelligenceSection() {
           {cards.map((card, i) => (
             <div
               key={i}
-              className="group bg-white rounded-xl p-6 lg:p-7 border border-l-[3px] border-l-accent border-black/5 transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-xl"
+              className="group bg-white rounded-xl p-6 lg:p-7 border border-l-[3px] border-l-verified border-black/5 transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-xl"
             >
               {/* Title */}
-              <h3 className="text-xl font-semibold text-primary mb-3">
+              <h3 className="text-xl font-semibold text-charcoal mb-3">
                 {card.title}
               </h3>
 
               {/* Description */}
-              <p className="text-sm md:text-base text-primary/70 mb-5 leading-relaxed">
+              <p className="text-sm md:text-base text-charcoal/70 mb-5 leading-relaxed">
                 {card.desc}
               </p>
 
@@ -71,16 +71,16 @@ export default function IntelligenceSection() {
                 {card.points.map((point, idx) => (
                   <li
                     key={idx}
-                    className="flex items-start gap-2 text-sm md:text-lg text-primary/80"
+                    className="flex items-start gap-2 text-sm md:text-lg text-charcoal/80"
                   >
-                    <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-accent" />
+                    <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-verified" />
                     <span>{point}</span>
                   </li>
                 ))}
               </ul>
 
               {/* Link */}
-              <span className="text-sm text-accent inline-flex items-center gap-1 cursor-pointer">
+              <span className="text-sm text-verified inline-flex items-center gap-1 cursor-pointer">
                 Learn more →
               </span>
             </div>

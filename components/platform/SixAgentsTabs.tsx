@@ -138,14 +138,14 @@ export default function SixAgentsTabs() {
             >
               <div
                 className={`w-1.5 h-1.5 rounded-full mt-2 transition-colors duration-300 ${
-                  isActive ? "bg-accent" : "bg-white/20 group-hover:bg-white/40"
+                  isActive ? "bg-verified" : "bg-white/20 group-hover:bg-white/40"
                 }`}
               />
               <div>
                 <div
                   className={`text-sm md:text-base font-semibold transition-colors duration-300 ${
                     isActive
-                      ? "text-font"
+                      ? "text-parchment"
                       : "text-white/50 group-hover:text-white/80"
                   }`}
                 >
@@ -174,12 +174,12 @@ export default function SixAgentsTabs() {
               Agent {activeAgent.number}
             </span>
             <div className="flex-1 h-px bg-white/5"></div>
-            <span className="text-xs font-semibold text-accent whitespace-nowrap">
+            <span className="text-xs font-semibold text-verified whitespace-nowrap">
               {activeAgent.status}
             </span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-font mb-6">
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-parchment mb-6">
             {activeAgent.title}
           </h2>
           <p className="text-base md:text-lg text-white/70 max-w-3xl leading-relaxed mb-12">
@@ -196,7 +196,7 @@ export default function SixAgentsTabs() {
                   key={index}
                   className="bg-[#111e2a] border border-white/5 rounded-lg py-3 px-4 flex items-center text-sm text-white/80"
                 >
-                  <div className="w-1.5 h-1.5 rounded-full bg-accent mr-3" />
+                  <div className="w-1.5 h-1.5 rounded-full bg-verified mr-3" />
                   {capability}
                 </div>
               ))}
@@ -207,7 +207,7 @@ export default function SixAgentsTabs() {
         <div className="mt-12 pt-6 border-t border-white/10">
           <Link
             href={activeAgent.docLink}
-            className="group inline-flex items-center text-sm font-medium text-accent hover:text-[#0f9d8e] transition-colors duration-300"
+            className="group inline-flex items-center text-sm font-medium text-verified hover:text-[#0f9d8e] transition-colors duration-300"
           >
             Full {activeAgent.name} documentation
             <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1 duration-300" />

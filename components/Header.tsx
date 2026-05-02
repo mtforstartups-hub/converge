@@ -68,7 +68,7 @@ export default function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b-[0.5px] ${
         isScrolled
-          ? "bg-primary/95 backdrop-blur-md border-white/20 shadow-lg py-3"
+          ? "bg-midnight/95 backdrop-blur-md border-white/20 shadow-lg py-3"
           : "bg-transparent border-transparent py-4"
       }`}
     >
@@ -107,7 +107,7 @@ export default function Header() {
                         {/* Overview Card */}
                         <Link
                           href="/platform"
-                          className="block p-5 rounded-lg bg-[#0e1923] border border-accent/40 mb-6 group/overview hover:bg-[#111e2a] transition-colors"
+                          className="block p-5 rounded-lg bg-[#0e1923] border border-verified/40 mb-6 group/overview hover:bg-[#111e2a] transition-colors"
                         >
                           <h3 className="text-white font-semibold text-[15px] mb-1">
                             Platform Overview
@@ -131,11 +131,11 @@ export default function Header() {
                               key={index}
                               className="flex gap-3 items-start group/agent rounded-lg hover:bg-white/5 p-2 -m-2 transition-colors"
                             >
-                              <div className="w-10 h-10 rounded-md bg-[#0d1b22] border border-accent/60 flex items-center justify-center shrink-0">
-                                <div className="w-2 h-2 rounded-full bg-accent group-hover/agent:bg-accent/80 group-hover/agent:shadow-[0_0_10px_rgba(45,212,191,0.6)] transition-all"></div>
+                              <div className="w-10 h-10 rounded-md bg-[#0d1b22] border border-verified/60 flex items-center justify-center shrink-0">
+                                <div className="w-2 h-2 rounded-full bg-verified group-hover/agent:bg-verified/80 group-hover/agent:shadow-[0_0_10px_var(--color-verified)] transition-all"></div>
                               </div>
                               <div>
-                                <h5 className="text-white font-medium text-sm mb-1 group-hover/agent:text-accent/80 transition-colors">
+                                <h5 className="text-white font-medium text-sm mb-1 group-hover/agent:text-verified/80 transition-colors">
                                   {agent.name}
                                 </h5>
                                 <p className="text-white/50 text-xs leading-snug">

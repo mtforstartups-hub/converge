@@ -1,17 +1,56 @@
 import type { Metadata } from "next";
-import { Fraunces, Space_Grotesk } from "next/font/google";
+import { DM_Sans, IBM_Plex_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-const fraunces = Fraunces({
-  variable: "--font-fraunces",
-  subsets: ["latin"],
+// Editorial / Long-form
+const tiemposText = localFont({
+  src: [
+    {
+      path: "../public/fonts/Tiempos Text/Tiempos Text Regular.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Tiempos Text/Tiempos Text Semibold.woff2",
+      weight: "600",
+      style: "normal",
+    },
+  ],
+  variable: "--font-tiempos",
 });
 
-const spaceGrotesk = Space_Grotesk({
-  variable: "--font-space-grotesk",
+// Display / Brand Statements
+const neueHaasDisplay = localFont({
+  src: [
+    {
+      path: "../public/fonts/Neue Haas Grotesk Display Pro/NeueHaasDisplay-Roman.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Neue Haas Grotesk Display Pro/NeueHaasDisplay-Bold.woff2",
+      weight: "700",
+      style: "normal",
+    },
+  ],
+  variable: "--font-neue-haas",
+});
+
+// UI / Interface Copy
+const dmSans = DM_Sans({
+  variable: "--font-dm-sans",
   subsets: ["latin"],
+  weight: ["400", "500"], // Regular, Medium
+});
+
+// Data / Technical References
+const ibmPlexMono = IBM_Plex_Mono({
+  variable: "--font-ibm-plex",
+  subsets: ["latin"],
+  weight: ["400"], // Regular only
 });
 
 export const metadata: Metadata = {
@@ -28,7 +67,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${fraunces.variable} ${spaceGrotesk.variable} h-full antialiased`}
+      className={`${tiemposText.variable} ${neueHaasDisplay.variable} ${dmSans.variable} ${ibmPlexMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         <Header />

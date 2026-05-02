@@ -30,19 +30,19 @@ export default function PlatformSection() {
   ];
 
   return (
-    <section className="w-full bg-font">
+    <section className="w-full bg-parchment">
       <div className="max-w-95/100 md:max-w-5/6 mx-auto px-4 sm:px-6 lg:px-10 py-16 lg:py-24 grid lg:grid-cols-2 gap-12 lg:gap-20">
         {/* LEFT */}
         <div>
-          <p className="text-sm md:text-base font-semibold tracking-widest uppercase text-primary/80 mb-4">
+          <p className="text-sm md:text-base font-semibold tracking-widest uppercase text-charcoal/80 mb-4">
             Our platform
           </p>
 
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-[#0B1B2B] leading-tight mb-6">
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-semibold text-deep-slate leading-tight mb-6">
             CreditOS — the intelligence engine.
           </h2>
 
-          <p className="text-base sm:text-lg text-[#0B1B2B]/70 leading-relaxed mb-8 max-w-xl">
+          <p className="text-base sm:text-lg text-deep-slate/70 leading-relaxed mb-8 max-w-xl">
             Not a workflow tool. Not a document parser. The system that thinks
             through every loan before your team opens it.
           </p>
@@ -59,14 +59,16 @@ export default function PlatformSection() {
           {items.map((item) => (
             <div key={item.id} className="py-5 flex gap-4">
               {/* Number */}
-              <div className="text-lg text-accent mt-1 min-w-6">{item.id}</div>
+              <div className="text-lg text-verified mt-1 min-w-6">
+                {item.id}
+              </div>
 
               {/* Content */}
               <div>
-                <h3 className="text-lg font-semibold text-primary mb-1">
+                <h3 className="text-lg font-semibold text-charcoal mb-1">
                   {item.title}
                 </h3>
-                <p className="text-base text-primary/70 leading-relaxed">
+                <p className="text-base text-charcoal/70 leading-relaxed">
                   {item.desc}
                 </p>
               </div>

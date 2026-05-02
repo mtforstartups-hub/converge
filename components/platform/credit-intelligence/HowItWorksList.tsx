@@ -30,7 +30,7 @@ export default function HowItWorksList() {
   return (
     <section className="py-16 md:py-24 border-t border-white/5 bg-[#0f172b]">
       <div className="mx-auto max-w-95/100 md:max-w-5/6 px-4 md:px-6 lg:px-10">
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-font mb-16">
+        <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-parchment mb-16">
           How it works
         </h2>
 
@@ -44,12 +44,12 @@ export default function HowItWorksList() {
               className="flex flex-row gap-6 sm:gap-8 relative z-10"
             >
               <div className="flex-none">
-                <div className="w-8 h-8 rounded-full border border-white/20 bg-primary flex items-center justify-center text-xs font-semibold text-accent">
+                <div className="w-8 h-8 rounded-full border border-white/20 bg-midnight flex items-center justify-center text-xs font-semibold text-verified">
                   {index + 1}
                 </div>
               </div>
               <div className="pt-1">
-                <h3 className="text-base font-semibold text-font mb-2">
+                <h3 className="text-base font-semibold text-parchment mb-2">
                   {step.title}
                 </h3>
                 <p className="text-sm md:text-base text-white/60 leading-relaxed">

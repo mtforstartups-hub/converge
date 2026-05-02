@@ -23,19 +23,19 @@ export default function HowItWorks() {
   ];
 
   return (
-    <section className="w-full bg-primary text-font">
+    <section className="w-full bg-midnight text-parchment">
       <div className="max-w-95/100 md:max-w-5/6 mx-auto px-4 sm:px-6 lg:px-10 py-20 lg:py-28">
         {/* TOP TEXT */}
         <div className="text-center mx-auto mb-14">
-          <p className="text-sm md:text-base font-semibold tracking-widest uppercase text-font/80 mb-4">
+          <p className="text-sm md:text-base font-semibold tracking-widest uppercase text-parchment/80 mb-4">
             How it works
           </p>
 
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6">
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6">
             Documents → Evidence → Facts → Decisions
           </h2>
 
-          <p className="text-base sm:text-lg text-font/60 leading-relaxed">
+          <p className="text-base sm:text-lg text-parchment/60 leading-relaxed">
             Converge reads your loan files, extracts and validates key
             information, flags risks, compares the deal to your credit policy,
             and shows exactly where every conclusion comes from.
@@ -47,18 +47,18 @@ export default function HowItWorks() {
           {steps.map((step, i) => (
             <div
               key={step.id}
-              className="bg-[#0B1B2B] p-6 lg:p-7 flex flex-col gap-4 border-b sm:border-b-0 sm:border-r border-font/10 last:border-r-0"
+              className="bg-deep-slate p-6 lg:p-7 flex flex-col gap-4 border-b sm:border-b-0 sm:border-r border-font/10 last:border-r-0"
             >
               {/* Number */}
-              <span className="text-sm text-font/50">{step.id}</span>
+              <span className="text-sm text-parchment/50">{step.id}</span>
 
               {/* Title */}
-              <h3 className="text-sm md:text-base font-semibold text-font">
+              <h3 className="text-sm md:text-base font-semibold text-parchment">
                 {step.title}
               </h3>
 
               {/* Description */}
-              <p className="text-base text-font/60 leading-relaxed">
+              <p className="text-base text-parchment/60 leading-relaxed">
                 {step.desc}
               </p>
             </div>

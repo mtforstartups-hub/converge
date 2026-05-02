@@ -29,7 +29,7 @@ export default function BottomCta() {
 
   return (
     <section className="bg-[#16263A]">
-      <div className="max-w-95/100 md:max-w-5/6 text-font text-xl md:text-2xl lg:text-3xl xl:text-5xl mx-auto px-4 md:px-10 py-10 md:py-20 font-bold text-center">
+      <div className="max-w-95/100 md:max-w-5/6 text-parchment text-xl md:text-2xl lg:text-3xl xl:text-5xl mx-auto px-4 md:px-10 py-10 md:py-20 font-bold text-center">
         {/* Animated text */}
         <div className="h-14 flex items-center justify-center overflow-hidden">
           <p
@@ -45,7 +45,7 @@ export default function BottomCta() {
         <div className="mt-4">
           <Link
             href="/live-deal"
-            className={`mt-4 max-w-fit py-2.25 px-4.5 md:py-3 md:px-6 rounded-lg text-sm md:text-base text-font bg-accent transform hover:shadow-lg hover:bg-accent/90 hover:-translate-y-1 duration-300 ease-linear`}
+            className={`mt-4 max-w-fit py-2.25 px-4.5 md:py-3 md:px-6 rounded-lg text-sm md:text-base text-parchment bg-verified transform hover:shadow-lg hover:bg-verified/90 hover:-translate-y-1 duration-300 ease-linear`}
           >
             See it on a live deal
           </Link>

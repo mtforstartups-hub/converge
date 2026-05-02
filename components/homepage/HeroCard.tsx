@@ -49,7 +49,7 @@ export default function HeroCard() {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <p className="text-xs md:text-sm font-semibold uppercase tracking-[0.15em] text-font/80 mb-8 ">
+      <p className="text-xs md:text-sm font-semibold uppercase tracking-[0.15em] text-parchment/80 mb-8 ">
         CreditOS <span className="mx-2">·</span> Live Processing
       </p>
 
@@ -74,8 +74,8 @@ export default function HeroCard() {
               <div
                 className={`w-9 h-9 shrink-0 rounded-full flex items-center justify-center text-xs font-medium border transition-colors duration-500 bg-[#0f1623] ${
                   isActive
-                    ? "border-accent text-accent"
-                    : "border-white/10 text-font/40"
+                    ? "border-verified text-verified"
+                    : "border-white/10 text-parchment/40"
                 }`}
               >
                 {step.num}
@@ -86,7 +86,7 @@ export default function HeroCard() {
                 <div className="flex justify-between items-center h-9">
                   <div
                     className={`text-sm sm:text-[15px] font-medium transition-colors duration-500 ${
-                      isActive ? "text-white" : "text-font/50"
+                      isActive ? "text-white" : "text-parchment/50"
                     }`}
                   >
                     {step.label}
@@ -95,7 +95,7 @@ export default function HeroCard() {
                   <div
                     className={`w-1.5 h-1.5 rounded-full transition-all duration-500 ${
                       isActive
-                        ? "bg-accent shadow-[0_0_8px_rgba(13,125,113,0.8)]"
+                        ? "bg-verified shadow-[0_0_8px_rgba(13,125,113,0.8)]"
                         : "bg-white/10"
                     }`}
                   ></div>
@@ -110,7 +110,7 @@ export default function HeroCard() {
                   }`}
                 >
                   <div className="overflow-hidden">
-                    <p className="text-[13px] text-font/50 pt-1 leading-relaxed">
+                    <p className="text-[13px] text-parchment/50 pt-1 leading-relaxed">
                       {step.detail}
                     </p>
                   </div>
@@ -121,10 +121,10 @@ export default function HeroCard() {
         })}
       </div>
 
-      <div className="mt-auto border-t border-white/5 pt-5 flex justify-between items-center text-xs md:text-sm text-font/80">
+      <div className="mt-auto border-t border-white/5 pt-5 flex justify-between items-center text-xs md:text-sm text-parchment/80">
         <span>Every output auditable</span>
-        <span className="text-accent flex items-center gap-2">
-          <span className="w-1 h-1 rounded-full bg-accent shadow-[0_0_8px_rgba(13,125,113,0.8)]"></span>
+        <span className="text-verified flex items-center gap-2">
+          <span className="w-1 h-1 rounded-full bg-verified shadow-[0_0_8px_rgba(13,125,113,0.8)]"></span>
           Source-backed
         </span>
       </div>

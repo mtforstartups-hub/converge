@@ -3,7 +3,7 @@ import Button from "@/components/ui/Button";
 
 export default function PlatformHero() {
   return (
-    <section className="pt-32 pb-16 md:pt-40 md:pb-24 bg-primary">
+    <section className="pt-32 pb-16 md:pt-40 md:pb-24 bg-midnight">
       <div className="mx-auto max-w-95/100 md:max-w-5/6 px-4 md:px-6 lg:px-10">
         <div className="flex flex-col space-y-8 max-w-3xl">
           <Breadcrumbs items={[{ label: "Platform" }]} />
@@ -12,8 +12,8 @@ export default function PlatformHero() {
             <div className="text-xs font-semibold tracking-widest text-white/60 uppercase">
               Platform Overview
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
-              <span className="text-font">One platform. Six agents.</span>
+            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
+              <span className="text-parchment">One platform. Six agents.</span>
               <br />
               <span className="text-white/40">
                 The complete lending workflow.

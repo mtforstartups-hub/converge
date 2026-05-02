@@ -28,7 +28,7 @@ export default function MobileMenu({
       </button>
       {/* Menu panel */}
       {open && (
-        <div className="absolute left-0 top-full w-full max-h-[85vh] overflow-y-auto bg-primary text-white py-6 px-6 sm:px-10 md:px-25 border-t border-t-white/10 shadow-2xl">
+        <div className="absolute left-0 top-full w-full max-h-[85vh] overflow-y-auto bg-midnight text-white py-6 px-6 sm:px-10 md:px-25 border-t border-t-white/10 shadow-2xl">
           <ul className="flex flex-col gap-6">
             {links.map((item, i: number) => (
               <li key={i} className="border-b border-white/5 pb-2">
@@ -44,7 +44,7 @@ export default function MobileMenu({
                         </span>
                         <ChevronDown
                           size={18}
-                          className={`opacity-70 transition-transform duration-300 ${openPlatform ? "rotate-180 text-accent" : ""}`}
+                          className={`opacity-70 transition-transform duration-300 ${openPlatform ? "rotate-180 text-verified" : ""}`}
                         />
                       </button>
 
@@ -56,7 +56,7 @@ export default function MobileMenu({
                           {/* Overview Card */}
                           <Link
                             href="/platform"
-                            className="block p-4 rounded-lg bg-[#0e1923] border border-accent/30 hover:bg-[#111e2a] transition-colors"
+                            className="block p-4 rounded-lg bg-[#0e1923] border border-verified/30 hover:bg-[#111e2a] transition-colors"
                             onClick={() => setOpen(false)}
                           >
                             <h3 className="text-white font-semibold text-sm mb-1">
@@ -80,11 +80,11 @@ export default function MobileMenu({
                                   onClick={() => setOpen(false)}
                                   className="flex gap-3 items-start group/agent"
                                 >
-                                  <div className="w-8 h-8 rounded-md bg-[#0d1b22] border border-accent/40 flex items-center justify-center shrink-0">
-                                    <div className="w-1.5 h-1.5 rounded-full bg-accent group-hover/agent:bg-accent/80 transition-colors"></div>
+                                  <div className="w-8 h-8 rounded-md bg-[#0d1b22] border border-verified/40 flex items-center justify-center shrink-0">
+                                    <div className="w-1.5 h-1.5 rounded-full bg-verified group-hover/agent:bg-verified/80 transition-colors"></div>
                                   </div>
                                   <div>
-                                    <h5 className="text-white/90 font-medium text-[14px] mb-0.5 group-hover/agent:text-accent/80 transition-colors">
+                                    <h5 className="text-white/90 font-medium text-[14px] mb-0.5 group-hover/agent:text-verified/80 transition-colors">
                                       {agent.name}
                                     </h5>
                                     <p className="text-white/50 text-[12px] leading-snug">

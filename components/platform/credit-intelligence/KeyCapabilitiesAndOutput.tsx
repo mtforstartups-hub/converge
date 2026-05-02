@@ -23,21 +23,21 @@ export default function KeyCapabilitiesAndOutput() {
   ];
 
   return (
-    <section className="py-16 md:py-24 border-t border-white/5 bg-font">
+    <section className="py-16 md:py-24 border-t border-white/5 bg-parchment">
       <div className="mx-auto max-w-95/100 md:max-w-5/6 px-4 md:px-6 lg:px-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
           {/* Left Column: Key capabilities */}
           <div>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary mb-10">
+            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-charcoal mb-10">
               Key capabilities
             </h2>
             <div className="space-y-8">
               {capabilities.map((item, index) => (
                 <div key={index}>
-                  <h3 className="text-base font-semibold text-primary mb-2">
+                  <h3 className="text-base font-semibold text-charcoal mb-2">
                     {item.title}
                   </h3>
-                  <p className="text-sm md:text-base text-primary/60 leading-relaxed">
+                  <p className="text-sm md:text-base text-charcoal/60 leading-relaxed">
                     {item.description}
                   </p>
                 </div>
@@ -47,12 +47,12 @@ export default function KeyCapabilitiesAndOutput() {
 
           {/* Right Column: Example output */}
           <div>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary mb-10">
+            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-charcoal mb-10">
               Example output
             </h2>
-            <div className="bg-primary/90 border border-white/10 rounded-2xl p-6 shadow-2xl overflow-hidden flex flex-col">
+            <div className="bg-midnight/90 border border-white/10 rounded-2xl p-6 shadow-2xl overflow-hidden flex flex-col">
               <div className="flex items-center space-x-3 border-b border-white/5 pb-4 mb-6">
-                <div className="w-1.5 h-1.5 rounded-full bg-accent"></div>
+                <div className="w-1.5 h-1.5 rounded-full bg-verified"></div>
                 <div className="text-xs font-bold tracking-widest text-white/50 uppercase">
                   Credit Intelligence Report - Synthetic Data
                 </div>

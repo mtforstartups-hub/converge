@@ -4,34 +4,64 @@ When generating or modifying frontend code in this project, adhere strictly to t
 
 ## 1. Color Palette & Theming
 
-- **Primary Backgrounds**: Rely on the defined custom properties in `globals.css`.
-  - `bg-primary` (`#0a0f1c`) for main page backgrounds.
-  - Deep slates and navys for cards, dropdowns, and containers (e.g., `bg-[#0c121e]`, `bg-[#0e1923]`, `bg-[#0d1b22]`).
-- **Text Colors**: Use `text-font` (`#f4f1eb`) for primary text. Use opacities for visual hierarchy (e.g., `text-white/80`, `text-white/60`, `text-white/50`, `text-white/40`).
-- **Accent Colors**: Use `bg-accent` (`#0d7d71`) for primary actions.
-- **Borders**: Avoid solid, high-contrast borders. Use subtle, low-opacity borders (e.g., `border-white/10`, `border-accent/40`, `border-accent/60`).
+Rely exclusively on the six defined custom properties in `globals.css` according to their brand roles. Do not use arbitrary colors or old variables (like `primary`, `accent`, `font`).
+
+- **Midnight (`#0A0F1C`)**: `bg-midnight` / `text-midnight`
+  - **Role**: Primary brand persona.
+  - **Uses**: Hero backgrounds, full-bleed panels, navigation bars, footers.
+
+- **Deep Slate (`#162032`)**: `bg-deep-slate` / `text-deep-slate`
+  - **Role**: Secondary brand surface.
+  - **Uses**: Cards & modules, side panels, tables & charts, section breaks.
+
+- **Parchment (`#F4F1EB`)**: `bg-parchment` / `text-parchment`
+  - **Role**: Primary editorial surface.
+  - **Uses**: Long-form content, page backgrounds, print stock, reports & docs.
+
+- **Steel (`#8A9BAE`)**: `bg-steel` / `text-steel` / `border-steel`
+  - **Role**: Supporting neutral.
+  - **Uses**: Icons & strokes, dividers, disabled states, subdued text.
+
+- **Verified (`#0B6B60`)**: `bg-verified` / `text-verified` / `border-verified`
+  - **Role**: Single accent (one per view).
+  - **Uses**: CTAs & buttons, key highlights, links & indicators, active states.
+
+- **Charcoal (`#2D3D4F`)**: `bg-charcoal` / `text-charcoal` / `border-charcoal`
+  - **Role**: Structural neutral.
+  - **Uses**: Headings on light backgrounds, body text (secondary), icons & UI chrome, borders & grids.
+
+- **Usage Notes**: 
+  - Use opacities for visual hierarchy (e.g., `text-parchment/80`, `bg-midnight/90`).
+  - Avoid solid, high-contrast borders. Use subtle, low-opacity borders (e.g., `border-white/10`, `border-verified/40`).
 
 ## 2. Typography
 
-- **Font Family**: The project uses `Space Grotesk` (`var(--font-space-grotesk)`). Do not introduce new font families unless explicitly requested.
+The project strictly uses four distinct typefaces, each with a defined role and zero overlap.
 
-- **Typography Scale & Usage**:
-  - **Headings (e.g., h2)**:
-    Use `text-3xl sm:text-4xl lg:text-5xl font-bold`
-    → Primary section headings with strong visual weight.
+- **Display / Brand Statements**: `Neue Haas Grotesk Display Pro` (`font-display` / `var(--font-neue-haas)`)
+  - **Sizes**: 36–56px (screen)
+  - **Weights**: Regular (55 Roman) and Bold (75 Bold) only.
+  - **Use for**: Brand statements, section headlines, investor decks, cover elements, homepage heroes.
 
-  - **Sub-headings / Top Labels**:
-    Use `text-sm md:text-base font-semibold`
-    → Can be combined with `uppercase tracking-widest` when used as section labels.
+- **Editorial / Long-form**: `Tiempos Text` (`font-serif` / `var(--font-tiempos)`)
+  - **Sizes**: 16–21px (screen)
+  - **Weights**: Regular and Semibold only.
+  - **Use for**: Case studies, long-form articles, investor reports, documentation.
 
-  - **Body Text**:
-    Use `text-sm` by default
-    → For better readability on larger screens, use `text-sm md:text-base` when needed.
+- **UI / Interface Copy**: `DM Sans` (`font-sans` / `var(--font-dm-sans)`)
+  - **Sizes**: 14–18px (screen)
+  - **Weights**: Regular and Medium only.
+  - **Use for**: Product UI, navigation, labels, body text in product contexts, email, case study captions, sales collateral.
 
-- **General Guidelines**:
-  - Prefer **font weight and opacity** (`font-medium`, `font-semibold`, `text-white/70`, etc.) over large font-size jumps to create hierarchy.
-  - Keep typography **clean, consistent, and restrained**—avoid unnecessary size variations.
-  - Maintain good readability across breakpoints using responsive scaling (`sm:`, `md:`, `lg:`).
+- **Data / Technical References**: `IBM Plex Mono` (`font-mono` / `var(--font-ibm-plex)`)
+  - **Sizes**: 13–16px (screen)
+  - **Weights**: Regular only.
+  - **Use for**: Loan IDs, HEX codes, API references, audit trails, entity references.
+
+- **General Typography Guidelines**:
+  - **Zero Overlap**: Stick strictly to the defined sizes, weights, and roles. Do not use UI fonts for Brand Statements, etc.
+  - Maintain good readability across breakpoints using responsive scaling (`text-sm md:text-base`, etc.) but stay within the defined pixel ranges for each font.
+  - *Note: Print-specific sizes from the brand guidelines (e.g., 10-12pt) are ignored for frontend development; adhere only to the screen px sizes.*
 
 ## 3. Spacing & Layout
 
@@ -47,14 +77,14 @@ When generating or modifying frontend code in this project, adhere strictly to t
   - Standard duration/easing: `duration-200` or `duration-300`, often with `ease-linear`.
 - **Hover Effects**:
   - Buttons: `hover:-translate-y-1 hover:shadow-lg`.
-  - Cards/Interactive Items: `hover:bg-white/5`, `hover:bg-[#111e2a]`.
-  - Text interactions: `group-hover/item:text-teal-400`, `group-hover/item:translate-x-1`.
-- **Glow Effects**: Use customized neon-like box shadows for glowing elements on hover/active states (e.g., `shadow-[0_0_10px_rgba(45,212,191,0.6)]`).
+  - Cards/Interactive Items: `hover:bg-white/5`, `hover:bg-deep-slate/50`.
+  - Text interactions: `group-hover/item:text-verified`, `group-hover/item:translate-x-1`.
+- **Glow Effects**: Use customized neon-like box shadows for glowing elements on hover/active states (e.g., `shadow-[0_0_10px_rgba(11,107,96,0.6)]` using Verified color).
 
 ## 5. UI/UX Patterns
 
-- **Glassmorphism**: Use `backdrop-blur-md` combined with semi-transparent backgrounds (e.g., `bg-primary/95 border-white/20`) for floating elements, sticky headers, or modals.
+- **Glassmorphism**: Use `backdrop-blur-md` combined with semi-transparent backgrounds (e.g., `bg-midnight/95 border-white/20`) for floating elements, sticky headers, or modals.
 - **Group Targeting**: Use Tailwind's `group` and `group-hover` extensively for complex component interactions.
-  - ALWAYS name groups for nested components to avoid conflicts (e.g., `group/agent`, `group-hover/agent:bg-teal-400`).
+  - ALWAYS name groups for nested components to avoid conflicts (e.g., `group/agent`, `group-hover/agent:bg-verified`).
 - **Icons**: Use `lucide-react` for standard icons. Keep them appropriately sized (e.g., `size={14}`, `w-10 h-10 container`).
 - **Responsiveness**: Ensure layout adapts gracefully across breakpoints. Use `hidden lg:flex` or `hidden lg:block` to switch between mobile and desktop navigation/layouts. Stack grid elements appropriately (e.g., `grid-cols-1 md:grid-cols-2`).
