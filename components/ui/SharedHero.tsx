@@ -2,11 +2,9 @@ import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import Button from "@/components/ui/Button";
 
 type SharedHeroProps = {
-  badge: string;
   title: string;
   description: string;
   breadcrumbLabel: string;
-  href: string;
 };
 
 export default function SharedHero({

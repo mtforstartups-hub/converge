@@ -40,7 +40,9 @@ export default function Footer() {
                 <Link href="/loan-officer">Loan Officer Intelligence</Link>
               </li>
               <li>
-                <Link href="#">Processor Intelligence</Link>
+                <Link href="/processor-intelligence">
+                  Processor Intelligence
+                </Link>
               </li>
               <li>
                 <Link href="#">Underwriter Intelligence</Link>

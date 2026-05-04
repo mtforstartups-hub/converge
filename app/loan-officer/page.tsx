@@ -35,11 +35,9 @@ export default function LoanOfficerIntelligence() {
   return (
     <>
       <SharedHero
-        badge="LOAN OFFICER INTELLIGENCE"
         title="Borrower coordination and file completeness — intelligently."
         description="Your loan officers spend hours chasing documents, checking what is missing, and updating systems when files arrive. Converge handles the cognitive load so they can focus on relationships and deal flow."
         breadcrumbLabel="Loan Officer Intelligence"
-        href="/loan-officer"
       />
 
       <section className="bg-parchment text-charcoal py-10 md:py-20">
