@@ -37,7 +37,7 @@ export default function Footer() {
             </p>
             <ul className="flex flex-col gap-3 text-sm text-white/70">
               <li>
-                <Link href="#">Loan Officer Intelligence</Link>
+                <Link href="/loan-officer">Loan Officer Intelligence</Link>
               </li>
               <li>
                 <Link href="#">Processor Intelligence</Link>
