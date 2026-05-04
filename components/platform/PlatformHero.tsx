@@ -27,7 +27,7 @@ export default function PlatformHero() {
           </div>
 
           <div className="pt-2">
-            <Button href="/demo" title="Book a Platform Demo &rarr;" />
+            <Button href="/live-deal" title="Book a Platform Demo &rarr;" />
           </div>
         </div>
       </div>

@@ -199,7 +199,7 @@ export default function IntelligencePage() {
 
         <div className="mx-auto max-w-95/100 md:max-w-5/6 px-4 md:px-6 lg:px-10 text-center relative z-10">
           <div className="max-w-3xl mx-auto space-y-8">
-            <h2 className="text-xl md:font-display text-3xl lg:text-4xl text-charcoal font-bold leading-tight">
+            <h2 className=" md:font-display text-3xl lg:text-4xl text-charcoal font-bold leading-tight">
               The transformation of loan origination will look completely
               different in 24 months.
               <br />
@@ -208,7 +208,7 @@ export default function IntelligencePage() {
               </span>
             </h2>
             <div className="flex justify-center">
-              <Button href="/demo" title="See it on a live deal &rarr;" />
+              <Button href="/live-deal" title="See it on a live deal &rarr;" />
             </div>
           </div>
         </div>

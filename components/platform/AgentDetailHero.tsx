@@ -34,7 +34,7 @@ export default function AgentDetailHero({
           </div>
 
           <div className="pt-4 flex flex-wrap gap-4 items-center">
-            <Button href="/demo" title="See it on a live deal &rarr;" />
+            <Button href="/live-deal" title="See it on a live deal &rarr;" />
             <Button
               href="/platform"
               title="Back to Platform"

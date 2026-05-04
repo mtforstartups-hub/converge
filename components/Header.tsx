@@ -5,6 +5,7 @@ import Link from "next/link";
 import Button from "./ui/Button";
 import MobileMenu from "./MobileMenu";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 import { ChevronDown } from "lucide-react";
 
@@ -51,6 +52,7 @@ const platformAgents = [
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -69,7 +71,9 @@ export default function Header() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b-[0.5px] ${
         isScrolled
           ? "bg-midnight/95 backdrop-blur-md border-white/20 shadow-lg py-3"
-          : "bg-transparent border-transparent py-4"
+          : pathname === "/"
+            ? "bg-transparent border-transparent py-4"
+            : "bg-midnight/95 backdrop-blur-md border-white/20 shadow-lg py-3"
       }`}
     >
       <div className="mx-auto max-w-95/100 md:max-w-5/6 text-white flex justify-between items-center px-4 md:px-6 lg:px-10">

@@ -59,7 +59,7 @@ export default function IndustriesPage() {
               </p>
             </div>
             <div className="flex justify-center pt-6">
-              <Button href="/demo" title="See it on a live deal &rarr;" />
+              <Button href="/live-deal" title="See it on a live deal &rarr;" />
             </div>
           </div>
         </div>
