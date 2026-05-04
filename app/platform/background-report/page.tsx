@@ -3,6 +3,7 @@ import AgentDetailHero from "@/components/platform/AgentDetailHero";
 import UnifiedIntelligence from "@/components/platform/UnifiedIntelligence";
 import BottomCta from "@/components/ui/BottomCta";
 import GridLeftContents from "@/components/platform/GridLeftContents";
+import { ShieldAlert, ShieldCheck } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Background Report | Converge",
@@ -60,22 +61,7 @@ export default function BackgroundReportPage() {
                     <div className="grid grid-cols-2 gap-4 mb-6">
                       <div className="p-4 border border-steel bg-parchment rounded-sm">
                         <div className="flex items-center gap-2 mb-2">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            className="lucide lucide-shield-check w-4 h-4 text-verified/80"
-                            aria-hidden="true"
-                          >
-                            <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
-                            <path d="m9 12 2 2 4-4"></path>
-                          </svg>
+                          <ShieldCheck className="w-4 h-4 text-verified/80" />
                           <div className="text-sm font-semibold uppercase tracking-wider text-charcoal/90">
                             Watchlists
                           </div>
@@ -89,23 +75,7 @@ export default function BackgroundReportPage() {
                       </div>
                       <div className="p-4 border border-steel bg-parchment rounded-sm">
                         <div className="flex items-center gap-2 mb-2">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            className="lucide lucide-shield-alert w-4 h-4 text-amber-500"
-                            aria-hidden="true"
-                          >
-                            <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
-                            <path d="M12 8v4"></path>
-                            <path d="M12 16h.01"></path>
-                          </svg>
+                          <ShieldAlert className="w-4 h-4 text-amber-500" />
                           <div className="text-sm font-semibold uppercase tracking-wider text-charcoal/90">
                             Litigation
                           </div>

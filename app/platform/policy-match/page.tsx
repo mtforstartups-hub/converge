@@ -3,6 +3,7 @@ import AgentDetailHero from "@/components/platform/AgentDetailHero";
 import UnifiedIntelligence from "@/components/platform/UnifiedIntelligence";
 import BottomCta from "@/components/ui/BottomCta";
 import GridLeftContents from "@/components/platform/GridLeftContents";
+import { CircleCheck, CircleX } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Policy Match | Converge",
@@ -71,22 +72,7 @@ export default function PolicyMatchPage() {
                     <div className="space-y-3">
                       <div className="flex items-center justify-between p-3 border border-steel bg-parchment rounded-sm">
                         <div className="flex items-center gap-3">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            className="lucide lucide-circle-check w-5 h-5 text-verified/80"
-                            aria-hidden="true"
-                          >
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <path d="m9 12 2 2 4-4"></path>
-                          </svg>
+                          <CircleCheck className="w-5 h-5 text-verified/80" />
                           <div>
                             <div className="text-sm font-medium text-charcoal">
                               DSCR &gt;= 1.25x
@@ -102,22 +88,7 @@ export default function PolicyMatchPage() {
                       </div>
                       <div className="flex items-center justify-between p-3 border border-border bg-background rounded-sm">
                         <div className="flex items-center gap-3">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            className="lucide lucide-circle-check w-5 h-5 text-verified/80"
-                            aria-hidden="true"
-                          >
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <path d="m9 12 2 2 4-4"></path>
-                          </svg>
+                          <CircleCheck className="w-5 h-5 text-verified/80" />
                           <div>
                             <div className="text-sm font-medium text-charcoal">
                               LTV &lt;= 75%
@@ -133,23 +104,7 @@ export default function PolicyMatchPage() {
                       </div>
                       <div className="flex items-center justify-between p-3 border border-border bg-background rounded-sm">
                         <div className="flex items-center gap-3">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            className="lucide lucide-circle-x w-5 h-5 text-red-500"
-                            aria-hidden="true"
-                          >
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <path d="m15 9-6 6"></path>
-                            <path d="m9 9 6 6"></path>
-                          </svg>
+                          <CircleX className="w-5 h-5 text-red-500" />
                           <div>
                             <div className="text-sm font-medium text-charcoal">
                               Guarantor FICO &gt;= 680
@@ -165,22 +120,7 @@ export default function PolicyMatchPage() {
                       </div>
                       <div className="flex items-center justify-between p-3 border border-border bg-background rounded-sm">
                         <div className="flex items-center gap-3">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            className="lucide lucide-circle-check w-5 h-5 text-verified/80"
-                            aria-hidden="true"
-                          >
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <path d="m9 12 2 2 4-4"></path>
-                          </svg>
+                          <CircleCheck className="w-5 h-5 text-verified/80" />
                           <div>
                             <div className="text-sm font-medium text-charcoal">
                               No Open Bankruptcies
@@ -196,22 +136,7 @@ export default function PolicyMatchPage() {
                       </div>
                       <div className="flex items-center justify-between p-3 border border-border bg-background rounded-sm">
                         <div className="flex items-center gap-3">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            className="lucide lucide-circle-check w-5 h-5 text-verified/80"
-                            aria-hidden="true"
-                          >
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <path d="m9 12 2 2 4-4"></path>
-                          </svg>
+                          <CircleCheck className="w-5 h-5 text-verified/80" />
                           <div>
                             <div className="text-sm font-medium text-charcoal">
                               Occupancy &gt;= 90%

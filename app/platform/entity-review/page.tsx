@@ -3,6 +3,7 @@ import AgentDetailHero from "@/components/platform/AgentDetailHero";
 import UnifiedIntelligence from "@/components/platform/UnifiedIntelligence";
 import BottomCta from "@/components/ui/BottomCta";
 import GridLeftContents from "@/components/platform/GridLeftContents";
+import { Building2, GitCommitHorizontal, User } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Entity Review | Converge",
@@ -59,113 +60,30 @@ export default function EntityReviewPage() {
                     </div>
                     <div className="font-mono text-sm space-y-2 border border-border p-4 rounded-sm bg-parchment/50">
                       <div className="flex items-center gap-2 text-charcoal font-medium">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          className="lucide lucide-building2 lucide-building-2 w-4 h-4 text-verified"
-                          aria-hidden="true"
-                        >
-                          <path d="M10 12h4"></path>
-                          <path d="M10 8h4"></path>
-                          <path d="M14 21v-3a2 2 0 0 0-4 0v3"></path>
-                          <path d="M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2"></path>
-                          <path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16"></path>
-                        </svg>
+                        <Building2 className="w-4 h-4 text-verified" />
                         123 Main Street Property LLC (Borrower)
                       </div>
                       <div className="pl-6 border-l border-border ml-2 space-y-2 py-1">
                         <div className="flex items-center gap-2 text-charcoal/80">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            className="lucide lucide-git-commit-horizontal w-3 h-3"
-                            aria-hidden="true"
-                          >
-                            <circle cx="12" cy="12" r="3"></circle>
-                            <line x1="3" x2="9" y1="12" y2="12"></line>
-                            <line x1="15" x2="21" y1="12" y2="12"></line>
-                          </svg>
+                          <GitCommitHorizontal className="w-3 h-3" />
                           <span className="text-xs uppercase tracking-wider">
                             Owned 60% by
                           </span>
                         </div>
                         <div className="flex items-center gap-2 text-charcoal">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            className="lucide lucide-building2 lucide-building-2 w-4 h-4 text-charcoal/80"
-                            aria-hidden="true"
-                          >
-                            <path d="M10 12h4"></path>
-                            <path d="M10 8h4"></path>
-                            <path d="M14 21v-3a2 2 0 0 0-4 0v3"></path>
-                            <path d="M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2"></path>
-                            <path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16"></path>
-                          </svg>
+                          <Building2 className="w-4 h-4 text-charcoal/80" />
                           Main Street Holdings Corp.
                         </div>
                         <div className="pl-6 border-l border-border ml-2 space-y-2 py-1">
                           <div className="flex items-center gap-2 text-charcoal/80">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="24"
-                              height="24"
-                              viewBox="0 0 24 24"
-                              fill="none"
-                              stroke="currentColor"
-                              stroke-width="2"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              className="lucide lucide-git-commit-horizontal w-3 h-3"
-                              aria-hidden="true"
-                            >
-                              <circle cx="12" cy="12" r="3"></circle>
-                              <line x1="3" x2="9" y1="12" y2="12"></line>
-                              <line x1="15" x2="21" y1="12" y2="12"></line>
-                            </svg>
+                            <GitCommitHorizontal className="w-3 h-3" />
                             <span className="text-xs uppercase tracking-wider">
                               Owned 100% by
                             </span>
                           </div>
                           <div className="flex justify-between items-center">
                             <div className="flex items-center gap-2 text-charcoal font-medium">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                className="lucide lucide-user w-4 h-4 text-verified"
-                                aria-hidden="true"
-                              >
-                                <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
-                                <circle cx="12" cy="7" r="4"></circle>
-                              </svg>
+                              <User className="w-4 h-4 text-verified" />
                               Michael T. Sterling
                             </div>
                             <span className="text-xs bg-verified/10 text-green-700 px-2 py-0.5 rounded-sm">
@@ -176,90 +94,25 @@ export default function EntityReviewPage() {
                       </div>
                       <div className="pl-6 border-l border-border ml-2 space-y-2 py-1 mt-2">
                         <div className="flex items-center gap-2 text-charcoal/80">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            className="lucide lucide-git-commit-horizontal w-3 h-3"
-                            aria-hidden="true"
-                          >
-                            <circle cx="12" cy="12" r="3"></circle>
-                            <line x1="3" x2="9" y1="12" y2="12"></line>
-                            <line x1="15" x2="21" y1="12" y2="12"></line>
-                          </svg>
+                          <GitCommitHorizontal className="w-3 h-3" />
                           <span className="text-xs uppercase tracking-wider">
                             Owned 40% by
                           </span>
                         </div>
                         <div className="flex items-center gap-2 text-charcoal">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            className="lucide lucide-building2 lucide-building-2 w-4 h-4 text-charcoal/80"
-                            aria-hidden="true"
-                          >
-                            <path d="M10 12h4"></path>
-                            <path d="M10 8h4"></path>
-                            <path d="M14 21v-3a2 2 0 0 0-4 0v3"></path>
-                            <path d="M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2"></path>
-                            <path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16"></path>
-                          </svg>
+                          <Building2 className="w-4 h-4 text-charcoal/80" />
                           Sterling Family Trust 2018
                         </div>
                         <div className="pl-6 border-l border-border ml-2 space-y-2 py-1">
                           <div className="flex items-center gap-2 text-charcoal/80">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="24"
-                              height="24"
-                              viewBox="0 0 24 24"
-                              fill="none"
-                              stroke="currentColor"
-                              stroke-width="2"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              className="lucide lucide-git-commit-horizontal w-3 h-3"
-                              aria-hidden="true"
-                            >
-                              <circle cx="12" cy="12" r="3"></circle>
-                              <line x1="3" x2="9" y1="12" y2="12"></line>
-                              <line x1="15" x2="21" y1="12" y2="12"></line>
-                            </svg>
+                            <GitCommitHorizontal className="w-3 h-3" />
                             <span className="text-xs uppercase tracking-wider">
                               Beneficiary
                             </span>
                           </div>
                           <div className="flex justify-between items-center">
                             <div className="flex items-center gap-2 text-charcoal font-medium">
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                className="lucide lucide-user w-4 h-4 text-verified"
-                                aria-hidden="true"
-                              >
-                                <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
-                                <circle cx="12" cy="7" r="4"></circle>
-                              </svg>
+                              <User className="w-4 h-4 text-verified" />
                               Sarah J. Sterling
                             </div>
                             <span className="text-xs bg-verified/10 text-green-700 px-2 py-0.5 rounded-sm">

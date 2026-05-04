@@ -1,8 +1,9 @@
+import { Metadata } from "next";
 import AgentDetailHero from "@/components/platform/AgentDetailHero";
 import HowItWorksList from "@/components/platform/credit-intelligence/HowItWorksList";
 import KeyCapabilitiesAndOutput from "@/components/platform/credit-intelligence/KeyCapabilitiesAndOutput";
-import BottomCta from "@/components/homepage/BottomCta";
-import { Metadata } from "next";
+import UnifiedIntelligence from "@/components/platform/UnifiedIntelligence";
+import BottomCta from "@/components/ui/BottomCta";
 
 export const metadata: Metadata = {
   title: "Credit Intelligence | Converge",
@@ -18,9 +19,17 @@ export default function CreditIntelligencePage() {
         title="Credit Intelligence"
         description="Deep interlinked risk analysis across every document in the loan file. The analyst that never misses a footnote — running in 4 minutes."
       />
-      <HowItWorksList />
       <KeyCapabilitiesAndOutput />
-      {/* <BottomCta /> */}
+      <HowItWorksList />
+      <UnifiedIntelligence />
+      <BottomCta
+        messages={[
+          "See the platform in action",
+          "We will process your sample loan documents",
+          "And show you the output live.",
+        ]}
+        type="secondary"
+      />
     </>
   );
 }
