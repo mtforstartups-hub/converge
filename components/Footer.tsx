@@ -37,18 +37,24 @@ export default function Footer() {
             </p>
             <ul className="flex flex-col gap-3 text-sm text-white/70">
               <li>
-                <Link href="/loan-officer">Loan Officer Intelligence</Link>
+                <Link href="/product/loan-officer-intelligence">
+                  Loan Officer Intelligence
+                </Link>
               </li>
               <li>
-                <Link href="/processor-intelligence">
+                <Link href="/product/processor-intelligence">
                   Processor Intelligence
                 </Link>
               </li>
               <li>
-                <Link href="#">Underwriter Intelligence</Link>
+                <Link href="/product/underwriter-intelligence">
+                  Underwriter Intelligence
+                </Link>
               </li>
               <li>
-                <Link href="#">CreditOS Platform</Link>
+                <Link href="/platform/credit-intelligence">
+                  CreditOS Platform
+                </Link>
               </li>
             </ul>
           </div>
@@ -60,13 +66,13 @@ export default function Footer() {
             </p>
             <ul className="flex flex-col gap-3 text-sm text-white/70">
               <li>
-                <Link href="#">Intelligence</Link>
+                <Link href="/intelligence">Intelligence</Link>
               </li>
               <li>
-                <Link href="#">Industries</Link>
+                <Link href="/industries">Industries</Link>
               </li>
               <li>
-                <Link href="#">Proof</Link>
+                <Link href="/proof">Proof</Link>
               </li>
               <li>
                 <Link href="#">Contact Us</Link>
