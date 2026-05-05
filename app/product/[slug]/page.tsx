@@ -1,6 +1,7 @@
 import { getProduct } from "@/lib/products";
 import BottomCta from "@/components/ui/BottomCta";
 import SharedHero from "@/components/ui/SharedHero";
+import { notFound } from "next/navigation";
 
 export default async function IndividualProducts({
   params,
@@ -9,12 +10,8 @@ export default async function IndividualProducts({
 }) {
   const { slug } = await params;
   const product = await getProduct(slug);
-  if (!product)
-    return (
-      <div className="text-5xl py-50 bg-midnight text-parchment min-h-screen">
-        NOT FOund
-      </div>
-    );
+  if (!product) notFound();
+
   return (
     <div className="min-h-screen">
       <SharedHero
