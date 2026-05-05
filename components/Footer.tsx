@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="w-full bg-[#020C1B] text-white">
       <div className="max-w-95/100 md:max-w-5/6 mx-auto px-4 sm:px-6 lg:px-10 py-7 lg:py-10">
         {/* TOP GRID */}
-        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-6">
+        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-5">
           {/* BRAND */}
           <div className="lg:col-span-2">
             <div className="text-sm font-semibold mb-4">
@@ -32,7 +32,7 @@ export default function Footer() {
 
           {/* PRODUCT */}
           <div>
-            <p className="text-[10px] uppercase tracking-widest text-white/40 mb-4">
+            <p className="text-sm uppercase tracking-widest text-white/40 mb-4">
               Product
             </p>
             <ul className="flex flex-col gap-3 text-sm text-white/70">
@@ -61,7 +61,7 @@ export default function Footer() {
 
           {/* COMPANY */}
           <div>
-            <p className="text-[10px] uppercase tracking-widest text-white/40 mb-4">
+            <p className="text-sm uppercase tracking-widest text-white/40 mb-4">
               Company
             </p>
             <ul className="flex flex-col gap-3 text-sm text-white/70">
@@ -75,46 +75,70 @@ export default function Footer() {
                 <Link href="/proof">Proof</Link>
               </li>
               <li>
-                <Link href="#">Contact Us</Link>
+                <Link href="/contact">Contact Us</Link>
               </li>
             </ul>
           </div>
 
           {/* RESOURCES */}
           <div>
-            <p className="text-[10px] uppercase tracking-widest text-white/40 mb-4">
+            <p className="text-sm uppercase tracking-widest text-white/40 mb-4">
               Resources
             </p>
             <ul className="flex flex-col gap-3 text-sm text-white/70">
               <li>
-                <Link href="#">LinkedIn</Link>
+                <Link
+                  href="https://www.linkedin.com/company/converge-finance"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  LinkedIn
+                </Link>
               </li>
               <li>
-                <Link href="#">X</Link>
+                <Link
+                  href="https://x.com/convergefin"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  X
+                </Link>
               </li>
               <li>
-                <Link href="#">Facebook</Link>
+                <Link
+                  href="https://www.facebook.com/share/1Feueiuj2s/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Facebook
+                </Link>
               </li>
               <li>
-                <Link href="#">YouTube</Link>
+                <Link
+                  href="https://youtu.be/AyLwmPPJyQI"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  YouTube
+                </Link>
               </li>
             </ul>
           </div>
 
           {/* LEGAL */}
-          <div>
+          {/* <div>
             <p className="text-[10px] uppercase tracking-widest text-white/40 mb-4">
               Legal
             </p>
             <ul className="flex flex-col gap-3 text-sm text-white/70">
               <li>
-                <Link href="#">Privacy Policy</Link>
+                <Link href="/privacy-policy">Privacy Policy</Link>
               </li>
               <li>
                 <Link href="#">Terms and Conditions</Link>
               </li>
             </ul>
-          </div>
+          </div> */}
         </div>
 
         {/* DIVIDER */}
@@ -124,7 +148,7 @@ export default function Footer() {
 
           {/* RIGHT */}
           <div className="flex gap-6">
-            <Link href="#">Privacy Policy</Link>
+            <Link href="/privacy-policy">Privacy Policy</Link>
             <Link href="#">Terms and Conditions</Link>
           </div>
         </div>
