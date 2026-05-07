@@ -149,7 +149,7 @@ export default function Footer() {
           {/* RIGHT */}
           <div className="flex gap-6">
             <Link href="/privacy-policy">Privacy Policy</Link>
-            <Link href="#">Terms and Conditions</Link>
+            <Link href="/terms">Terms and Conditions</Link>
           </div>
         </div>
       </div>
