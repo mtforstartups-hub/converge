@@ -19,7 +19,7 @@ export default function ImpactSection() {
   ];
 
   return (
-    <section className="w-full bg-[#16263A] text-white">
+    <section className="w-full bg-deep-slate text-white">
       <div className="max-w-95/100 md:max-w-5/6 mx-auto px-4 sm:px-6 lg:px-10 py-16 lg:py-20">
         {/* Top label */}
         <p className="text-sm md:text-base font-semibold tracking-widest uppercase text-white/80 mb-10">
@@ -27,14 +27,20 @@ export default function ImpactSection() {
         </p>
 
         {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 border-y border-white/10">
+        <div className="grid grid-cols-2 md:grid-cols-4">
           {stats.map((stat, i) => (
             <div
               key={i}
-              className="py-10 px-4 sm:px-6 flex flex-col gap-2 border-r md:border-r border-b md:border-b-0 border-white/10 max-md:even:border-r-0 md:last:border-r-0"
+              className="relative py-10 px-4 sm:px-6 flex flex-col gap-2"
             >
+              {/* Vertical Separator */}
+              <div className="absolute left-0 top-0 h-full w-px bg-linear-to-b from-transparent via-parchment to-transparent">
+                {/* Accent Line */}
+                {/* <div className="absolute top-1/2 -translate-y-1/2 -left-px w-0.75 h-10 bg-parchment"></div> */}
+              </div>
+
               {/* Value */}
-              <div className="font-mono text-3xl sm:text-4xl lg:text-5xl font-medium tracking-wide">
+              <div className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-wide">
                 {stat.value}
               </div>
 
