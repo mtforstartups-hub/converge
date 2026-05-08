@@ -15,14 +15,15 @@ export default function ProblemSection() {
             The real bottleneck
           </p>
 
-          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal  mb-6 ">
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-medium tracking-wide text-charcoal mb-6 ">
             Your team doesn’t have a data entry problem. They have a fact
             maintenance problem.
           </h2>
 
           <p className="text-lg text-charcoal/70 mb-5 max-w-xl">
-            Customers often describe their pain as "too much time entering data
-            into LOS systems." That framing leads to the wrong solution.
+            Customers often describe their pain as &quot;too much time entering
+            data into LOS systems.&quot; That framing leads to the wrong
+            solution.
           </p>
 
           <p className="text-lg text-charcoal/70 mb-6 max-w-xl">
@@ -32,7 +33,7 @@ export default function ProblemSection() {
             true.
           </p>
 
-          <p className="text-lg font-semibold text-deep-slate">
+          <p className="text-lg font-medium text-deep-slate">
             Data entry is linear. Fact maintenance is compounding.
           </p>
         </div>
@@ -59,7 +60,7 @@ export default function ProblemSection() {
           </div>
 
           {/* Bottom Highlight */}
-          <div className="mt-6 bg-verified/40 border border-verified rounded-lg p-4 text-sm md:text-base font-semibold text-white/80">
+          <div className="mt-6 bg-verified/40 border border-verified rounded-lg p-4 text-sm md:text-base font-medium text-white/80">
             Without a system that maintains truth across the loan file, cost
             increases, throughput slows, and risk accumulates — silently.
           </div>
