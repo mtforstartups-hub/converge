@@ -31,7 +31,7 @@ export default function HowItWorks() {
             How it works
           </p>
 
-          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6">
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-medium tracking-wide mb-6">
             Documents → Evidence → Facts → Decisions
           </h2>
 
@@ -44,7 +44,7 @@ export default function HowItWorks() {
 
         {/* STEPS */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 border border-font/10 rounded-xl overflow-hidden">
-          {steps.map((step, i) => (
+          {steps.map((step) => (
             <div
               key={step.id}
               className="bg-deep-slate p-6 lg:p-7 flex flex-col gap-4 border-b sm:border-b-0 sm:border-r border-font/10 last:border-r-0"

@@ -38,7 +38,7 @@ export default function IntelligenceSection() {
             Intelligence at every step
           </p>
 
-          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-semibold text-deep-slate mb-6 leading-tight">
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-medium tracking-wide text-deep-slate mb-6 leading-tight">
             Loan origination, intelligently.
           </h2>
 

@@ -38,7 +38,7 @@ export default function PlatformSection() {
             Our platform
           </p>
 
-          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-semibold text-deep-slate leading-tight mb-6">
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-medium tracking-wide text-deep-slate leading-tight mb-6">
             CreditOS — the intelligence engine.
           </h2>
 

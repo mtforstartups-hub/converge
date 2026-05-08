@@ -34,7 +34,7 @@ export default function ImpactSection() {
               className="py-10 px-4 sm:px-6 flex flex-col gap-2 border-r md:border-r border-b md:border-b-0 border-white/10 max-md:even:border-r-0 md:last:border-r-0"
             >
               {/* Value */}
-              <div className="text-3xl sm:text-4xl lg:text-5xl font-semibold">
+              <div className="font-mono text-3xl sm:text-4xl lg:text-5xl font-medium tracking-wide">
                 {stat.value}
               </div>
 
