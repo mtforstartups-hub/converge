@@ -52,7 +52,7 @@ export default function TermsOfUse() {
         <header className="mb-16 border-b border-steel/30 pb-8">
           <h1
             id="terms-of-use"
-            className="font-display text-4xl md:text-5xl lg:text-6xl text-midnight font-bold mb-6 tracking-tight"
+            className="font-display text-4xl md:text-5xl lg:text-6xl text-midnight font-bold mb-6 tracking-wider"
           >
             Terms of Use
           </h1>
@@ -139,7 +139,7 @@ export default function TermsOfUse() {
 
           {/* Contents Index */}
           <section className="bg-white/40 p-8 rounded-2xl border border-steel/20 shadow-sm">
-            <p className="font-display text-2xl text-midnight font-bold mb-6">
+            <p className="font-display text-2xl text-midnight font-medium mb-6 tracking-wide">
               Click on the links below to jump to that section of the Agreement:
             </p>
             <ol className="font-sans text-base space-y-3">
@@ -160,7 +160,7 @@ export default function TermsOfUse() {
           </section>
 
           <section id="changes-to-agreement" className="scroll-mt-32">
-            <h2 className="font-display text-3xl text-midnight font-bold mb-6">
+            <h2 className="font-display text-3xl text-midnight font-medium mb-6 tracking-wide">
               1. Changes to this Agreement
             </h2>
             <p className="mb-6">
@@ -185,7 +185,7 @@ export default function TermsOfUse() {
           </section>
 
           <section id="accessing-services" className="scroll-mt-32">
-            <h2 className="font-display text-3xl text-midnight font-bold mb-6">
+            <h2 className="font-display text-3xl text-midnight font-medium mb-6 tracking-wide">
               2. Accessing the Services
             </h2>
             <p className="mb-6">
@@ -227,7 +227,7 @@ export default function TermsOfUse() {
           </section>
 
           <section id="intellectual-property" className="scroll-mt-32">
-            <h2 className="font-display text-3xl text-midnight font-bold mb-6">
+            <h2 className="font-display text-3xl text-midnight font-medium mb-6 tracking-wide">
               3. Intellectual Property
             </h2>
             <p className="mb-6">
@@ -256,7 +256,7 @@ export default function TermsOfUse() {
           </section>
 
           <section id="grant-of-rights" className="scroll-mt-32">
-            <h2 className="font-display text-3xl text-midnight font-bold mb-6">
+            <h2 className="font-display text-3xl text-midnight font-medium mb-6 tracking-wide">
               4. Grant of Rights
             </h2>
             <p className="mb-6">
@@ -314,7 +314,7 @@ export default function TermsOfUse() {
           </section>
 
           <section id="restrictions" className="scroll-mt-32">
-            <h2 className="font-display text-3xl text-midnight font-bold mb-6">
+            <h2 className="font-display text-3xl text-midnight font-medium mb-6 tracking-wide">
               5. Restrictions on Use
             </h2>
             <p className="mb-6">
@@ -434,7 +434,7 @@ export default function TermsOfUse() {
           </section>
 
           <section id="comments" className="scroll-mt-32">
-            <h2 className="font-display text-3xl text-midnight font-bold mb-6">
+            <h2 className="font-display text-3xl text-midnight font-medium mb-6 tracking-wide">
               6. Comments, Feedback, and Other Submissions
             </h2>
             <p className="mb-6">
@@ -460,7 +460,7 @@ export default function TermsOfUse() {
           </section>
 
           <section id="third-party-content" className="scroll-mt-32">
-            <h2 className="font-display text-3xl text-midnight font-bold mb-6">
+            <h2 className="font-display text-3xl text-midnight font-medium mb-6 tracking-wide">
               7. Third-Party Content and Links
             </h2>
             <p className="mb-6">
@@ -499,7 +499,7 @@ export default function TermsOfUse() {
           </section>
 
           <section id="privacy" className="scroll-mt-32">
-            <h2 className="font-display text-3xl text-midnight font-bold mb-6">
+            <h2 className="font-display text-3xl text-midnight font-medium mb-6 tracking-wide">
               8. Privacy
             </h2>
             <p className="mb-6">
@@ -519,7 +519,7 @@ export default function TermsOfUse() {
           </section>
 
           <section id="disclaimer" className="scroll-mt-32">
-            <h2 className="font-display text-3xl text-midnight font-bold mb-6">
+            <h2 className="font-display text-3xl text-midnight font-medium mb-6 tracking-wide">
               9. Disclaimer; Limitation of Liability; Indemnity
             </h2>
             <div className="pl-6 [&>p]:text-base mb-4">
@@ -650,7 +650,7 @@ export default function TermsOfUse() {
           </section>
 
           <section id="dispute-resolution" className="scroll-mt-32">
-            <h2 className="font-display text-3xl text-midnight font-bold mb-6">
+            <h2 className="font-display text-3xl text-midnight font-medium mb-6 tracking-wide">
               10. Dispute Resolution (Including Arbitration Agreement; Class
               Action Waiver; Jury Trial Waiver)
             </h2>
@@ -715,12 +715,13 @@ export default function TermsOfUse() {
                   make a good faith effort to informally resolve it. The party
                   initiating the Dispute must send a written notice to the other
                   party that describes the Dispute (“Notice”). The Notice must
-                  include the following information: (i) the initiating party's
-                  contact information (including name, address, telephone
-                  number, and email address) (with their counsel's contact
-                  information, if represented); and (ii) a detailed description
-                  of (a) the Dispute, (b) the nature and basis of the claims,
-                  and (c) the nature and basis of the relief sought (“Demand”).
+                  include the following information: (i) the initiating
+                  party&apos;s contact information (including name, address,
+                  telephone number, and email address) (with their
+                  counsel&apos;s contact information, if represented); and (ii)
+                  a detailed description of (a) the Dispute, (b) the nature and
+                  basis of the claims, and (c) the nature and basis of the
+                  relief sought (“Demand”).
                 </p>
                 <br />
                 <p>
@@ -790,10 +791,10 @@ export default function TermsOfUse() {
                   the phone, using video conferencing, or similar. You may be
                   entitled to an in-person hearing near your place of residence.
                   In the event that the arbitration will be conducted solely on
-                  the basis of submitted documents, the arbitrator's decision
-                  and award will be made and delivered within six (6) months of
-                  the selection of the arbitrator, unless extended by the
-                  arbitrator. Reasonable discovery will be allowed during
+                  the basis of submitted documents, the arbitrator&apos;s
+                  decision and award will be made and delivered within six (6)
+                  months of the selection of the arbitrator, unless extended by
+                  the arbitrator. Reasonable discovery will be allowed during
                   arbitration in accordance with these rules. Judgment on any
                   arbitration award may be entered in any court having
                   appropriate jurisdiction. This clause shall not preclude
@@ -895,8 +896,8 @@ export default function TermsOfUse() {
                 COLLECTIVE, CONSOLIDATED, PRIVATE ATTORNEY GENERAL, OR
                 REPRESENTATIVE PROCEEDING. Further, except for Coordinated
                 Claims, unless both you and we agree otherwise, an arbitrator
-                may not consolidate more than one person's claims and may not
-                otherwise preside over any form of class, collective,
+                may not consolidate more than one person&apos;s claims and may
+                not otherwise preside over any form of class, collective,
                 consolidated, private attorney general, or representative
                 proceeding.
               </p>
@@ -938,7 +939,7 @@ export default function TermsOfUse() {
           </section>
 
           <section id="applicable-law" className="scroll-mt-32">
-            <h2 className="font-display text-3xl text-midnight font-bold mb-6">
+            <h2 className="font-display text-3xl text-midnight font-medium mb-6 tracking-wide">
               11. Applicable Law
             </h2>
             <p className="mb-6">
@@ -971,11 +972,11 @@ export default function TermsOfUse() {
           </section>
 
           <section id="miscellaneous" className="scroll-mt-32">
-            <h2 className="font-display text-3xl text-midnight font-bold mb-6">
+            <h2 className="font-display text-3xl text-midnight font-medium mb-6 tracking-wide">
               12. Miscellaneous Legal Terms
             </h2>
             <div className="mb-6 pl-6">
-              <h3 className="font-display text-xl text-midnight font-bold mb-4">
+              <h3 className="font-display text-xl text-midnight font-medium mb-4 tracking-wide">
                 1. Consent to Communication
               </h3>
               <p className="mb-4">
@@ -995,7 +996,7 @@ export default function TermsOfUse() {
                 Privacy Policy.
               </p>
 
-              <h3 className="font-display text-xl text-midnight font-bold mb-4">
+              <h3 className="font-display text-xl text-midnight font-medium mb-4 tracking-wide">
                 2. Modifications to the Services
               </h3>
               <p className="mb-4">
@@ -1008,7 +1009,7 @@ export default function TermsOfUse() {
                 products, or services offered on or through the Services.
               </p>
 
-              <h3 className="font-display text-xl text-midnight font-bold mb-4">
+              <h3 className="font-display text-xl text-midnight font-medium mb-4 tracking-wide">
                 3. Other Terms, Conditions, and Policies
               </h3>
               <p className="mb-4">
@@ -1021,7 +1022,7 @@ export default function TermsOfUse() {
                 Agreement, whether they reference this Agreement or not.
               </p>
 
-              <h3 className="font-display text-xl text-midnight font-bold mb-4">
+              <h3 className="font-display text-xl text-midnight font-medium mb-4 tracking-wide">
                 4. Term and Termination
               </h3>
               <p className="mb-4">
@@ -1067,7 +1068,7 @@ export default function TermsOfUse() {
                 any other provisions that by their nature should survive, shall
                 survive any termination of this Agreement.
               </p>
-              <h3 className="font-display text-xl text-midnight font-bold mb-4">
+              <h3 className="font-display text-xl text-midnight font-medium mb-4 tracking-wide">
                 5. Children
               </h3>
               <p className="mb-4">
@@ -1079,7 +1080,7 @@ export default function TermsOfUse() {
                 SERVICES.
               </p>
 
-              <h3 className="font-display text-xl text-midnight font-bold mb-4">
+              <h3 className="font-display text-xl text-midnight font-medium mb-4 tracking-wide">
                 6. Waiver; Severability
               </h3>
               <p className="mb-4">
@@ -1097,7 +1098,7 @@ export default function TermsOfUse() {
                 provision of this Agreement.
               </p>
 
-              <h3 className="font-display text-xl text-midnight font-bold mb-4">
+              <h3 className="font-display text-xl text-midnight font-medium mb-4 tracking-wide">
                 7. Assignment
               </h3>
               <p className="mb-4">
@@ -1108,7 +1109,7 @@ export default function TermsOfUse() {
                 shall be binding on and will inure to the benefit of the parties
                 and their respective successors and permitted assigns.
               </p>
-              <h3 className="font-display text-xl text-midnight font-bold mb-4">
+              <h3 className="font-display text-xl text-midnight font-medium mb-4 tracking-wide">
                 8. Force Majeure
               </h3>
               <p className="mb-4">
@@ -1129,7 +1130,7 @@ export default function TermsOfUse() {
                 communications, power or Internet infrastructure.
               </p>
 
-              <h3 className="font-display text-xl text-midnight font-bold mb-4">
+              <h3 className="font-display text-xl text-midnight font-medium mb-4 tracking-wide">
                 9.Information for New Jersey Users
               </h3>
               <p className="mb-4">
@@ -1146,7 +1147,7 @@ export default function TermsOfUse() {
                 Agreement are found to violate an established legal right.
               </p>
 
-              <h3 className="font-display text-xl text-midnight font-bold mb-4">
+              <h3 className="font-display text-xl text-midnight font-medium mb-4 tracking-wide">
                 10. Information for California Users
               </h3>
               <p className="mb-4">
@@ -1174,7 +1175,7 @@ export default function TermsOfUse() {
           </section>
 
           <section id="contact-info" className="scroll-mt-32">
-            <h2 className="font-display text-3xl text-midnight font-bold mb-6">
+            <h2 className="font-display text-3xl text-midnight font-medium mb-6 tracking-wide">
               13. Contact Information
             </h2>
             <p className="mb-6">

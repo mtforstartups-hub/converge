@@ -2,7 +2,7 @@ export default function UnifiedIntelligence() {
   return (
     <section className="py-16 md:py-24 border-y border-steel bg-parchment">
       <div className="mx-auto max-w-95/100 md:max-w-5/6 px-4 md:px-6 lg:px-10 text-left md:text-center text-charcoal space-y-4 md:space-y-8">
-        <h2 className="font-display text-4xl md:text-5xl font-bold">
+        <h2 className="font-display text-4xl md:text-5xl font-medium tracking-wide">
           Unified Intelligence
         </h2>
         <p className="font-sans text-sm md:text-lg">

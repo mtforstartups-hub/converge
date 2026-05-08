@@ -28,7 +28,7 @@ export default function KeyCapabilitiesAndOutput() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
           {/* Left Column: Key capabilities */}
           <div>
-            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-charcoal mb-10">
+            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-medium text-charcoal mb-10 tracking-wide">
               Key capabilities
             </h2>
             <div className="space-y-8">
@@ -47,7 +47,7 @@ export default function KeyCapabilitiesAndOutput() {
 
           {/* Right Column: Example output */}
           <div>
-            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold text-charcoal mb-10">
+            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-medium text-charcoal mb-10 tracking-wide">
               Example output
             </h2>
             <div className="bg-midnight/90 border border-white/10 rounded-2xl p-6 shadow-2xl overflow-hidden flex flex-col">

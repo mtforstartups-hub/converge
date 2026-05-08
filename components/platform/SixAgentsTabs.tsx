@@ -130,7 +130,7 @@ export default function SixAgentsTabs() {
             <button
               key={agent.id}
               onClick={() => setActiveTab(agent.id)}
-              className={`group flex items-start text-left gap-4 py-3 px-4 rounded-xl transition-all duration-300 min-w-[200px] lg:min-w-0 border ${
+              className={`group flex items-start text-left gap-4 py-3 px-4 rounded-xl transition-all duration-300 min-w-50 lg:min-w-0 border ${
                 isActive
                   ? "bg-white/5 border-white/10"
                   : "border-transparent hover:bg-white/5"
@@ -138,7 +138,9 @@ export default function SixAgentsTabs() {
             >
               <div
                 className={`w-1.5 h-1.5 rounded-full mt-2 transition-colors duration-300 ${
-                  isActive ? "bg-verified" : "bg-white/20 group-hover:bg-white/40"
+                  isActive
+                    ? "bg-verified"
+                    : "bg-white/20 group-hover:bg-white/40"
                 }`}
               />
               <div>
@@ -167,7 +169,7 @@ export default function SixAgentsTabs() {
       </div>
 
       {/* Content Area */}
-      <div className="flex-1 p-6 md:p-10 lg:p-12 transition-all duration-500 min-h-[450px] flex flex-col justify-between">
+      <div className="flex-1 p-6 md:p-10 lg:p-12 transition-all duration-500 min-h-112.5 flex flex-col justify-between">
         <div>
           <div className="flex items-center gap-4 mb-8">
             <span className="text-xs font-bold tracking-widest text-white/50 uppercase whitespace-nowrap">
@@ -179,7 +181,7 @@ export default function SixAgentsTabs() {
             </span>
           </div>
 
-          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-parchment mb-6">
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-medium text-parchment mb-6 tracking-wide">
             {activeAgent.title}
           </h2>
           <p className="text-base md:text-lg text-white/70 max-w-3xl leading-relaxed mb-12">

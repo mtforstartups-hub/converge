@@ -59,7 +59,7 @@ const industries = [
 export default function IndustryTabs() {
   const [activeTab, setActiveTab] = useState(industries[0].id);
 
-  const activeIndustry = industries.find((ind) => ind.id === activeTab)!;
+  // const activeIndustry = industries.find((ind) => ind.id === activeTab)!;
 
   return (
     <div className="w-full">
@@ -77,7 +77,7 @@ export default function IndustryTabs() {
           >
             {industry.name}
             {activeTab === industry.id && (
-              <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-verified shadow-[0_0_15px_rgba(45,212,191,0.8)] z-10" />
+              <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-verified shadow-[0_0_15px_rgba(45,212,191,0.8)] z-10" />
             )}
           </button>
         ))}
@@ -97,7 +97,7 @@ export default function IndustryTabs() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
               {/* Header Info */}
               <div className="lg:col-span-4 space-y-6">
-                <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-parchment tracking-tight">
+                <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-medium text-parchment tracking-wide">
                   {industry.name}
                 </h2>
                 <div className="group flex items-center gap-2 text-verified cursor-pointer w-fit">

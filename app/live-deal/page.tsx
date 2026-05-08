@@ -25,7 +25,7 @@ export default function LiveDeal() {
         <div className="mx-auto max-w-95/100 md:max-w-5/6 px-4 md:px-6 lg:px-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
             <div className="space-y-4">
-              <h2 className="font-display font-bold text-4xl md:text-5xl mb-4">
+              <h2 className="font-display font-bold text-4xl md:text-5xl mb-4 tracking-wider">
                 See it on a live deal.
               </h2>
               <p className="font-sans text-lg md:text-xl">
@@ -39,7 +39,7 @@ export default function LiveDeal() {
               </p>
               <div className="space-y-6 mt-10">
                 {points.map((point, idx) => (
-                  <div className="flex items-center gap-4 md:gap-5">
+                  <div className="flex items-center gap-4 md:gap-5" key={idx}>
                     <div className="rounded-full size-7 flex items-center justify-center text-base text-verified bg-verified/10 border border-verified">
                       {idx + 1}
                     </div>
@@ -56,8 +56,8 @@ export default function LiveDeal() {
               </div>
               <LeftBorderedCard type="secondary" className="bg-white mt-10">
                 <h3 className="font-semibold mb-4">
-                  "We saw 4-minute entity review in the session. We signed the
-                  next week."
+                  &quot;We saw 4-minute entity review in the session. We signed
+                  the next week.&quot;
                 </h3>
                 — VP of Credit Operations, regional bridge lender
               </LeftBorderedCard>
@@ -66,7 +66,7 @@ export default function LiveDeal() {
             {/* form section */}
             <div>
               <div className="rounded-xl bg-deep-slate p-8 md:p-10 text-parchment shadow-5xl">
-                <h3 className="font-display font-bold text-2xl md:text-3xl mb-4">
+                <h3 className="font-display font-medium text-2xl md:text-3xl mb-4 tracking-wide">
                   Request a session
                 </h3>
                 <form action="" className="space-y-8">

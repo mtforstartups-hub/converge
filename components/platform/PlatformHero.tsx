@@ -12,7 +12,7 @@ export default function PlatformHero() {
             <div className="text-xs font-semibold tracking-widest text-white/60 uppercase">
               Platform Overview
             </div>
-            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
+            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-wider">
               <span className="text-parchment">One platform. Six agents.</span>
               <br />
               <span className="text-white/40">

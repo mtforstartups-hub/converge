@@ -22,7 +22,7 @@ export default function IndustriesPage() {
             <Breadcrumbs items={[{ label: "Industries" }]} />
 
             <div className="space-y-8">
-              <h1 className="font-display text-4xl md:text-5xl lg:text-7xl font-bold leading-[1.1] tracking-tight text-parchment">
+              <h1 className="font-display text-4xl md:text-5xl lg:text-7xl font-bold leading-[1.1] tracking-wider text-parchment">
                 Built for real estate credit.
                 <br />
                 <span className="text-white/30">
@@ -51,7 +51,7 @@ export default function IndustriesPage() {
         <div className="mx-auto max-w-95/100 md:max-w-5/6 px-4 md:px-6 lg:px-10 text-center">
           <div className="max-w-3xl mx-auto space-y-5">
             <div className="space-y-6">
-              <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-parchment tracking-tight">
+              <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-medium text-parchment tracking-wide">
                 Which vertical are you in?
               </h2>
               <p className="text-lg md:text-xl text-white/50 font-light">

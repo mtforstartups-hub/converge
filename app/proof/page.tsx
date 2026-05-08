@@ -52,7 +52,7 @@ export default function ProofPage() {
             <Breadcrumbs items={[{ label: "Proof" }]} />
 
             <div className="space-y-8">
-              <h1 className="font-display text-4xl md:text-5xl lg:text-7xl font-bold leading-[1.1] tracking-tight text-parchment">
+              <h1 className="font-display text-4xl md:text-5xl lg:text-7xl font-bold leading-[1.1] tracking-wider text-parchment">
                 Proof, not promises.
               </h1>
               <p className="text-base md:text-xl text-parchment/60 max-w-2xl leading-relaxed font-light">
@@ -80,7 +80,7 @@ export default function ProofPage() {
                 <div key={index} className="space-y-6 group">
                   <div className="w-full h-px bg-midnight/10 group-hover:bg-verified/40 transition-colors duration-500" />
                   <div className="space-y-3">
-                    <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal tracking-tight">
+                    <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-medium text-charcoal tracking-wide">
                       {stat.value}
                     </h2>
                     <p className="text-sm md:text-base text-charcoal/60 font-medium">

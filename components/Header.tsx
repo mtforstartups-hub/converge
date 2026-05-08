@@ -106,7 +106,7 @@ export default function Header() {
 
                   {/* Dropdown for Platform */}
                   {item.title === "Platform" && (
-                    <div className="absolute top-full right-0 lg:-left-4 mt-0 w-[640px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top translate-y-2 group-hover:translate-y-0">
+                    <div className="absolute top-full right-0 lg:-left-4 mt-0 w-160 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top translate-y-2 group-hover:translate-y-0">
                       <div className="bg-[#0c121e] border border-white/10 rounded-xl shadow-2xl p-6 text-left -mt-2">
                         {/* Overview Card */}
                         <Link

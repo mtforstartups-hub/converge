@@ -9,7 +9,7 @@ export default function PrivacyPolicy() {
       <article className="mx-auto max-w-95/100 md:max-w-5/6 px-4 md:px-6 lg:px-10">
         {/* Header */}
         <header className="mb-16 border-b border-steel/30 pb-8">
-          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl text-midnight font-bold mb-6 tracking-tight">
+          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl text-midnight font-bold mb-6 tracking-wider">
             Privacy Policy
           </h1>
           <p className="font-mono text-steel text-sm uppercase tracking-wider">
@@ -33,7 +33,7 @@ export default function PrivacyPolicy() {
 
           {/* Contents Index */}
           <section className="bg-white/40 p-8 rounded-2xl border border-steel/20 shadow-sm">
-            <h2 className="font-display text-2xl text-midnight font-bold mb-6">
+            <h2 className="font-display text-2xl text-midnight font-medium mb-6 tracking-wide">
               Contents
             </h2>
             <ul className="font-sans text-base space-y-3 list-none">
@@ -129,7 +129,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section id="information-we-collect" className="scroll-mt-32">
-            <h2 className="font-display text-3xl text-midnight font-bold mb-6">
+            <h2 className="font-display text-3xl text-midnight font-medium mb-6 tracking-wide">
               Information We Collect
             </h2>
             <p className="mb-6">
@@ -171,7 +171,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section id="how-we-collect-information" className="scroll-mt-32">
-            <h2 className="font-display text-3xl text-midnight font-bold mb-6">
+            <h2 className="font-display text-3xl text-midnight font-medium mb-6 tracking-wide">
               How We Collect Information
             </h2>
             <p className="mb-6">
@@ -210,7 +210,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section id="how-we-use-information" className="scroll-mt-32">
-            <h2 className="font-display text-3xl text-midnight font-bold mb-6">
+            <h2 className="font-display text-3xl text-midnight font-medium mb-6 tracking-wide">
               How We Use Information
             </h2>
             <p className="mb-6">
@@ -260,7 +260,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section id="how-we-share-information" className="scroll-mt-32">
-            <h2 className="font-display text-3xl text-midnight font-bold mb-6">
+            <h2 className="font-display text-3xl text-midnight font-medium mb-6 tracking-wide">
               How We Share Information
             </h2>
             <p className="mb-6">
@@ -321,7 +321,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section id="your-choices" className="scroll-mt-32">
-            <h2 className="font-display text-3xl text-midnight font-bold mb-6">
+            <h2 className="font-display text-3xl text-midnight font-medium mb-6 tracking-wide">
               Your Choices
             </h2>
             <p className="mb-6">
@@ -341,7 +341,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section id="how-we-protect-information" className="scroll-mt-32">
-            <h2 className="font-display text-3xl text-midnight font-bold mb-6">
+            <h2 className="font-display text-3xl text-midnight font-medium mb-6 tracking-wide">
               How We Protect Information
             </h2>
             <p className="mb-6">
@@ -361,7 +361,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section id="third-party-links" className="scroll-mt-32">
-            <h2 className="font-display text-3xl text-midnight font-bold mb-6">
+            <h2 className="font-display text-3xl text-midnight font-medium mb-6 tracking-wide">
               Third-Party Links
             </h2>
             <p>
@@ -376,7 +376,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section id="children" className="scroll-mt-32">
-            <h2 className="font-display text-3xl text-midnight font-bold mb-6">
+            <h2 className="font-display text-3xl text-midnight font-medium mb-6 tracking-wide">
               Children
             </h2>
             <p>
@@ -387,7 +387,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section id="changes-to-this-privacy-policy" className="scroll-mt-32">
-            <h2 className="font-display text-3xl text-midnight font-bold mb-6">
+            <h2 className="font-display text-3xl text-midnight font-medium mb-6 tracking-wide">
               Changes to this Privacy Policy
             </h2>
             <p>
@@ -404,7 +404,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section id="california-residents" className="scroll-mt-32">
-            <h2 className="font-display text-3xl text-midnight font-bold mb-6">
+            <h2 className="font-display text-3xl text-midnight font-medium mb-6 tracking-wide">
               California Residents
             </h2>
             <p>
@@ -423,7 +423,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section id="how-to-contact-us" className="scroll-mt-32">
-            <h2 className="font-display text-3xl text-midnight font-bold mb-6">
+            <h2 className="font-display text-3xl text-midnight font-medium mb-6 tracking-wide">
               How to Contact Us
             </h2>
             <p className="mb-6">
