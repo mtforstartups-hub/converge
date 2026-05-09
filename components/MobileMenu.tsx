@@ -50,7 +50,7 @@ export default function MobileMenu({
 
                       {/* Expanded Platform Submenu */}
                       <div
-                        className={`overflow-hidden transition-all duration-300 ease-in-out ${openPlatform ? "max-h-[800px] opacity-100 mt-4 mb-2" : "max-h-0 opacity-0"}`}
+                        className={`overflow-hidden transition-all duration-300 ease-in-out ${openPlatform ? "max-h-200 opacity-100 mt-4 mb-2" : "max-h-0 opacity-0"}`}
                       >
                         <div className="flex flex-col gap-5 pl-4 border-l border-white/10 ml-1">
                           {/* Overview Card */}
