@@ -62,11 +62,10 @@ export default function BottomCta() {
         {/* --- RIGHT SIDE: The SVG Image Wrapper --- */}
         <div className="w-full lg:w-1/2 mt-12 lg:mt-0 relative hidden lg:flex justify-end md:min-h-80 lg:min-h-100 pointer-events-none">
           <Image
-            src="/images/shape2.svg" //
-            alt="Decorative background"
+            src="/images/shape2.svg"
+            alt=""
             fill
             className="object-contain lg:object-right"
-            priority
           />
         </div>
       </div>
