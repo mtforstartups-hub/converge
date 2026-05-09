@@ -70,11 +70,18 @@ export default function HowItWorks() {
           {steps.map((step, i) => (
             <div
               key={step.id}
+              tabIndex={0}
+              role="button"
               onMouseEnter={() => {
                 setPaused(true);
                 setActive(i);
               }}
               onMouseLeave={() => setPaused(false)}
+              onFocus={() => {
+                setPaused(true);
+                setActive(i);
+              }}
+              onBlur={() => setPaused(false)}
               className={[
                 "p-6 lg:p-7 flex flex-col gap-4",
                 "border-b sm:border-b-0 sm:border-r border-font/10 last:border-r-0",
@@ -87,7 +94,7 @@ export default function HowItWorks() {
               {/* Icon */}
               <span
                 className={[
-                  "transition-colors duration-600 ease-in-out",
+                  "transition-colors duration-500 ease-in-out",
                   active === i ? "text-deep-slate" : "text-parchment",
                 ].join(" ")}
               >
