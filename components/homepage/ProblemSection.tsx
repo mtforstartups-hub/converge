@@ -12,29 +12,38 @@ export default function ProblemSection() {
         {/* LEFT CONTENT */}
         <div>
           <p className="text-sm md:text-base font-semibold tracking-widest uppercase text-charcoal/80 mb-4">
-            The real bottleneck
+            {/* The real bottleneck */}
+            THE MARKET TRUTH
           </p>
 
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-medium tracking-wide text-charcoal mb-6 ">
-            Your team doesn’t have a data entry problem. They have a fact
-            maintenance problem.
+            {/* Your team doesn’t have a data entry problem. They have a fact
+            maintenance problem. */}
+            Lenders don&apos;t lack data. They lack clarity.
           </h2>
 
           <p className="text-lg text-charcoal/70 mb-5 max-w-xl">
-            Customers often describe their pain as &quot;too much time entering
+            {/* Customers often describe their pain as &quot;too much time entering
             data into LOS systems.&quot; That framing leads to the wrong
-            solution.
+            solution. */}
+            A single commercial real estate loan touches twenty to fifty
+            distinct work streams. Bank statements arrive in three formats.
+            Entity structures span four affiliated LLCs and a holding company.
+            Operating agreements contradict the rent roll. Borrower disclosures
+            omit a guarantor obligation buried on page sixty-three.
           </p>
 
           <p className="text-lg text-charcoal/70 mb-6 max-w-xl">
-            The real problem: as documents arrive over days and weeks, your team
-            must continuously interpret, compare, validate, reconcile, and
-            update loan data. Every new document can change what was previously
-            true.
+            Every credit team in the country processes the same chaos by hand.
+            Junior analysts spend hours assembling what the underwriter needs to
+            see. Senior underwriters spend hours re-checking what the analyst
+            missed. The loan that should have closed in ten days closes in
+            thirty — or doesn&apos;t close at all.
           </p>
 
           <p className="text-lg font-medium text-deep-slate">
-            Data entry is linear. Fact maintenance is compounding.
+            Converge fixes the cognitive bottleneck. Documents in, structured
+            decisions out, before the loan ever touches your LOS.
           </p>
         </div>
 

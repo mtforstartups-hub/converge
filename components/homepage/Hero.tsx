@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Button from "../ui/Button";
 import HeroCard from "./HeroCard";
-import BrandsMarquee from "./BrandsMarquee";
 
 export default function Hero() {
   return (
@@ -53,7 +52,7 @@ export default function Hero() {
               <span className="hidden md:flex">
                 <Button
                   href="/platform"
-                  title="Watch a 2-minute Overview"
+                  title="Explore the platform"
                   type="secondary"
                 />
               </span>
@@ -65,8 +64,45 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* BRANDS */}
-      <BrandsMarquee />
+      {/* METRICS */}
+      <div className="relative z-10 w-full bg-parchment py-4 sm:py-8 border-b border-steel">
+        <div className="max-w-95/100 md:max-w-5/6 mx-auto px-4 sm:px-6 lg:px-10">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+            <div className="flex flex-col gap-1">
+              <span className="text-lg sm:text-xl lg:text-3xl font-bold text-verified tracking-tight">
+                2.3M+
+              </span>
+              <span className="font-sans text-xs sm:text-sm font-medium text-charcoal uppercase tracking-widest">
+                loans analyzed
+              </span>
+            </div>
+            <div className="flex flex-col gap-1">
+              <span className="text-lg sm:text-xl lg:text-3xl font-bold text-verified tracking-tight">
+                98.7%
+              </span>
+              <span className="font-sans text-xs sm:text-sm font-medium text-charcoal uppercase tracking-widest">
+                extraction accuracy
+              </span>
+            </div>
+            <div className="flex flex-col gap-1">
+              <span className="text-lg sm:text-xl lg:text-3xl font-bold text-verified tracking-tight">
+                76%
+              </span>
+              <span className="font-sans text-xs sm:text-sm font-medium text-charcoal uppercase tracking-widest">
+                faster decisioning
+              </span>
+            </div>
+            <div className="flex flex-col gap-1">
+              <span className="text-lg sm:text-xl lg:text-3xl font-bold text-verified tracking-tight">
+                $12B+
+              </span>
+              <span className="font-sans text-xs sm:text-sm font-medium text-charcoal uppercase tracking-widest">
+                capital enabled
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }
