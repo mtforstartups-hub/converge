@@ -16,18 +16,14 @@ export default function IndustriesPage() {
       <div className="absolute bottom-1/4 right-0 w-[400px] h-[400px] bg-verified/5 rounded-full blur-[100px] -z-10" /> */}
 
       {/* Hero Section */}
-      <section className="pt-32 pb-16 md:pt-40 md:pb-24 bg-deep-slate">
+      <section className="pt-32 pb-16 md:pt-40 md:pb-24 bg-midnight">
         <div className="mx-auto max-w-95/100 md:max-w-5/6 px-4 md:px-6 lg:px-10">
           <div className="flex flex-col space-y-10 max-w-4xl">
             <Breadcrumbs items={[{ label: "Industries" }]} />
 
             <div className="space-y-8">
-              <h1 className="font-display text-4xl md:text-5xl lg:text-7xl font-bold leading-[1.1] tracking-wider text-parchment">
-                Built for real estate credit.
-                <br />
-                <span className="text-white/30">
-                  Configured for your vertical.
-                </span>
+              <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-wider text-parchment">
+                Built for real estate credit. Configured for your vertical.
               </h1>
               <p className="text-base md:text-xl text-white/60 max-w-2xl leading-relaxed font-light">
                 Every lending vertical has different document types, entity
@@ -40,7 +36,7 @@ export default function IndustriesPage() {
       </section>
 
       {/* Tabs Section */}
-      <section className="py-10 md:py-20 bg-midnight border-y border-white/5">
+      <section className="py-10 md:py-20 bg-parchment border-y border-white/95">
         <div className="mx-auto max-w-95/100 md:max-w-5/6 px-4 md:px-6 lg:px-10">
           <IndustryTabs />
         </div>
