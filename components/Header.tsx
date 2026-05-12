@@ -14,7 +14,7 @@ const menuLinks = [
   // { title: "Product", link: "/product" },
   { title: "Intelligence", link: "/intelligence" },
   { title: "Industries", link: "/industries" },
-  { title: "Proof", link: "/proof" },
+  { title: "Impact", link: "/impact" },
 ];
 
 const platformAgents = [

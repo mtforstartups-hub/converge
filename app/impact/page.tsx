@@ -46,13 +46,13 @@ export default function ProofPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="pt-20 pb-10 md:pt-30 md:pb-16 bg-deep-slate">
+      <section className="pt-20 pb-10 md:pt-30 md:pb-16 bg-midnight">
         <div className="mx-auto max-w-95/100 md:max-w-5/6 px-4 md:px-6 lg:px-10">
           <div className="flex flex-col space-y-10 max-w-4xl">
             <Breadcrumbs items={[{ label: "Proof" }]} />
 
             <div className="space-y-8">
-              <h1 className="font-display text-4xl md:text-5xl lg:text-7xl font-bold leading-[1.1] tracking-wider text-parchment">
+              <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-wider text-parchment">
                 Proof, not promises.
               </h1>
               <p className="text-base md:text-xl text-parchment/60 max-w-2xl leading-relaxed font-light">

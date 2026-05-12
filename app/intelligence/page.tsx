@@ -60,12 +60,8 @@ export default function IntelligencePage() {
             <Breadcrumbs items={[{ label: "Intelligence" }]} />
 
             <div className="space-y-6">
-              <h1 className="font-display text-4xl md:text-5xl lg:text-7xl font-bold leading-[1.1] tracking-wider text-parchment">
-                Credit intelligence is not a feature.
-                <br />
-                <span className="text-white/30 text-3xl md:text-5xl lg:text-6xl">
-                  It is a category.
-                </span>
+              <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-wider text-parchment">
+                Credit intelligence is not a feature. It is a category.
               </h1>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4">

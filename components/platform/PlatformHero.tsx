@@ -12,12 +12,10 @@ export default function PlatformHero() {
             <div className="text-xs font-semibold tracking-widest text-white/60 uppercase">
               Platform Overview
             </div>
-            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-wider">
-              <span className="text-parchment">One platform. Six agents.</span>
+            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-wider text-parchment">
+              One platform. Six agents.
               <br />
-              <span className="text-white/40">
-                The complete lending workflow.
-              </span>
+              The complete lending workflow.
             </h1>
             <p className="text-base md:text-lg text-white/70 max-w-2xl leading-relaxed">
               Converge integrates six AI agents into a single workflow — from
