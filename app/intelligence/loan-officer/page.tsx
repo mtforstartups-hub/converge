@@ -1,10 +1,9 @@
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import Button from "@/components/ui/Button";
-import BottomCtaNew from "@/components/BottomCtaNew";
 import LoanOfficerCapabilities from "@/components/intelligence/LoanOfficerCapabilities";
 import LoanOfficerFAQ from "@/components/intelligence/LoanOfficerFAQ";
 import Link from "next/link";
-import { ArrowRight, Layers, Cpu, ShieldCheck } from "lucide-react";
+import { ArrowRight, Cpu, ShieldCheck } from "lucide-react";
 
 export const metadata = {
   title: "Loan Officer Intelligence | Converge Finance",
@@ -468,19 +467,16 @@ export default function LoanOfficerPage() {
       </section>
 
       {/* ─── BOTTOM CTA ─── */}
-
-      <section className=" bg-parchment pb-10">
-        <div className="mx-auto max-w-95/100 md:max-w-5/6 px-4 md:px-6 lg:px-10 text-center">
-          <div className="max-w-7xl mx-auto ">
-            <div className="flex justify-center pt-6 gap-4">
-              <Button href="/live-deal" title="See it on a live deal" />
-
-              <Link
+      <section className="bg-parchment pb-10">
+        <div className="mx-auto max-w-95/100 md:max-w-5/6 px-4 md:px-6 lg:px-10">
+          <div className="max-w-4xl mx-auto">
+            <div className="pt-6 border-t border-charcoal/5 flex flex-wrap justify-center gap-4">
+              <Button href="/live-deal" title="See it on a live deal &rarr;" />
+              <Button
+                type="secondary-light"
                 href="/intelligence/processor"
-                className={`max-w-fit py-2.25 px-4.5 rounded-lg text-sm text-charcoal border border-steel/60 hover:border-steel duration-300 ease-linear`}
-              >
-                Read about Processor Intelligence
-              </Link>
+                title="Read about Processor Intelligence"
+              />
             </div>
           </div>
         </div>

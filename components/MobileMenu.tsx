@@ -9,12 +9,20 @@ type Agent = { name: string; description: string; link: string };
 export default function MobileMenu({
   links,
   platformAgents,
+  intelligenceLayers,
+  solutionVerticals,
 }: {
   links: { link: string; title: string; hasDropdown?: boolean }[];
   platformAgents?: Agent[];
+  intelligenceLayers?: Agent[];
+  solutionVerticals?: Agent[];
 }) {
   const [open, setOpen] = useState(false);
-  const [openPlatform, setOpenPlatform] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+
+  const toggleDropdown = (title: string) => {
+    setOpenDropdown(openDropdown === title ? null : title);
+  };
 
   return (
     <div className="lg:hidden">
@@ -33,10 +41,10 @@ export default function MobileMenu({
             {links.map((item, i: number) => (
               <li key={i} className="border-b border-white/5 pb-2">
                 <div className="flex flex-col">
-                  {item.title === "Platform" && item.hasDropdown ? (
+                  {item.hasDropdown ? (
                     <>
                       <button
-                        onClick={() => setOpenPlatform(!openPlatform)}
+                        onClick={() => toggleDropdown(item.title)}
                         className="flex justify-between items-center w-full text-left py-2"
                       >
                         <span className="text-white/90 font-medium text-base">
@@ -44,57 +52,135 @@ export default function MobileMenu({
                         </span>
                         <ChevronDown
                           size={18}
-                          className={`opacity-70 transition-transform duration-300 ${openPlatform ? "rotate-180 text-verified" : ""}`}
+                          className={`opacity-70 transition-transform duration-300 ${
+                            openDropdown === item.title
+                              ? "rotate-180 text-verified"
+                              : ""
+                          }`}
                         />
                       </button>
 
-                      {/* Expanded Platform Submenu */}
+                      {/* Expanded Submenu */}
                       <div
-                        className={`overflow-hidden transition-all duration-300 ease-in-out ${openPlatform ? "max-h-200 opacity-100 mt-4 mb-2" : "max-h-0 opacity-0"}`}
+                        className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                          openDropdown === item.title
+                            ? "max-h-200 opacity-100 mt-4 mb-2"
+                            : "max-h-0 opacity-0"
+                        }`}
                       >
                         <div className="flex flex-col gap-5 pl-4 border-l border-white/10 ml-1">
-                          {/* Overview Card */}
-                          <Link
-                            href="/platform"
-                            className="block p-4 rounded-lg bg-[#0e1923] border border-verified/30 hover:bg-[#111e2a] transition-colors"
-                            onClick={() => setOpen(false)}
-                          >
-                            <h3 className="text-white font-semibold text-sm mb-1">
-                              Platform Overview
-                            </h3>
-                            <p className="text-white/60 text-xs">
-                              See how six AI agents work as one unified system →
-                            </p>
-                          </Link>
+                          
+                          {/* Platform specific layout */}
+                          {item.title === "Platform" && (
+                            <>
+                              <Link
+                                href="/platform"
+                                className="block p-4 rounded-lg bg-[#0e1923] border border-verified/30 hover:bg-[#111e2a] transition-colors"
+                                onClick={() => setOpen(false)}
+                              >
+                                <h3 className="text-white font-semibold text-sm mb-1">
+                                  Platform Overview
+                                </h3>
+                                <p className="text-white/60 text-xs">
+                                  See how six AI agents work as one unified system →
+                                </p>
+                              </Link>
+                              <div>
+                                <h4 className="text-[11px] font-bold text-white/40 tracking-widest uppercase mb-4">
+                                  Six Agents
+                                </h4>
+                                <div className="flex flex-col gap-5">
+                                  {platformAgents?.map((agent, index) => (
+                                    <Link
+                                      href={agent.link}
+                                      key={index}
+                                      onClick={() => setOpen(false)}
+                                      className="flex gap-3 items-start group/agent"
+                                    >
+                                      <div className="w-8 h-8 rounded-md bg-[#0d1b22] border border-verified/40 flex items-center justify-center shrink-0">
+                                        <div className="w-1.5 h-1.5 rounded-full bg-verified group-hover/agent:bg-verified/80 transition-colors"></div>
+                                      </div>
+                                      <div>
+                                        <h5 className="text-white/90 font-medium text-[14px] mb-0.5 group-hover/agent:text-verified/80 transition-colors">
+                                          {agent.name}
+                                        </h5>
+                                        <p className="text-white/50 text-[12px] leading-snug">
+                                          {agent.description}
+                                        </p>
+                                      </div>
+                                    </Link>
+                                  ))}
+                                </div>
+                              </div>
+                            </>
+                          )}
 
-                          {/* Agents List */}
-                          <div>
-                            <h4 className="text-[11px] font-bold text-white/40 tracking-widest uppercase mb-4">
-                              Six Agents
-                            </h4>
+                          {/* Intelligence specific layout */}
+                          {item.title === "Intelligence" && (
+                            <>
+                              <Link
+                                href="/intelligence"
+                                className="block p-4 rounded-lg bg-[#0e1923] border border-verified/30 hover:bg-[#111e2a] transition-colors"
+                                onClick={() => setOpen(false)}
+                              >
+                                <h3 className="text-white font-semibold text-sm mb-1">
+                                  Intelligence Layers
+                                </h3>
+                                <p className="text-white/60 text-xs">
+                                  View all three layers →
+                                </p>
+                              </Link>
+                              <div className="flex flex-col gap-5 mt-2">
+                                {intelligenceLayers?.map((layer, index) => (
+                                  <Link
+                                    href={layer.link}
+                                    key={index}
+                                    onClick={() => setOpen(false)}
+                                    className="flex gap-3 items-start group/layer"
+                                  >
+                                    <div className="w-8 h-8 rounded-md bg-[#0d1b22] border border-verified/40 flex items-center justify-center shrink-0">
+                                      <div className="w-1.5 h-1.5 rounded-full bg-verified group-hover/layer:bg-verified/80 transition-colors"></div>
+                                    </div>
+                                    <div>
+                                      <h5 className="text-white/90 font-medium text-[14px] mb-0.5 group-hover/layer:text-verified/80 transition-colors">
+                                        {layer.name}
+                                      </h5>
+                                      <p className="text-white/50 text-[12px] leading-snug">
+                                        {layer.description}
+                                      </p>
+                                    </div>
+                                  </Link>
+                                ))}
+                              </div>
+                            </>
+                          )}
+
+                          {/* Solutions specific layout */}
+                          {item.title === "Solutions" && (
                             <div className="flex flex-col gap-5">
-                              {platformAgents?.map((agent, index) => (
+                              {solutionVerticals?.map((vertical, index) => (
                                 <Link
-                                  href={agent.link}
+                                  href={vertical.link}
                                   key={index}
                                   onClick={() => setOpen(false)}
-                                  className="flex gap-3 items-start group/agent"
+                                  className="flex gap-3 items-start group/vertical"
                                 >
                                   <div className="w-8 h-8 rounded-md bg-[#0d1b22] border border-verified/40 flex items-center justify-center shrink-0">
-                                    <div className="w-1.5 h-1.5 rounded-full bg-verified group-hover/agent:bg-verified/80 transition-colors"></div>
+                                    <div className="w-1.5 h-1.5 rounded-full bg-verified group-hover/vertical:bg-verified/80 transition-colors"></div>
                                   </div>
                                   <div>
-                                    <h5 className="text-white/90 font-medium text-[14px] mb-0.5 group-hover/agent:text-verified/80 transition-colors">
-                                      {agent.name}
+                                    <h5 className="text-white/90 font-medium text-[14px] mb-0.5 group-hover/vertical:text-verified/80 transition-colors">
+                                      {vertical.name}
                                     </h5>
                                     <p className="text-white/50 text-[12px] leading-snug">
-                                      {agent.description}
+                                      {vertical.description}
                                     </p>
                                   </div>
                                 </Link>
                               ))}
                             </div>
-                          </div>
+                          )}
+                          
                         </div>
                       </div>
                     </>

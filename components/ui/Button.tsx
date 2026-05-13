@@ -7,12 +7,20 @@ export default function Button({
 }: {
   href: string;
   title: string;
-  type?: "primary" | "secondary";
+  type?: "primary" | "secondary" | "secondary-light";
 }) {
+  const styles = {
+    primary:
+      "bg-verified text-parchment transform hover:shadow-lg hover:bg-verified/90 hover:-translate-y-1",
+    secondary: "border border-font/60 hover:border-font text-parchment",
+    "secondary-light":
+      "border border-charcoal/30 text-charcoal hover:border-charcoal/60 hover:bg-charcoal/5",
+  };
+
   return (
     <Link
       href={href}
-      className={`max-w-fit py-2.25 px-4.5 rounded-lg text-sm text-parchment ${type === "primary" ? "bg-verified transform hover:shadow-lg hover:bg-verified/90 hover:-translate-y-1 " : "border border-font/60 hover:border-font"} duration-300 ease-linear`}
+      className={`max-w-fit py-2.25 px-4.5 rounded-lg text-sm ${styles[type]} duration-300 ease-linear`}
     >
       {title}
     </Link>
