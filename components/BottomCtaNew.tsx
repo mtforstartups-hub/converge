@@ -3,9 +3,13 @@ import Button from "./ui/Button";
 export default function BottomCtaNew({
   title,
   para,
+  primaryCta,
+  secondaryCta = "",
 }: {
   title: string;
   para: string;
+  primaryCta: string;
+  secondaryCta?: string;
 }) {
   return (
     <section className="py-10 md:py-20 bg-deep-slate">
@@ -18,12 +22,10 @@ export default function BottomCtaNew({
             <p className="text-lg md:text-xl text-steel font-light">{para}</p>
           </div>
           <div className="flex justify-center pt-6 gap-4">
-            <Button href="/live-deal" title="See it on a live deal &rarr;" />
-            <Button
-              type="secondary"
-              href="/live-deal"
-              title="Watch the 2-minute platform overview"
-            />
+            <Button href="/live-deal" title={primaryCta} />
+            {secondaryCta !== "" && (
+              <Button type="secondary" href="/live-deal" title={secondaryCta} />
+            )}
           </div>
         </div>
       </div>

@@ -125,7 +125,7 @@ export default function PlatformSection() {
           </div>
 
           {/* Right Side: Image Crossfade Container */}
-          <div className="relative aspect-square w-9/10 overflow-hidden ">
+          <div className="relative aspect-square w-full overflow-hidden ">
             {items.map((item, index) => (
               <div
                 key={`image-${item.id}`}

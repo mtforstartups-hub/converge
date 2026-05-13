@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 const items = [
   "SOC 2 Type II",
   "U.S. Data Residency",
