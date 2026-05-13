@@ -11,10 +11,10 @@ import { ChevronDown } from "lucide-react";
 
 const menuLinks = [
   { title: "Platform", link: "/platform", hasDropdown: true },
-  // { title: "Product", link: "/product" },
-  { title: "Intelligence", link: "/intelligence" },
-  { title: "Industries", link: "/industries" },
-  { title: "Proof", link: "/proof" },
+  { title: "Intelligence", link: "/intelligence", hasDropdown: true },
+  { title: "Solutions", link: "/solutions", hasDropdown: true },
+  { title: "Impact", link: "/impact" },
+  { title: "Pricing", link: "/pricing" },
 ];
 
 const platformAgents = [
@@ -47,6 +47,52 @@ const platformAgents = [
     name: "Comps",
     description: "Property comparable benchmarking",
     link: "/platform/comps",
+  },
+];
+
+const intelligenceLayers = [
+  {
+    name: "Loan Officer Intelligence",
+    description: "Credit-ready deal packages",
+    link: "/intelligence/loan-officer",
+  },
+  {
+    name: "Processor Intelligence",
+    description: "Normalized, conflict-free files",
+    link: "/intelligence/processor",
+  },
+  {
+    name: "Underwriter Intelligence",
+    description: "Policy match & risk signals",
+    link: "/intelligence/underwriter",
+  },
+];
+
+const solutionVerticals = [
+  {
+    name: "Private Lenders",
+    description: "Speed & consistency",
+    link: "/solutions/private-lenders",
+  },
+  {
+    name: "Credit Unions",
+    description: "Scale CRE without adding FTEs",
+    link: "/solutions/credit-unions",
+  },
+  {
+    name: "Real Estate Funds",
+    description: "Portfolio risk visibility",
+    link: "/solutions/real-estate-funds",
+  },
+  {
+    name: "Non-bank Lenders",
+    description: "Full-stack origination scale",
+    link: "/solutions/non-bank-lenders",
+  },
+  {
+    name: "Brokers & Loan Officers",
+    description: "First-pass lender approvals",
+    link: "/solutions/brokers",
   },
 ];
 
@@ -106,7 +152,7 @@ export default function Header() {
 
                   {/* Dropdown for Platform */}
                   {item.title === "Platform" && (
-                    <div className="absolute top-full right-0 lg:-left-4 mt-0 w-[640px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top translate-y-2 group-hover:translate-y-0">
+                    <div className="absolute top-full right-0 lg:-left-4 mt-0 w-160 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top translate-y-2 group-hover:translate-y-0">
                       <div className="bg-[#0c121e] border border-white/10 rounded-xl shadow-2xl p-6 text-left -mt-2">
                         {/* Overview Card */}
                         <Link
@@ -152,6 +198,78 @@ export default function Header() {
                       </div>
                     </div>
                   )}
+
+                  {/* Dropdown for Intelligence */}
+                  {item.title === "Intelligence" && (
+                    <div className="absolute top-full left-1/2 -translate-x-1/2 lg:-left-4 lg:translate-x-0 mt-0 w-80 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top translate-y-2 group-hover:translate-y-0">
+                      <div className="bg-[#0c121e] border border-white/10 rounded-xl shadow-2xl p-6 text-left -mt-2">
+                        <Link
+                          href="/intelligence"
+                          className="block p-4 rounded-lg bg-[#0e1923] border border-verified/40 mb-5 group/overview hover:bg-[#111e2a] transition-colors"
+                        >
+                          <h3 className="text-white font-semibold text-[15px] mb-1">
+                            Intelligence Layers
+                          </h3>
+                          <p className="text-white/60 text-sm flex items-center gap-2">
+                            View all three layers{" "}
+                            <span className="group-hover/overview:translate-x-1 transition-transform">
+                              →
+                            </span>
+                          </p>
+                        </Link>
+                        <div className="flex flex-col gap-4">
+                          {intelligenceLayers.map((layer, index) => (
+                            <Link
+                              href={layer.link}
+                              key={index}
+                              className="flex gap-3 items-start group/layer hover:bg-white/5 p-2 -m-2 rounded-lg transition-colors"
+                            >
+                              <div className="w-10 h-10 rounded-md bg-[#0d1b22] border border-verified/60 flex items-center justify-center shrink-0">
+                                <div className="w-2 h-2 rounded-full bg-verified group-hover/layer:bg-verified/80 group-hover/layer:shadow-[0_0_10px_var(--color-verified)] transition-all"></div>
+                              </div>
+                              <div>
+                                <h5 className="text-white font-medium text-sm mb-1 group-hover/layer:text-verified/80 transition-colors">
+                                  {layer.name}
+                                </h5>
+                                <p className="text-white/50 text-xs leading-snug">
+                                  {layer.description}
+                                </p>
+                              </div>
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Dropdown for Solutions */}
+                  {item.title === "Solutions" && (
+                    <div className="absolute top-full left-1/2 -translate-x-1/2 lg:-left-4 lg:translate-x-0 mt-0 w-80 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top translate-y-2 group-hover:translate-y-0">
+                      <div className="bg-[#0c121e] border border-white/10 rounded-xl shadow-2xl p-6 text-left -mt-2">
+                        <div className="flex flex-col gap-4">
+                          {solutionVerticals.map((vertical, index) => (
+                            <Link
+                              href={vertical.link}
+                              key={index}
+                              className="flex gap-3 items-start group/vertical hover:bg-white/5 p-2 -m-2 rounded-lg transition-colors"
+                            >
+                              <div className="w-10 h-10 rounded-md bg-[#0d1b22] border border-verified/60 flex items-center justify-center shrink-0">
+                                <div className="w-2 h-2 rounded-full bg-verified group-hover/vertical:bg-verified/80 group-hover/vertical:shadow-[0_0_10px_var(--color-verified)] transition-all"></div>
+                              </div>
+                              <div>
+                                <h5 className="text-white font-medium text-sm mb-1 group-hover/vertical:text-verified/80 transition-colors">
+                                  {vertical.name}
+                                </h5>
+                                <p className="text-white/50 text-xs leading-snug">
+                                  {vertical.description}
+                                </p>
+                              </div>
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  )}
                 </li>
               ))}
             </ul>
@@ -167,7 +285,12 @@ export default function Header() {
           </div>
         </div>
 
-        <MobileMenu links={menuLinks} platformAgents={platformAgents} />
+        <MobileMenu
+          links={menuLinks}
+          platformAgents={platformAgents}
+          intelligenceLayers={intelligenceLayers}
+          solutionVerticals={solutionVerticals}
+        />
       </div>
     </header>
   );

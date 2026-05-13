@@ -2,17 +2,20 @@ import LeftBorderedCard from "@/components/ui/LeftBorderedCard";
 
 const points = [
   {
-    point: "We tailor it to your deal type",
+    point:
+      "Send us a deal file you're underwriting today. Documents redacted as you prefer. We'll run it through CreditOS before we meet.",
     description:
       "Send us a sample deal before the call and we'll run it live through CreditOS.",
   },
   {
-    point: "We show you the full workflow",
+    point:
+      "On the call, we walk through what the engine extracted, what it flagged, and how it matched the deal to your credit policy. You ask the hard questions. We answer them on the file.",
     description:
       "Documents in. Intelligence out. Every layer, every output, fully traced.",
   },
   {
-    point: "We answer your questions",
+    point:
+      "If it's a fit, we scope a pilot — typically a parallel run against your last quarter's volume to confirm accuracy on your portfolio.",
     description:
       "Security, pricing, implementation timeline — nothing is off the table.",
   },
@@ -25,39 +28,40 @@ export default function LiveDeal() {
         <div className="mx-auto max-w-95/100 md:max-w-5/6 px-4 md:px-6 lg:px-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
             <div className="space-y-4">
-              <h2 className="font-display font-bold text-4xl md:text-5xl mb-4">
-                See it on a live deal.
+              <h2 className="font-display font-bold text-4xl md:text-5xl mb-4 tracking-wider">
+                See Converge on a real loan file.
               </h2>
               <p className="font-sans text-lg md:text-xl">
-                Not a slide deck. Not a product tour. We run Converge on a loan
-                file from your current pipeline — and you see the output in real
-                time.
+                Bring a deal you&apos;re working. We&apos;ll run it through
+                CreditOS live and show you what the intelligence layer surfaces
+                — risk flags, entity gaps, policy matches, the lot. Twenty
+                minutes.
               </p>
               <p className="font-sans text-lg md:text-xl">
-                Bring a messy file. We will show you what credit intelligence
-                looks like.
+                Three things, in order
               </p>
               <div className="space-y-6 mt-10">
                 {points.map((point, idx) => (
-                  <div className="flex items-center gap-4 md:gap-5">
-                    <div className="rounded-full size-7 flex items-center justify-center text-base text-verified bg-verified/10 border border-verified">
-                      {idx + 1}
+                  <div className="flex items-start gap-4 md:gap-5" key={idx}>
+                    <div className="text-base md:text-lg font-semibold text-verified">
+                      {idx + 1}.
                     </div>
                     <div>
                       <div className="text-base md:text-lg font-semibold">
                         {point.point}
                       </div>
-                      <div className="text-sm md:text-base">
+                      {/* <div className="text-sm md:text-base">
                         {point.description}
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 ))}
               </div>
               <LeftBorderedCard type="secondary" className="bg-white mt-10">
                 <h3 className="font-semibold mb-4">
-                  "We saw 4-minute entity review in the session. We signed the
-                  next week."
+                  We bring a deal that&apos;s been giving us trouble for two
+                  weeks. Twenty minutes later we know whether Converge changes
+                  our underwriting or not.
                 </h3>
                 — VP of Credit Operations, regional bridge lender
               </LeftBorderedCard>
@@ -66,7 +70,7 @@ export default function LiveDeal() {
             {/* form section */}
             <div>
               <div className="rounded-xl bg-deep-slate p-8 md:p-10 text-parchment shadow-5xl">
-                <h3 className="font-display font-bold text-2xl md:text-3xl mb-4">
+                <h3 className="font-display font-medium text-2xl md:text-3xl mb-4 tracking-wide">
                   Request a session
                 </h3>
                 <form action="" className="space-y-8">

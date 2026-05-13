@@ -121,32 +121,34 @@ export default function SixAgentsTabs() {
     agentsData.find((a) => a.id === activeTab) || agentsData[5];
 
   return (
-    <div className="mt-12 flex flex-col lg:flex-row border border-white/10 rounded-2xl overflow-hidden bg-[#0c121e]">
+    <div className="mt-12 flex flex-col lg:flex-row border border-midnight/10 rounded-2xl overflow-hidden bg-white shadow-sm">
       {/* Sidebar Tabs */}
-      <div className="flex-none lg:w-72 flex lg:flex-col overflow-x-auto lg:overflow-visible border-b lg:border-b-0 lg:border-r border-white/10 hide-scrollbar p-4 lg:p-6 gap-2">
+      <div className="flex-none lg:w-72 flex lg:flex-col overflow-x-auto lg:overflow-visible border-b lg:border-b-0 lg:border-r border-midnight/10 hide-scrollbar p-4 lg:p-6 gap-2">
         {agentsData.map((agent) => {
           const isActive = activeTab === agent.id;
           return (
             <button
               key={agent.id}
               onClick={() => setActiveTab(agent.id)}
-              className={`group flex items-start text-left gap-4 py-3 px-4 rounded-xl transition-all duration-300 min-w-[200px] lg:min-w-0 border ${
+              className={`group flex items-start text-left gap-4 py-3 px-4 rounded-xl transition-all duration-300 min-w-50 lg:min-w-0 border ${
                 isActive
-                  ? "bg-white/5 border-white/10"
-                  : "border-transparent hover:bg-white/5"
+                  ? "bg-parchment border-midnight/10"
+                  : "border-transparent hover:bg-midnight/5"
               }`}
             >
               <div
                 className={`w-1.5 h-1.5 rounded-full mt-2 transition-colors duration-300 ${
-                  isActive ? "bg-verified" : "bg-white/20 group-hover:bg-white/40"
+                  isActive
+                    ? "bg-verified"
+                    : "bg-midnight/20 group-hover:bg-midnight/40"
                 }`}
               />
               <div>
                 <div
                   className={`text-sm md:text-base font-semibold transition-colors duration-300 ${
                     isActive
-                      ? "text-parchment"
-                      : "text-white/50 group-hover:text-white/80"
+                      ? "text-midnight"
+                      : "text-steel group-hover:text-charcoal"
                   }`}
                 >
                   {agent.name}
@@ -154,8 +156,8 @@ export default function SixAgentsTabs() {
                 <div
                   className={`text-xs mt-0.5 transition-colors duration-300 ${
                     isActive
-                      ? "text-white/60"
-                      : "text-white/30 group-hover:text-white/50"
+                      ? "text-charcoal"
+                      : "text-steel/70 group-hover:text-steel"
                   }`}
                 >
                   {agent.number}
@@ -167,34 +169,34 @@ export default function SixAgentsTabs() {
       </div>
 
       {/* Content Area */}
-      <div className="flex-1 p-6 md:p-10 lg:p-12 transition-all duration-500 min-h-[450px] flex flex-col justify-between">
+      <div className="flex-1 p-6 md:p-10 lg:p-12 transition-all duration-500 min-h-112.5 flex flex-col justify-between">
         <div>
           <div className="flex items-center gap-4 mb-8">
-            <span className="text-xs font-bold tracking-widest text-white/50 uppercase whitespace-nowrap">
+            <span className="text-xs font-bold tracking-widest text-steel uppercase whitespace-nowrap">
               Agent {activeAgent.number}
             </span>
-            <div className="flex-1 h-px bg-white/5"></div>
+            <div className="flex-1 h-px bg-midnight/10"></div>
             <span className="text-xs font-semibold text-verified whitespace-nowrap">
               {activeAgent.status}
             </span>
           </div>
 
-          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-parchment mb-6">
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-medium text-midnight mb-6 tracking-wide">
             {activeAgent.title}
           </h2>
-          <p className="text-base md:text-lg text-white/70 max-w-3xl leading-relaxed mb-12">
+          <p className="text-base md:text-lg text-charcoal max-w-3xl leading-relaxed mb-12">
             {activeAgent.description}
           </p>
 
           <div className="space-y-4">
-            <h3 className="text-xs font-semibold tracking-widest text-white/50 uppercase">
+            <h3 className="text-xs font-semibold tracking-widest text-steel uppercase">
               Key Capabilities
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {activeAgent.capabilities.map((capability, index) => (
                 <div
                   key={index}
-                  className="bg-[#111e2a] border border-white/5 rounded-lg py-3 px-4 flex items-center text-sm text-white/80"
+                  className="bg-parchment border border-midnight/5 rounded-lg py-3 px-4 flex items-center text-sm text-charcoal"
                 >
                   <div className="w-1.5 h-1.5 rounded-full bg-verified mr-3" />
                   {capability}
@@ -204,10 +206,10 @@ export default function SixAgentsTabs() {
           </div>
         </div>
 
-        <div className="mt-12 pt-6 border-t border-white/10">
+        <div className="mt-12 pt-6 border-t border-midnight/10">
           <Link
             href={activeAgent.docLink}
-            className="group inline-flex items-center text-sm font-medium text-verified hover:text-[#0f9d8e] transition-colors duration-300"
+            className="group inline-flex items-center text-sm font-medium text-verified hover:opacity-80 transition-opacity duration-300"
           >
             Full {activeAgent.name} documentation
             <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1 duration-300" />

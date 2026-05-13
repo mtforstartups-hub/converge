@@ -25,7 +25,7 @@ export default function AgentDetailHero({
               <span className="w-1.5 h-1.5 inline-block rounded-full bg-verified mr-2 mb-px"></span>
               {badge}
             </div>
-            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-parchment leading-tight tracking-tight">
+            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-parchment leading-tight tracking-wider">
               {title}
             </h1>
             <p className="text-base md:text-lg text-white/70 max-w-2xl leading-relaxed">

@@ -9,7 +9,7 @@ export default function GridLeftContents({
 }) {
   return (
     <div className="space-y-4 md:space-y-8">
-      <h2 className="font-display text-4xl md:text-5xl font-bold ">{title}</h2>
+      <h2 className="font-display text-4xl md:text-5xl font-medium tracking-wide">{title}</h2>
       {paras.map((para, index) => (
         <p key={index} className="font-sans text-sm md:text-lg">
           {para}

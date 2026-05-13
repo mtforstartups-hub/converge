@@ -30,7 +30,7 @@ export default function FAQ() {
     <section className="w-full bg-parchment">
       <div className="max-w-95/100 md:max-w-4xl mx-auto px-4 sm:px-6 lg:px-10 py-16 lg:py-20">
         {/* Title */}
-        <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-semibold text-center text-charcoal mb-10">
+        <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-medium tracking-wide text-center text-charcoal mb-10">
           Frequently asked questions
         </h2>
 

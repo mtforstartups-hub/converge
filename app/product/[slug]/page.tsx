@@ -28,7 +28,7 @@ export default async function IndividualProducts({
                 key={index}
                 className={`space-y-4 py-6 border-t-2 ${index == 0 ? "border-t-verified" : "border-t-steel"}`}
               >
-                <h3 className="text-2xl md:text-3xl font-semibold font-display">
+                <h3 className="text-2xl md:text-3xl font-medium font-display tracking-wide">
                   {item.heading}
                 </h3>
                 <p className="font-sans">{item.desc}</p>
@@ -46,7 +46,7 @@ export default async function IndividualProducts({
                 key={index}
                 className={`space-y-4 py-6 px-2 md:px-4 ${index == product.sectionTwoItems.length - 1 ? "border-r-none" : "border-b md:border-b-0 md:border-r border-r-steel"}`}
               >
-                <h3 className="text-2xl md:text-3xl font-semibold font-display">
+                <h3 className="text-2xl md:text-3xl font-medium font-display tracking-wide">
                   {item.heading}
                 </h3>
                 <p className="font-sans">{item.desc}</p>

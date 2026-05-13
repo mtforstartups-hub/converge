@@ -19,7 +19,7 @@ export default function Positioning() {
       <div className="max-w-95/100 md:max-w-5/6 mx-auto px-4 sm:px-6 lg:px-10 py-20 lg:py-28">
         {/* HEADER */}
         <div className="max-w-3xl mb-14">
-          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight">
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-medium tracking-wide leading-tight">
             Not extraction. Not workflow. Not generic AI.
           </h2>
         </div>
@@ -32,7 +32,7 @@ export default function Positioning() {
               <div className="h-px w-full bg-white/10 mb-4" />
 
               {/* Title */}
-              <h3 className="text-lg font-semibold">{item.title}</h3>
+              <h3 className="text-lg font-medium">{item.title}</h3>
 
               {/* Description */}
               <p className="text-base text-white/60 leading-relaxed">

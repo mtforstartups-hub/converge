@@ -36,7 +36,7 @@ export default function Industries() {
             Industries
           </p>
 
-          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight mb-6">
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-medium tracking-wide leading-tight mb-6">
             Built for real estate credit and asset-backed lending.
           </h2>
 
@@ -56,7 +56,7 @@ export default function Industries() {
             >
               <div>
                 {/* Title */}
-                <h3 className="text-xl font-semibold mb-3">{item.title}</h3>
+                <h3 className="text-xl font-medium mb-3">{item.title}</h3>
 
                 {/* Description */}
                 <p className="text-sm md:text-lg text-white/70 leading-relaxed mb-5">

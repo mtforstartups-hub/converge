@@ -60,12 +60,8 @@ export default function IntelligencePage() {
             <Breadcrumbs items={[{ label: "Intelligence" }]} />
 
             <div className="space-y-6">
-              <h1 className="font-display text-4xl md:text-5xl lg:text-7xl font-bold leading-[1.1] tracking-tight text-parchment">
-                Credit intelligence is not a feature.
-                <br />
-                <span className="text-white/30 text-3xl md:text-5xl lg:text-6xl">
-                  It is a category.
-                </span>
+              <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-wider text-parchment">
+                Credit intelligence is not a feature. It is a category.
               </h1>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4">
@@ -104,7 +100,7 @@ export default function IntelligencePage() {
         <div className="mx-auto max-w-95/100 md:max-w-5/6 px-4 md:px-6 lg:px-10">
           <div className="space-y-8 md:space-y-12">
             <div className="max-w-2xl">
-              <h2 className="font-display text-2xl md:text-4xl font-bold text-charcoal tracking-tight">
+              <h2 className="font-display text-2xl md:text-4xl font-medium text-charcoal tracking-wide">
                 What credit intelligence is — and what it is not
               </h2>
             </div>
@@ -121,7 +117,7 @@ export default function IntelligencePage() {
                 >
                   <div className="space-y-6">
                     <h3
-                      className={`text-xl font-bold ${item.highlight ? "text-verified" : "text-parchment"}`}
+                      className={`text-xl font-medium ${item.highlight ? "text-verified" : "text-parchment"}`}
                     >
                       {item.title}
                     </h3>
@@ -159,7 +155,7 @@ export default function IntelligencePage() {
         <div className="mx-auto max-w-95/100 md:max-w-5/6 px-4 md:px-6 lg:px-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 md:gap-16 items-start">
             <div className="lg:col-span-5 space-y-6">
-              <h2 className="font-display text-3xl md:text-5xl font-bold text-parchment tracking-tight leading-tight">
+              <h2 className="font-display text-3xl md:text-5xl font-medium text-parchment tracking-wide leading-tight">
                 The 20–50 cognitive work streams behind every loan
               </h2>
               <p className="text-sm md:text-lg text-white/60 leading-relaxed font-light">
@@ -199,7 +195,7 @@ export default function IntelligencePage() {
 
         <div className="mx-auto max-w-95/100 md:max-w-5/6 px-4 md:px-6 lg:px-10 text-center relative z-10">
           <div className="max-w-3xl mx-auto space-y-8">
-            <h2 className=" md:font-display text-3xl lg:text-4xl text-charcoal font-bold leading-tight">
+            <h2 className=" md:font-display text-3xl lg:text-4xl text-charcoal font-medium leading-tight tracking-wide">
               The transformation of loan origination will look completely
               different in 24 months.
               <br />

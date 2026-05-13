@@ -30,7 +30,7 @@ export default function HowItWorksList() {
   return (
     <section className="py-16 md:py-24 border-t border-white/5 bg-[#0f172b]">
       <div className="mx-auto max-w-95/100 md:max-w-5/6 px-4 md:px-6 lg:px-10">
-        <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-parchment mb-16">
+        <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-medium text-parchment mb-16 tracking-wide">
           How it works
         </h2>
 

@@ -1,147 +1,209 @@
 import Breadcrumbs from "@/components/ui/Breadcrumbs";
 import Button from "@/components/ui/Button";
-import LeftBorderedCard from "@/components/ui/LeftBorderedCard";
+import Link from "next/link";
+import { ArrowRight, Filter, ChevronDown } from "lucide-react";
 
 export const metadata = {
-  title: "Proof | Converge Finance",
+  title: "Proof | Customers | Converge Finance",
   description:
-    "Real customer results from production deployments. See how Converge delivers 2-3x throughput and 90% reduction in manual tasks.",
+    "How lenders are originating differently with Converge. Named customers, specific outcomes, complete verifiability.",
 };
 
-const stats = [
+const aggregateStats = [
+  { metric: "2.3M+", label: "loans analyzed" },
+  { metric: "$12B+", label: "capital enabled" },
+  { metric: "98.7%", label: "extraction accuracy across the customer base" },
+];
+
+const caseStudies = [
   {
-    value: "2-3x",
-    label: "Faster underwriting team throughput",
+    slug: "summit-capital",
+    name: "Summit Capital",
+    logoText: "SC",
+    vertical: "Private Lender",
+    size: "Enterprise",
+    layer: "Underwriter Intelligence",
+    outcome: "How a $1.4B bridge lender cut credit memo turnaround by 73%.",
+    headlineMetric: "73%",
+    metricLabel: "Faster turnarounds",
   },
   {
-    value: "72 hrs → 4 min",
-    label: "Entity review turnaround",
+    slug: "apex-cu",
+    name: "Apex Credit Union",
+    logoText: "ACU",
+    vertical: "Credit Union",
+    size: "Mid-market",
+    layer: "Processor Intelligence",
+    outcome:
+      "Scaling commercial loan processing by 2.5× without expanding the credit team.",
+    headlineMetric: "2.5×",
+    metricLabel: "Capacity increase",
   },
   {
-    value: "90%",
-    label: "Reduction in manual review tasks",
+    slug: "horizon-debt",
+    name: "Horizon Debt Fund",
+    logoText: "HDF",
+    vertical: "Real Estate Fund",
+    size: "Enterprise",
+    layer: "CreditOS Full Stack",
+    outcome:
+      "Automated sponsor concentration tracking across a complex $2B active portfolio.",
+    headlineMetric: "100%",
+    metricLabel: "Risk visibility",
   },
   {
-    value: "$0",
-    label: "Attorney cost for routine entity work",
+    slug: "meridian-capital",
+    name: "Meridian Capital",
+    logoText: "MC",
+    vertical: "Non-bank Lender",
+    size: "Growth",
+    layer: "Loan Officer Intelligence",
+    outcome:
+      "Achieving first-pass lender approvals on 90% of complex multi-family packages.",
+    headlineMetric: "90%",
+    metricLabel: "First-pass approvals",
   },
 ];
 
-const testimonials = [
-  {
-    quote:
-      "I'm sure you see me beaming, but this is gonna save days of my life. This is so cool. I'm really kind of blown away.",
-    author: "Head of Credit",
-    company: "$500M+ annual origination",
-  },
-  {
-    quote:
-      "I cannot possibly overstate my excitement for this product. Its utility today alone would be a vast improvement.",
-    author: "Lead Underwriter",
-    company: "NYC-based credit originator",
-  },
-];
-
-export default function ProofPage() {
+export default function ProofHubPage() {
   return (
-    <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="pt-20 pb-10 md:pt-30 md:pb-16 bg-deep-slate">
-        <div className="mx-auto max-w-95/100 md:max-w-5/6 px-4 md:px-6 lg:px-10">
-          <div className="flex flex-col space-y-10 max-w-4xl">
-            <Breadcrumbs items={[{ label: "Proof" }]} />
+    <div className="min-h-screen relative bg-midnight text-white overflow-hidden">
+      {/* ─── HERO ─── */}
+      <section className="pt-24 pb-16 md:pt-32 md:pb-24 border-b border-white/5 relative">
+        {/* Glow effect */}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-200 h-100 bg-verified/10 rounded-full blur-[120px] pointer-events-none" />
 
-            <div className="space-y-8">
-              <h1 className="font-display text-4xl md:text-5xl lg:text-7xl font-bold leading-[1.1] tracking-tight text-parchment">
-                Proof, not promises.
-              </h1>
-              <p className="text-base md:text-xl text-parchment/60 max-w-2xl leading-relaxed font-light">
-                Every number on this page comes from a production deployment.
-                Every claim is demonstrable in a live session. Every customer
-                result is specific, quantified, and traceable.
-              </p>
+        <div className="mx-auto max-w-95/100 md:max-w-5/6 px-4 md:px-6 lg:px-10 relative z-10">
+          <div className="flex flex-col space-y-6 max-w-4xl mx-auto text-center items-center">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-verified/30 bg-verified/8">
+              <span className="w-1.5 h-1.5 rounded-full bg-verified animate-pulse" />
+              <span className="font-mono text-xs text-verified uppercase tracking-widest">
+                Proof
+              </span>
             </div>
+
+            <h1 className="font-display text-4xl md:text-5xl lg:text-7xl font-bold leading-[1.1] tracking-wider text-parchment">
+              How lenders are originating differently with Converge.
+            </h1>
+
+            <p className="text-lg md:text-xl text-white/60 max-w-2xl leading-relaxed font-light mt-4">
+              Named customers. Specific outcomes. No &quot;a leading lender
+              said.&quot; The whole point of credit intelligence is
+              verifiability — and that starts with how we talk about results.
+            </p>
           </div>
         </div>
       </section>
 
-      {/* Results Stats Section */}
-      <section className="py-10 md:py-20 bg-parchment">
+      {/* ─── AGGREGATE PROOF BAR ─── */}
+      <section className="py-12 md:py-16 bg-parchment border-b border-charcoal/10 relative z-20">
         <div className="mx-auto max-w-95/100 md:max-w-5/6 px-4 md:px-6 lg:px-10">
-          <div className="space-y-2 md:space-y-4">
-            <div>
-              <p className="text-xs md:text-sm uppercase tracking-[0.3em] font-bold text-charcoal/80 mb-2">
-                Results from production deployments
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16">
-              {stats.map((stat, index) => (
-                <div key={index} className="space-y-6 group">
-                  <div className="w-full h-px bg-midnight/10 group-hover:bg-verified/40 transition-colors duration-500" />
-                  <div className="space-y-3">
-                    <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal tracking-tight">
-                      {stat.value}
-                    </h2>
-                    <p className="text-sm md:text-base text-charcoal/60 font-medium">
-                      {stat.label}
-                    </p>
-                  </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-4 divide-y md:divide-y-0 md:divide-x divide-charcoal/10">
+            {aggregateStats.map((stat, i) => (
+              <div
+                key={i}
+                className={`flex flex-col items-center text-center ${
+                  i !== 0 ? "pt-8 md:pt-0 md:px-8" : "md:pr-8"
+                }`}
+              >
+                <div className="font-display text-5xl md:text-6xl font-bold text-verified tracking-tight mb-2">
+                  {stat.metric}
                 </div>
-              ))}
-            </div>
+                <div className="text-charcoal/70 font-sans text-sm md:text-base font-medium max-w-50">
+                  {stat.label}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section className="py-10 md:py-20 bg-midnight">
+      {/* ─── HUB STRUCTURE (FILTERS + GRID) ─── */}
+      <section className="py-20 md:py-32 bg-deep-slate">
         <div className="mx-auto max-w-95/100 md:max-w-5/6 px-4 md:px-6 lg:px-10">
-          <div className="space-y-4 md:space-y-8">
-            <div>
-              <p className="text-xs md:text-sm uppercase tracking-[0.3em] font-bold text-verified mb-2">
-                Trusted by credit professionals
-              </p>
+          {/* Filter Bar */}
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4 mb-12 pb-6 border-b border-white/10">
+            <div className="flex items-center gap-3 text-white/50 w-full md:w-auto">
+              <Filter className="w-5 h-5" />
+              <span className="font-mono text-xs uppercase tracking-widest">
+                Filter Results
+              </span>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
-              {testimonials.map((t, i) => (
-                <LeftBorderedCard key={i} type="primary" className="">
-                  <div className="flex flex-col h-full justify-between gap-4 md:gap-8">
-                    <p className="text-base md:text-lg text-parchment italic leading-relaxed font-serif">
-                      &ldquo;{t.quote}&rdquo;
-                    </p>
-                    <div className="space-y-1">
-                      <p className="text-sm md:text-base text-parchment/80">
-                        {t.author}
-                      </p>
-                      <p className="text-xs md:text-sm text-parchment/40">
-                        {t.company}
-                      </p>
+            <div className="flex flex-wrap items-center gap-3 w-full md:w-auto">
+              {["Lending Vertical", "Company Size", "Intelligence Layer"].map(
+                (filter, i) => (
+                  <button
+                    key={i}
+                    className="flex items-center gap-2 px-4 py-2.5 rounded-lg border border-white/10 bg-midnight/40 hover:bg-white/5 text-sm font-medium text-white/80 transition-colors"
+                  >
+                    {filter}
+                    <ChevronDown className="w-4 h-4 opacity-50" />
+                  </button>
+                ),
+              )}
+            </div>
+          </div>
+
+          {/* Case Study Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+            {caseStudies.map((study, i) => (
+              <Link
+                key={i}
+                href={`/proof/${study.slug}`}
+                className="group relative flex flex-col justify-between p-8 md:p-10 rounded-2xl border border-white/5 bg-midnight/30 hover:bg-midnight/60 hover:border-verified/30 transition-all duration-500 overflow-hidden"
+              >
+                {/* Glow on hover */}
+                <div className="absolute top-0 right-0 w-64 h-64 bg-verified/5 rounded-full blur-3xl -mr-32 -mt-32 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+
+                <div className="relative z-10">
+                  <div className="flex items-start justify-between mb-8">
+                    {/* Fake Logo Block */}
+                    <div className="flex items-center gap-3">
+                      <div className="w-12 h-12 rounded-xl bg-deep-slate border border-white/10 flex items-center justify-center font-display font-bold text-white/40 group-hover:border-verified/20 group-hover:text-verified transition-colors">
+                        {study.logoText}
+                      </div>
+                      <span className="font-mono text-sm uppercase tracking-wider text-white/60">
+                        {study.name}
+                      </span>
+                    </div>
+
+                    {/* Tag */}
+                    <div className="px-3 py-1 rounded-full border border-white/10 bg-white/5 text-[10px] font-mono uppercase tracking-widest text-white/60">
+                      {study.vertical}
                     </div>
                   </div>
-                </LeftBorderedCard>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Bottom CTA Section */}
-      <section className="py-10 md:py-20 bg-deep-slate">
-        <div className="mx-auto max-w-95/100 md:max-w-5/6 px-4 md:px-6 lg:px-10 text-center">
-          <div className="max-w-3xl mx-auto space-y-5">
-            <p className="text-xl md:text-3xl text-parchment/90 font-light leading-relaxed">
-              These results came from production deployments, not
-              proof-of-concept exercises.
-              <br />
-              <span className="text-parchment font-medium">
-                See it on a deal from your current pipeline.
-              </span>
-            </p>
-            <div className="flex justify-center pt-4">
-              <Button href="/live-deal" title="See it on a live deal &rarr;" />
-            </div>
+                  <h3 className="font-display text-2xl lg:text-3xl font-medium text-parchment leading-tight mb-12 group-hover:text-white transition-colors">
+                    {study.outcome}
+                  </h3>
+                </div>
+
+                <div className="relative z-10 flex items-end justify-between border-t border-white/10 pt-6 mt-auto">
+                  <div>
+                    <div className="font-display text-4xl font-bold text-verified mb-1">
+                      {study.headlineMetric}
+                    </div>
+                    <div className="text-sm text-white/40 font-mono uppercase tracking-wider">
+                      {study.metricLabel}
+                    </div>
+                  </div>
+
+                  <div className="flex items-center gap-2 text-sm font-medium text-white/70 group-hover:text-verified transition-colors">
+                    Read story
+                    <ArrowRight className="w-4 h-4 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300" />
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+
+          <div className="mt-16 text-center">
+            <Button
+              href="/contact"
+              title="Become a customer story"
+              type="secondary"
+            />
           </div>
         </div>
       </section>

@@ -19,7 +19,7 @@ export default function SharedHero({
           <Breadcrumbs items={[{ label: breadcrumbLabel }]} />
 
           <div className="space-y-6">
-            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-parchment leading-tight tracking-tight">
+            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-parchment leading-tight tracking-wider">
               {title}
             </h1>
             <p className="text-base md:text-lg text-white/70 max-w-2xl leading-relaxed">

@@ -31,6 +31,11 @@ const neueHaasDisplay = localFont({
       style: "normal",
     },
     {
+      path: "../public/fonts/Neue Haas Grotesk Display Pro/NeueHaasDisplay-Mediu.woff2",
+      weight: "500",
+      style: "normal",
+    },
+    {
       path: "../public/fonts/Neue Haas Grotesk Display Pro/NeueHaasDisplay-Bold.woff2",
       weight: "700",
       style: "normal",

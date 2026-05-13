@@ -59,25 +59,25 @@ const industries = [
 export default function IndustryTabs() {
   const [activeTab, setActiveTab] = useState(industries[0].id);
 
-  const activeIndustry = industries.find((ind) => ind.id === activeTab)!;
+  // const activeIndustry = industries.find((ind) => ind.id === activeTab)!;
 
   return (
     <div className="w-full">
       {/* Tabs List */}
-      <div className="flex flex-nowrap overflow-x-auto no-scrollbar gap-2 md:gap-4 mb-16 border-b border-white/10 pb-0 items-end">
+      <div className="flex flex-nowrap overflow-x-auto no-scrollbar gap-2 md:gap-4 mb-16 border-b border-deep-slate/30 pb-0 items-end">
         {industries.map((industry) => (
           <button
             key={industry.id}
             onClick={() => setActiveTab(industry.id)}
             className={`relative py-4 px-4 text-sm md:text-base font-medium transition-all duration-300 whitespace-nowrap ${
               activeTab === industry.id
-                ? "text-parchment"
-                : "text-white/40 hover:text-white/70"
+                ? "text-charcoal"
+                : "text-deep-slate/80 hover:text-deep-slate/40"
             }`}
           >
             {industry.name}
             {activeTab === industry.id && (
-              <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-verified shadow-[0_0_15px_rgba(45,212,191,0.8)] z-10" />
+              <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-verified shadow-[0_0_15px_rgba(45,212,191,0.8)] z-10" />
             )}
           </button>
         ))}
@@ -97,7 +97,7 @@ export default function IndustryTabs() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
               {/* Header Info */}
               <div className="lg:col-span-4 space-y-6">
-                <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-parchment tracking-tight">
+                <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-medium text-charcoal tracking-wide">
                   {industry.name}
                 </h2>
                 <div className="group flex items-center gap-2 text-verified cursor-pointer w-fit">
@@ -115,11 +115,11 @@ export default function IndustryTabs() {
                     <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-verified/80">
                       01
                     </span>
-                    <h3 className="text-xs font-semibold uppercase tracking-widest text-white/40">
+                    <h3 className="text-base font-semibold uppercase tracking-widest text-charcoal">
                       The Challenge
                     </h3>
                   </div>
-                  <p className="text-base text-white/70 leading-relaxed font-light">
+                  <p className="text-base text-charcoal/80 leading-relaxed font-light">
                     {industry.challenge}
                   </p>
                 </div>
@@ -129,11 +129,11 @@ export default function IndustryTabs() {
                     <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-verified/80">
                       02
                     </span>
-                    <h3 className="text-xs font-semibold uppercase tracking-widest text-white/40">
+                    <h3 className="text-base font-semibold uppercase tracking-widest text-charcoal">
                       How Converge Helps
                     </h3>
                   </div>
-                  <p className="text-base text-white/70 leading-relaxed font-light">
+                  <p className="text-base text-charcoal/80 leading-relaxed font-light">
                     {industry.help}
                   </p>
                 </div>
@@ -143,11 +143,11 @@ export default function IndustryTabs() {
                     <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-verified/80">
                       03
                     </span>
-                    <h3 className="text-xs font-semibold uppercase tracking-widest text-white/40">
+                    <h3 className="text-base font-semibold uppercase tracking-widest text-charcoal">
                       Result
                     </h3>
                   </div>
-                  <p className="text-base text-white/70 leading-relaxed font-light">
+                  <p className="text-base text-charcoal/80 leading-relaxed font-light">
                     {industry.result}
                   </p>
                 </div>
