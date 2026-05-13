@@ -33,10 +33,10 @@ export default function Footer() {
           {/* PRODUCT */}
           <div>
             <p className="text-sm uppercase tracking-widest text-white/40 mb-4">
-              Product
+              <Link href="/product">Product</Link>
             </p>
             <ul className="flex flex-col gap-3 text-sm text-white/70">
-              <li>
+              {/* <li>
                 <Link href="/product/loan-officer-intelligence">
                   Loan Officer Intelligence
                 </Link>
@@ -55,16 +55,7 @@ export default function Footer() {
                 <Link href="/platform/credit-intelligence">
                   CreditOS Platform
                 </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* COMPANY */}
-          <div>
-            <p className="text-sm uppercase tracking-widest text-white/40 mb-4">
-              Company
-            </p>
-            <ul className="flex flex-col gap-3 text-sm text-white/70">
+              </li> */}
               <li>
                 <Link href="/intelligence">Intelligence</Link>
               </li>
@@ -77,6 +68,25 @@ export default function Footer() {
               <li>
                 <Link href="/security">Security</Link>
               </li>
+            </ul>
+          </div>
+
+          {/* COMPANY */}
+          <div>
+            <p className="text-sm uppercase tracking-widest text-white/40 mb-4">
+              Company
+            </p>
+            <ul className="flex flex-col gap-3 text-sm text-white/70">
+              <li>
+                <Link href="/company/about">About</Link>
+              </li>
+              <li>
+                <Link href="/company/careers">Careers</Link>
+              </li>
+              <li>
+                <Link href="/company/newsroom">Newsroom</Link>
+              </li>
+
               <li>
                 <Link href="/contact">Contact Us</Link>
               </li>

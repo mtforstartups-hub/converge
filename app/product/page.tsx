@@ -29,7 +29,7 @@ export default function Product() {
           <div className="absolute inset-0 bg-midnight/70 z-0" />
 
           <div className="relative z-10 max-w-95/100 md:max-w-5/6 mx-auto px-4 sm:px-6 lg:px-10 py-12 sm:py-16 lg:py-20 xl:py-32 text-parchment">
-            <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold mb-5 leading-tight tracking-wider text-center lg:text-left max-w-6/10">
+            <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold mb-5 leading-tight tracking-wider text-center lg:text-left xl:max-w-6/10">
               CreditOS.
               <br />
               The intelligence engine behind every Converge decision.
