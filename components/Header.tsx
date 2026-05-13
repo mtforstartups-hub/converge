@@ -13,7 +13,7 @@ const menuLinks = [
   { title: "Platform", link: "/platform", hasDropdown: true },
   { title: "Intelligence", link: "/intelligence", hasDropdown: true },
   { title: "Solutions", link: "/solutions", hasDropdown: true },
-  { title: "Impact", link: "/impact" },
+  { title: "Proof", link: "/proof" },
 ];
 
 const platformAgents = [
