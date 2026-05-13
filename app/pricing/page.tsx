@@ -142,9 +142,9 @@ export default function PricingPage() {
 
             <p className="text-lg md:text-xl text-white/60 max-w-3xl leading-relaxed font-light mt-4">
               Three tiers — Foundation, Growth, Enterprise — built around the
-              Intelligence Layers you deploy and the volume you originate. Custom
-              pricing for institutions with specific compliance or deployment
-              needs.
+              Intelligence Layers you deploy and the volume you originate.
+              Custom pricing for institutions with specific compliance or
+              deployment needs.
             </p>
           </div>
         </div>
@@ -228,7 +228,7 @@ export default function PricingPage() {
                   <Button
                     title="Get a custom quote"
                     href="/contact"
-                    className="w-full justify-center"
+                    // className="w-full justify-center"
                     type={tier.highlighted ? "primary" : "secondary"}
                   />
                 </div>
@@ -250,7 +250,8 @@ export default function PricingPage() {
                 Pricing FAQ
               </h2>
               <p className="text-lg text-charcoal/60 font-sans mb-8">
-                Everything you need to know about how Converge prices its intelligence layers and platform licenses.
+                Everything you need to know about how Converge prices its
+                intelligence layers and platform licenses.
               </p>
               <div className="hidden lg:block">
                 <Button
@@ -278,7 +279,7 @@ export default function PricingPage() {
                   title="Talk to sales"
                   href="/contact"
                   type="secondary-light"
-                  className="w-full justify-center"
+                  // className="w-full justify-center"
                 />
               </div>
             </div>
@@ -294,7 +295,8 @@ export default function PricingPage() {
             Ready to scale your originations?
           </h2>
           <p className="text-xl text-white/60 mb-12 font-sans max-w-2xl mx-auto">
-            Get a precise quote based on your loan volume, integration scope, and specific compliance requirements.
+            Get a precise quote based on your loan volume, integration scope,
+            and specific compliance requirements.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button href="/contact" title="Get a custom quote" />
