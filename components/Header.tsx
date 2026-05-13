@@ -13,7 +13,8 @@ const menuLinks = [
   { title: "Platform", link: "/platform", hasDropdown: true },
   { title: "Intelligence", link: "/intelligence", hasDropdown: true },
   { title: "Solutions", link: "/solutions", hasDropdown: true },
-  { title: "Proof", link: "/proof" },
+  { title: "Impact", link: "/impact" },
+  { title: "Pricing", link: "/pricing" },
 ];
 
 const platformAgents = [
@@ -210,12 +211,19 @@ export default function Header() {
                             Intelligence Layers
                           </h3>
                           <p className="text-white/60 text-sm flex items-center gap-2">
-                            View all three layers <span className="group-hover/overview:translate-x-1 transition-transform">→</span>
+                            View all three layers{" "}
+                            <span className="group-hover/overview:translate-x-1 transition-transform">
+                              →
+                            </span>
                           </p>
                         </Link>
                         <div className="flex flex-col gap-4">
                           {intelligenceLayers.map((layer, index) => (
-                            <Link href={layer.link} key={index} className="flex gap-3 items-start group/layer hover:bg-white/5 p-2 -m-2 rounded-lg transition-colors">
+                            <Link
+                              href={layer.link}
+                              key={index}
+                              className="flex gap-3 items-start group/layer hover:bg-white/5 p-2 -m-2 rounded-lg transition-colors"
+                            >
                               <div className="w-10 h-10 rounded-md bg-[#0d1b22] border border-verified/60 flex items-center justify-center shrink-0">
                                 <div className="w-2 h-2 rounded-full bg-verified group-hover/layer:bg-verified/80 group-hover/layer:shadow-[0_0_10px_var(--color-verified)] transition-all"></div>
                               </div>
@@ -240,7 +248,11 @@ export default function Header() {
                       <div className="bg-[#0c121e] border border-white/10 rounded-xl shadow-2xl p-6 text-left -mt-2">
                         <div className="flex flex-col gap-4">
                           {solutionVerticals.map((vertical, index) => (
-                            <Link href={vertical.link} key={index} className="flex gap-3 items-start group/vertical hover:bg-white/5 p-2 -m-2 rounded-lg transition-colors">
+                            <Link
+                              href={vertical.link}
+                              key={index}
+                              className="flex gap-3 items-start group/vertical hover:bg-white/5 p-2 -m-2 rounded-lg transition-colors"
+                            >
                               <div className="w-10 h-10 rounded-md bg-[#0d1b22] border border-verified/60 flex items-center justify-center shrink-0">
                                 <div className="w-2 h-2 rounded-full bg-verified group-hover/vertical:bg-verified/80 group-hover/vertical:shadow-[0_0_10px_var(--color-verified)] transition-all"></div>
                               </div>
@@ -273,9 +285,9 @@ export default function Header() {
           </div>
         </div>
 
-        <MobileMenu 
-          links={menuLinks} 
-          platformAgents={platformAgents} 
+        <MobileMenu
+          links={menuLinks}
+          platformAgents={platformAgents}
           intelligenceLayers={intelligenceLayers}
           solutionVerticals={solutionVerticals}
         />

@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="w-full bg-midnight text-parchment">
       <div className="max-w-95/100 md:max-w-5/6 mx-auto px-4 sm:px-6 lg:px-10 py-7 lg:py-10">
         {/* TOP GRID */}
-        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-5">
+        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-6">
           {/* BRAND */}
           <div className="lg:col-span-2">
             <div className="text-sm font-semibold mb-4">
@@ -69,10 +69,13 @@ export default function Footer() {
                 <Link href="/intelligence">Intelligence</Link>
               </li>
               <li>
-                <Link href="/industries">Industries</Link>
+                <Link href="/solutions">Solutions</Link>
               </li>
               <li>
-                <Link href="/impact">Impact</Link>
+                <Link href="/proof">Proof</Link>
+              </li>
+              <li>
+                <Link href="/security">Security</Link>
               </li>
               <li>
                 <Link href="/contact">Contact Us</Link>
@@ -84,6 +87,27 @@ export default function Footer() {
           <div>
             <p className="text-sm uppercase tracking-widest text-white/40 mb-4">
               Resources
+            </p>
+            <ul className="flex flex-col gap-3 text-sm text-white/70">
+              <li>
+                <Link href="/resources">Hub</Link>
+              </li>
+              <li>
+                <Link href="/blog">Blog</Link>
+              </li>
+              <li>
+                <Link href="/resources/guides">Guides</Link>
+              </li>
+              <li>
+                <Link href="/glossary">Glossary</Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Socials */}
+          <div>
+            <p className="text-sm uppercase tracking-widest text-white/40 mb-4">
+              Socials
             </p>
             <ul className="flex flex-col gap-3 text-sm text-white/70">
               <li>
