@@ -12,20 +12,18 @@ export default function ProblemSection() {
         {/* LEFT CONTENT */}
         <div>
           <p className="text-sm md:text-base font-semibold tracking-widest uppercase text-charcoal/80 mb-4">
-            The real bottleneck
+            The case
           </p>
 
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-charcoal  mb-6 ">
-            Your team doesn’t have a data entry problem. They have a fact
-            maintenance problem.
+            Forming credit understanding by hand is expensive, risky, and <span className="text-verified font-medium italic">impossible to scale.</span>
           </h2>
 
           <p className="text-lg text-charcoal/70 mb-5 max-w-xl">
-            Customers often describe their pain as "too much time entering data
-            into LOS systems." That framing leads to the wrong solution.
+            The systems you already run weren't built to change that. Converge was.
           </p>
 
-          <p className="text-lg text-charcoal/70 mb-6 max-w-xl">
+          {/* <p className="text-lg text-charcoal/70 mb-6 max-w-xl">
             The real problem: as documents arrive over days and weeks, your team
             must continuously interpret, compare, validate, reconcile, and
             update loan data. Every new document can change what was previously
@@ -34,7 +32,7 @@ export default function ProblemSection() {
 
           <p className="text-lg font-semibold text-deep-slate">
             Data entry is linear. Fact maintenance is compounding.
-          </p>
+          </p> */}
         </div>
 
         {/* RIGHT CARD */}

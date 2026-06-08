@@ -2,6 +2,8 @@ import Image from "next/image";
 import Button from "../ui/Button";
 import HeroCard from "./HeroCard";
 import BrandsMarquee from "./BrandsMarquee";
+import HowItWorksDemo from "./HowItWorksDemo";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -35,25 +37,30 @@ export default function Hero() {
           {/* LEFT */}
           <div>
             <h1 className="font-display text-4xl sm:text-5xl lg:text-7xl font-bold mb-5 leading-tight  text-center lg:text-left">
-              Credit intelligence for lenders who originate at scale.
+              The intelligence infrastructure for <span className="italic font-medium text-verified">institutional{"\u00A0"}</span> lending.
             </h1>
 
             <p className="text-base sm:text-lg text-parchment/60 mb-6 max-w-xl text-center lg:text-left mx-auto lg:mx-0">
-              We turn messy loan files into structured, traceable, credit-ready
-              decisions — before your LOS opens.
+              Each loan requires 30–50 different risk assessments — read, reconciled, and judged by hand, on every loan, every time. <span className="font-bold text-parchment">Converge does that work for you</span>, sourced, structured, and ready to review.
             </p>
 
             {/* Buttons */}
             <div className="flex gap-3 justify-center lg:justify-start">
-              <Button
+              {/* <Button
                 href="/live-deal"
                 title="See it on a live deal"
                 type="primary"
-              />
+              /> */}
+              <Link
+                href="/live-deal"
+                className={`max-w-fit py-2.25 px-4.5 rounded-lg text-sm text-parchment bg-terracotta transform hover:shadow-lg hover:bg-terracotta/90 hover:-translate-y-1 duration-300 ease-linear`}
+              >
+                Talk To Us
+              </Link>
               <span className="hidden md:flex">
                 <Button
                   href="/platform"
-                  title="Watch a 2-minute Overview"
+                  title="Read Our Thinking"
                   type="secondary"
                 />
               </span>
@@ -61,7 +68,8 @@ export default function Hero() {
           </div>
 
           {/* RIGHT CARD */}
-          <HeroCard />
+          {/* <HeroCard /> */}
+          <HowItWorksDemo />
         </div>
       </div>
 

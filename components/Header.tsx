@@ -68,13 +68,12 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b-[0.5px] ${
-        isScrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b-[0.5px] ${isScrolled
           ? "bg-midnight/95 backdrop-blur-md border-white/20 shadow-lg py-3"
           : pathname === "/"
             ? "bg-transparent border-transparent py-4"
             : "bg-midnight/95 backdrop-blur-md border-white/20 shadow-lg py-3"
-      }`}
+        }`}
     >
       <div className="mx-auto max-w-95/100 md:max-w-5/6 text-white flex justify-between items-center px-4 md:px-6 lg:px-10">
         <Link href="/" className="text-xl">
@@ -163,7 +162,13 @@ export default function Header() {
             <button className="cursor-pointer text-sm font-medium text-white/80 hover:text-white transition-colors">
               Login
             </button>
-            <Button href="/live-deal" title="See it on a live deal" />
+            {/* <Button href="/live-deal" title="See it on a live deal" /> */}
+            <Link
+              href="/live-deal"
+              className={`max-w-fit py-2.25 px-4.5 rounded-lg text-sm text-parchment bg-terracotta transform hover:shadow-lg hover:bg-terracotta/90 hover:-translate-y-1 duration-300 ease-linear`}
+            >
+              Talk To Us
+            </Link>
           </div>
         </div>
 
